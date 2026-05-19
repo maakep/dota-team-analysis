@@ -1,0 +1,81 @@
+name: Deploy committed data to GitHub Pages
+
+# Fallback deployment path. This workflow does NOT call STRATZ — it builds
+# from whatever `data/team.json` is currently committed to the repo and
+# publishes the result to Pages. Use this when:
+#   - STRATZ blocks the GitHub runner IP (current default behavior for
+#     personal tokens), or
+#   - You want to redeploy after a UI-only change without burning a refresh.
+#
+# To refresh the data: run `npm run refresh` locally — that fetches from
+# STRATZ on your machine (where your token is IP-pinned), commits the new
+# `data/team.json`, and pushes. The push to `main` re-triggers this
+# workflow automatically.
+#
+# The companion workflow `deploy.yml` does an in-CI prefetch and can
+# overwrite the same Pages deployment when STRATZ allows the runner IP.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build static site from committed data
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install deps
+        run: npm ci
+
+      # Sanity check: the build will silently produce a broken site if
+      # data/team.json is missing, so fail loudly here instead.
+      - name: Verify data/team.json exists
+        run: |
+          if [ ! -s data/team.json ]; then
+            echo "::error::data/team.json is missing or empty. Run \`npm run refresh\` locally and push."
+            exit 1
+          fi
+          echo "data/team.json size: $(wc -c < data/team.json) bytes"
+
+      - name: Build static site
+        env:
+          BASE_PATH: "/dota-team-analysis"
+        run: npm run build
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

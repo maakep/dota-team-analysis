@@ -1,8 +1,22 @@
-name: Build and deploy to GitHub Pages
+name: Prefetch from STRATZ and deploy
 
-# Manual-only trigger. The dispatcher picks the team and (optionally)
-# tweaks the analysis windows/ban thresholds. Defaults match the values
-# baked into lib/fetch-team-data.ts.
+# STRATZ-powered deployment path. Runs scripts/prefetch.ts in CI to fetch
+# fresh data from STRATZ, then builds and deploys to Pages — overwriting
+# whatever the fallback workflow (.github/workflows/pages.yml) last
+# published.
+#
+# IMPORTANT: STRATZ pins personal API tokens to the IP that minted them,
+# so this workflow will return HTTP 403 unless either:
+#   - STRATZ has whitelisted your token for multiple IPs (ask their dev
+#     team), or
+#   - You route the prefetch through a stable-IP proxy (see notes in
+#     README.md).
+# Until then, refresh data locally via `npm run refresh` and let the
+# fallback workflow publish the committed JSON.
+#
+# The dispatcher picks the team and (optionally) tweaks the analysis
+# windows/ban thresholds. Defaults match the values baked into
+# lib/fetch-team-data.ts.
 on:
   workflow_dispatch:
     inputs:
@@ -43,8 +57,8 @@ permissions:
   pages: write
   id-token: write
 
-# Avoid races between concurrent dispatches; let the in-flight one finish
-# so we don't leave Pages in a half-deployed state.
+# Shared group with the fallback workflow so the two can't race each
+# other when both happen to run around the same time.
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -66,40 +80,11 @@ jobs:
       - name: Install deps
         run: npm ci
 
-      # Temporary diagnostic: confirm the secret is reaching the runner and
-      # looks roughly JWT-shaped, without leaking the value. A STRATZ JWT
-      # is ~700+ chars and contains exactly two dots (header.payload.sig).
-      # Remove this step once the 403 is resolved.
-      - name: Debug — STRATZ token presence
-        env:
-          STRATZ_TOKEN: ${{ secrets.STRATZ_TOKEN }}
-        run: |
-          if [ -z "$STRATZ_TOKEN" ]; then
-            echo "::error::STRATZ_TOKEN is empty or unset"
-            exit 1
-          fi
-          echo "token length: ${#STRATZ_TOKEN}"
-          DOTS=$(echo -n "$STRATZ_TOKEN" | tr -cd '.' | wc -c)
-          echo "dot count (expect 2 for a JWT): $DOTS"
-          echo "first 6 chars: ${STRATZ_TOKEN:0:6}"
-          echo "last 6 chars:  ${STRATZ_TOKEN: -6}"
-          # Probe STRATZ directly with curl so we can see the raw HTTP
-          # status independent of our Node client. -sS keeps it quiet but
-          # still surfaces errors; -o /dev/null drops the body so the
-          # response data never lands in logs.
-          STATUS=$(curl -sS -o /dev/null -w "%{http_code}" \
-            -H "Authorization: Bearer $STRATZ_TOKEN" \
-            -H "User-Agent: STRATZ_API" \
-            -H "Content-Type: application/json" \
-            -X POST \
-            -d '{"query":"{ constants { heroes { id } } }"}' \
-            https://api.stratz.com/graphql)
-          echo "STRATZ probe HTTP status: $STATUS"
-
-      # `npm run build` triggers the `prebuild` hook in package.json which
-      # runs scripts/prefetch.ts → writes data/team.json → next build inlines
-      # it into the static bundle. Single step, single set of env vars.
-      - name: Build (prefetch + next build)
+      # Fetch fresh data from STRATZ → writes data/team.json on the runner.
+      # If STRATZ rejects the IP, this step fails fast and the deploy is
+      # skipped, leaving the previously-published site (and the committed
+      # data/team.json) untouched.
+      - name: Prefetch from STRATZ
         env:
           STRATZ_TOKEN: ${{ secrets.STRATZ_TOKEN }}
           TEAM_ID: ${{ inputs.team_id }}
@@ -108,7 +93,10 @@ jobs:
           BAN_MIN_GAMES_TEAM: ${{ inputs.ban_min_games_team }}
           BAN_MIN_GAMES_PUB: ${{ inputs.ban_min_games_pub }}
           TOP_BAN_MIN_GAMES: ${{ inputs.top_ban_min_games }}
-          # Pages serves the site under this subpath on github.io.
+        run: npm run prefetch
+
+      - name: Build static site
+        env:
           BASE_PATH: "/dota-team-analysis"
         run: npm run build
 

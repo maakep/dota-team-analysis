@@ -5,13 +5,12 @@
   "description": "Counter-draft intel dashboard for an amateur Dota team. Static Next.js app; data is fetched from STRATZ at build time and baked into the bundle.",
   "scripts": {
     "prefetch": "tsx scripts/prefetch.ts",
-    "predev": "npm run prefetch",
-    "prebuild": "npm run prefetch",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "refresh": "npm run prefetch && git add data/team.json && git commit -m \"data: refresh team.json\" && git push"
   },
   "dependencies": {
     "next": "14.2.13",

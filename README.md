@@ -18,14 +18,17 @@ npm install
 Copy-Item .env.local.example .env.local
 # edit .env.local: STRATZ_TOKEN=<jwt>, TEAM_ID=<numeric team id>
 
-# 2. Fetch + render.
-npm run dev        # runs prefetch then `next dev` on http://localhost:3000
+# 2. Fetch data from STRATZ (writes data/team.json).
+npm run prefetch
+
+# 3. Run the dashboard.
+npm run dev        # http://localhost:3000
 ```
 
-To build a static bundle (e.g. for hosting on GitHub Pages, S3, etc.):
+To build a static bundle:
 
 ```powershell
-npm run build       # runs prefetch via the prebuild hook, then exports out/
+npm run build       # exports out/  (does NOT prefetch — run prefetch first)
 ```
 
 The build emits an `out/` directory of pure static HTML/CSS/JS — that's
@@ -34,25 +37,51 @@ hosting on a project page (so asset URLs get prefixed correctly).
 
 ## Deploy to GitHub Pages
 
-This repo ships with a manual `workflow_dispatch` workflow at
-`.github/workflows/deploy.yml`. To set it up:
+This repo ships with **two** Pages workflows that share the same
+deployment target. Pick the one that matches your situation.
 
-1. Push to GitHub (repo: `dota-team-analysis`).
-2. Settings → Secrets and variables → Actions → New repository secret:
-   `STRATZ_TOKEN` = your JWT.
+### Primary: fallback workflow (`pages.yml`)
+
+`.github/workflows/pages.yml` triggers on every push to `main` (and on
+manual dispatch). It builds the site from whatever `data/team.json` is
+currently committed to the repo — no STRATZ call in CI. This is the
+default flow because STRATZ pins personal API tokens to a single IP,
+which GitHub-hosted runners can't satisfy.
+
+To refresh data:
+
+```powershell
+npm run refresh    # prefetch + git add data/team.json + commit + push
+```
+
+The push to `main` re-triggers `pages.yml`, which redeploys the site
+with the new data.
+
+### Optional: in-CI prefetch (`deploy.yml`)
+
+`.github/workflows/deploy.yml` is the original design: a manual
+`workflow_dispatch` that runs the prefetch inside the runner. It's kept
+for the day STRATZ allows your token from multiple IPs (a custom
+allowlist, a stable-IP proxy, etc.). Inputs: `team_id`,
+`team_window_days`, `pub_window_days`, `ban_min_games_team`,
+`ban_min_games_pub`, `top_ban_min_games`.
+
+If STRATZ rejects the runner's IP the prefetch step fails fast and the
+deploy is skipped, leaving the existing Pages site (and committed
+`data/team.json`) intact.
+
+### One-time setup
+
+1. Push the repo to GitHub (`dota-team-analysis`).
+2. Settings → Secrets and variables → Actions → add `STRATZ_TOKEN`
+   (only needed by `deploy.yml`; `pages.yml` doesn't read it).
 3. Settings → Pages → Source: **GitHub Actions**.
-4. Actions tab → **Build and deploy to GitHub Pages** → **Run workflow**.
-   Pick the team id (default `2163` = Team Liquid) and optionally tweak
-   the analysis windows / ban thresholds.
-
-The workflow runs `npm run build` which triggers `scripts/prefetch.ts` →
-`next build` → uploads `out/` as the Pages artifact. `data/team.json` is
-never committed; it lives only inside the CI run, baked into the static
-bundle. Site lands at `https://maakep.github.io/dota-team-analysis/`.
+4. Push to `main` → `pages.yml` builds and deploys to
+   `https://maakep.github.io/dota-team-analysis/`.
 
 Get a STRATZ JWT at <https://stratz.com/api>. The token is **server-side only** —
-it only ever lives in `.env.local` and is read by `scripts/prefetch.ts`. It is
-never bundled into the client.
+it only ever lives in `.env.local` (or as a GitHub Actions secret) and
+is read by `scripts/prefetch.ts`. It is never bundled into the client.
 
 ## What you get
 
