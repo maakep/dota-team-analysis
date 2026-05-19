@@ -25,12 +25,30 @@ npm run dev        # runs prefetch then `next dev` on http://localhost:3000
 To build a static bundle (e.g. for hosting on GitHub Pages, S3, etc.):
 
 ```powershell
-npm run build
-npm start          # serves .next/ locally
+npm run build       # runs prefetch via the prebuild hook, then exports out/
 ```
 
-`prefetch` runs automatically via `predev` / `prebuild`. To refresh data without
-restarting, run `npm run prefetch` and hard-reload the page.
+The build emits an `out/` directory of pure static HTML/CSS/JS — that's
+what gets uploaded to Pages. Set `BASE_PATH=/your-repo-name` if you're
+hosting on a project page (so asset URLs get prefixed correctly).
+
+## Deploy to GitHub Pages
+
+This repo ships with a manual `workflow_dispatch` workflow at
+`.github/workflows/deploy.yml`. To set it up:
+
+1. Push to GitHub (repo: `dota-team-analysis`).
+2. Settings → Secrets and variables → Actions → New repository secret:
+   `STRATZ_TOKEN` = your JWT.
+3. Settings → Pages → Source: **GitHub Actions**.
+4. Actions tab → **Build and deploy to GitHub Pages** → **Run workflow**.
+   Pick the team id (default `2163` = Team Liquid) and optionally tweak
+   the analysis windows / ban thresholds.
+
+The workflow runs `npm run build` which triggers `scripts/prefetch.ts` →
+`next build` → uploads `out/` as the Pages artifact. `data/team.json` is
+never committed; it lives only inside the CI run, baked into the static
+bundle. Site lands at `https://maakep.github.io/dota-team-analysis/`.
 
 Get a STRATZ JWT at <https://stratz.com/api>. The token is **server-side only** —
 it only ever lives in `.env.local` and is read by `scripts/prefetch.ts`. It is
@@ -95,21 +113,25 @@ data/
 
 ## Configuration knobs
 
-All tuning constants live at the top of `lib/fetch-team-data.ts`:
+Defaults live at the top of `lib/fetch-team-data.ts`. The starred ones
+can be overridden via env var (and the GitHub Actions workflow exposes
+them as `workflow_dispatch` inputs).
 
-| Constant | Default | Meaning |
-| --- | --- | --- |
-| `TEAM_WINDOW_DAYS` | 270 | How far back to look at team scrims. |
-| `PUB_WINDOW_DAYS` | 90 | Pub-matchmaking window. |
-| `TEAM_MATCH_TAKE` | 100 | Matches pulled to derive the roster. |
-| `HERO_TAKE_TEAM` | 30 | Hero pool size per player×position (team). |
-| `HERO_TAKE_PUB` | 15 | Hero pool size per player×position (pub). |
-| `COMFORT_MIN_GAMES` / `COMFORT_MIN_WR` | 5 / 0.6 | COMFORT tag threshold. |
-| `GEM_MIN_GAMES` / `GEM_MIN_WR` | 5 / 0.7 | HIDDEN-GEM tag threshold. |
-| `FLEX_SHARE` / `FLEX_MIN_TOTAL_GAMES` | 0.2 / 10 | Flex-player threshold. |
-| `FLEX_BOOST` | 1.1 | Score multiplier for flex picks on ban list. |
-| `PUB_WEIGHT` | 0.6 | Down-weight for pub picks vs team scrims. |
-| `PER_PLAYER` / top-10 cutoff | 6 / 10 | Ban candidates per player and per position. |
+| Constant | Default | Env override | Meaning |
+| --- | --- | --- | --- |
+| `TEAM_WINDOW_DAYS` | 270 | `TEAM_WINDOW_DAYS` | How far back to look at team scrims. |
+| `PUB_WINDOW_DAYS` | 90 | `PUB_WINDOW_DAYS` | Pub-matchmaking window. |
+| `BAN_MIN_GAMES_TEAM` | 3 | `BAN_MIN_GAMES_TEAM` | Min team games to surface a ban card. |
+| `BAN_MIN_GAMES_PUB` | 5 | `BAN_MIN_GAMES_PUB` | Min pub games to surface a ban card. |
+| `TOP_BAN_MIN_GAMES` | 3 | `TOP_BAN_MIN_GAMES` | Min team games for the priority-bans list. |
+| `TEAM_MATCH_TAKE` | 100 | — | Matches pulled to derive the roster. |
+| `HERO_TAKE_TEAM` | 30 | — | Hero pool size per player×position (team). |
+| `HERO_TAKE_PUB` | 50 | — | Hero pool size per player×position (pub). |
+| `COMFORT_MIN_GAMES` / `COMFORT_MIN_WR` | 5 / 0.6 | — | COMFORT tag threshold. |
+| `GEM_MIN_GAMES` / `GEM_MIN_WR` | 5 / 0.7 | — | HIDDEN-GEM tag threshold. |
+| `FLEX_SHARE` / `FLEX_MIN_TOTAL_GAMES` | 0.2 / 10 | — | Flex-player threshold. |
+| `FLEX_BOOST` | 1.1 | — | Score multiplier for flex picks on ban list. |
+| `PUB_WEIGHT` | 0.6 | — | Down-weight for pub picks vs team scrims. |
 
 ## Rate limits
 

@@ -1,0 +1,103 @@
+name: Build and deploy to GitHub Pages
+
+# Manual-only trigger. The dispatcher picks the team and (optionally)
+# tweaks the analysis windows/ban thresholds. Defaults match the values
+# baked into lib/fetch-team-data.ts.
+on:
+  workflow_dispatch:
+    inputs:
+      team_id:
+        description: "STRATZ team ID to fetch"
+        required: true
+        default: "2163"
+        type: string
+      team_window_days:
+        description: "Days of team-scrim history to analyze"
+        required: false
+        default: "270"
+        type: string
+      pub_window_days:
+        description: "Days of pub history to analyze"
+        required: false
+        default: "90"
+        type: string
+      ban_min_games_team:
+        description: "Minimum team-scrim games for a (hero, position) ban card"
+        required: false
+        default: "3"
+        type: string
+      ban_min_games_pub:
+        description: "Minimum pub games for a (hero, position) ban card"
+        required: false
+        default: "5"
+        type: string
+      top_ban_min_games:
+        description: "Minimum team games for the top-priority bans list"
+        required: false
+        default: "3"
+        type: string
+
+# Required by actions/deploy-pages: it uses OIDC to authenticate to Pages.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Avoid races between concurrent dispatches; let the in-flight one finish
+# so we don't leave Pages in a half-deployed state.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Prefetch + build static site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install deps
+        run: npm ci
+
+      # `npm run build` triggers the `prebuild` hook in package.json which
+      # runs scripts/prefetch.ts → writes data/team.json → next build inlines
+      # it into the static bundle. Single step, single set of env vars.
+      - name: Build (prefetch + next build)
+        env:
+          STRATZ_TOKEN: ${{ secrets.STRATZ_TOKEN }}
+          TEAM_ID: ${{ inputs.team_id }}
+          TEAM_WINDOW_DAYS: ${{ inputs.team_window_days }}
+          PUB_WINDOW_DAYS: ${{ inputs.pub_window_days }}
+          BAN_MIN_GAMES_TEAM: ${{ inputs.ban_min_games_team }}
+          BAN_MIN_GAMES_PUB: ${{ inputs.ban_min_games_pub }}
+          TOP_BAN_MIN_GAMES: ${{ inputs.top_ban_min_games }}
+          # Pages serves the site under this subpath on github.io.
+          BASE_PATH: "/dota-team-analysis"
+        run: npm run build
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

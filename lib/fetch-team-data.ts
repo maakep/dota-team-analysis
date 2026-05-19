@@ -29,9 +29,23 @@ import type {
 
 // ──────────────────────────────────────────────────────────────────────────
 // Tuning knobs.
+//
+// Each knob has a sensible default but can be overridden via environment
+// variable at prefetch time. This lets the GitHub Actions workflow expose
+// them as `workflow_dispatch` inputs without code changes.
 // ──────────────────────────────────────────────────────────────────────────
-const TEAM_WINDOW_DAYS = 270; // ~9 months for team scrim history
-const PUB_WINDOW_DAYS = 90;   // tighter — "what are they spamming right now"
+function envInt(key: string, fallback: number): number {
+  const v = process.env[key];
+  if (v === undefined || v.trim() === "") return fallback;
+  const n = Number(v);
+  if (!Number.isInteger(n) || n < 0) {
+    throw new UserError(`${key} must be a non-negative integer (got: ${v}).`);
+  }
+  return n;
+}
+
+const TEAM_WINDOW_DAYS = envInt("TEAM_WINDOW_DAYS", 270); // ~9 months for team scrim history
+const PUB_WINDOW_DAYS = envInt("PUB_WINDOW_DAYS", 90);    // tighter — "what are they spamming right now"
 const TEAM_MATCH_TAKE = 100;  // matches pulled to derive roster
 const HERO_TAKE_TEAM = 30;
 const HERO_TAKE_PUB = 50;     // top N hero rows; aggregates ~hundreds of games
@@ -489,8 +503,8 @@ function buildPlayerReport(
 // — every roster player who plays the hero at that position is rolled into
 // the same card with team + pub stats summed across the contributors.
 // ──────────────────────────────────────────────────────────────────────────
-const BAN_MIN_GAMES_TEAM = 3;
-const BAN_MIN_GAMES_PUB = 5;
+const BAN_MIN_GAMES_TEAM = envInt("BAN_MIN_GAMES_TEAM", 3);
+const BAN_MIN_GAMES_PUB = envInt("BAN_MIN_GAMES_PUB", 5);
 const FLEX_BOOST = 1.1;
 const PUB_WEIGHT = 0.6;
 const PER_POSITION = 8; // top-N per position column
@@ -660,7 +674,7 @@ function aggregateBans(report: PlayerReport[]): Record<Position, BanCandidate[]>
 // summed into a single team-level entry. Pub data is intentionally excluded
 // here; this is the "what they actually pick in scrims" board.
 // ──────────────────────────────────────────────────────────────────────────
-const TOP_BAN_MIN_GAMES = 3;
+const TOP_BAN_MIN_GAMES = envInt("TOP_BAN_MIN_GAMES", 3);
 const TOP_BAN_COUNT = 7;
 
 function aggregateTopBans(
