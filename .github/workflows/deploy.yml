@@ -66,6 +66,36 @@ jobs:
       - name: Install deps
         run: npm ci
 
+      # Temporary diagnostic: confirm the secret is reaching the runner and
+      # looks roughly JWT-shaped, without leaking the value. A STRATZ JWT
+      # is ~700+ chars and contains exactly two dots (header.payload.sig).
+      # Remove this step once the 403 is resolved.
+      - name: Debug — STRATZ token presence
+        env:
+          STRATZ_TOKEN: ${{ secrets.STRATZ_TOKEN }}
+        run: |
+          if [ -z "$STRATZ_TOKEN" ]; then
+            echo "::error::STRATZ_TOKEN is empty or unset"
+            exit 1
+          fi
+          echo "token length: ${#STRATZ_TOKEN}"
+          DOTS=$(echo -n "$STRATZ_TOKEN" | tr -cd '.' | wc -c)
+          echo "dot count (expect 2 for a JWT): $DOTS"
+          echo "first 6 chars: ${STRATZ_TOKEN:0:6}"
+          echo "last 6 chars:  ${STRATZ_TOKEN: -6}"
+          # Probe STRATZ directly with curl so we can see the raw HTTP
+          # status independent of our Node client. -sS keeps it quiet but
+          # still surfaces errors; -o /dev/null drops the body so the
+          # response data never lands in logs.
+          STATUS=$(curl -sS -o /dev/null -w "%{http_code}" \
+            -H "Authorization: Bearer $STRATZ_TOKEN" \
+            -H "User-Agent: STRATZ_API" \
+            -H "Content-Type: application/json" \
+            -X POST \
+            -d '{"query":"{ constants { heroes { id } } }"}' \
+            https://api.stratz.com/graphql)
+          echo "STRATZ probe HTTP status: $STATUS"
+
       # `npm run build` triggers the `prebuild` hook in package.json which
       # runs scripts/prefetch.ts → writes data/team.json → next build inlines
       # it into the static bundle. Single step, single set of env vars.

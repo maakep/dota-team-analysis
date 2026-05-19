@@ -31,6 +31,18 @@ export function createStratzClient(token: string, version = "0.3.0"): StratzClie
     throw new UserError("STRATZ_TOKEN env var is missing. Get a JWT at https://stratz.com/api and put it in .env.local.");
   }
 
+  // Diagnostic: emit a one-line fingerprint of the token at startup so the
+  // GitHub Actions log proves the secret reached this code path intact.
+  // Never logs the token itself — only length, dot count (a JWT has 2),
+  // and 6-char prefix/suffix. Safe to leave on permanently; remove or
+  // gate behind a DEBUG flag if it ever becomes noisy.
+  const dotCount = (token.match(/\./g) ?? []).length;
+  const head = token.slice(0, 6);
+  const tail = token.slice(-6);
+  process.stderr.write(
+    `» stratz client: token len=${token.length} dots=${dotCount} head=${head} tail=${tail}\n`,
+  );
+
   async function query<T>(
     gql: string,
     variables?: Record<string, unknown>,
@@ -63,6 +75,13 @@ export function createStratzClient(token: string, version = "0.3.0"): StratzClie
         if (!res.ok) {
           const text = await res.text();
           if (res.status === 401 || res.status === 403) {
+            // Surface the raw STRATZ response body to the log before we
+            // collapse it into a UserError. The body often contains the
+            // real reason (expired token, IP block, missing scope, etc.)
+            // that the generic UserError message hides from the operator.
+            process.stderr.write(
+              `» stratz auth rejected: HTTP ${res.status} on ${opName} — body: ${text.slice(0, 500)}\n`,
+            );
             throw new UserError(
               `STRATZ rejected the token (HTTP ${res.status}). Get a fresh one at https://stratz.com/api.`,
             );
