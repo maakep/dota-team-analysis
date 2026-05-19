@@ -3,7 +3,13 @@ import { POSITION_NAMES } from "@/lib/positions";
 import { PositionBlock } from "./PositionBlock";
 import { RankBadge } from "./RankBadge";
 
-export function PlayerCard({ player }: { player: PlayerReport }) {
+export function PlayerCard({
+  player,
+  pubWindowDays,
+}: {
+  player: PlayerReport;
+  pubWindowDays: number;
+}) {
   const wr =
     player.totalMatches > 0
       ? (player.totalWins / player.totalMatches) * 100
@@ -102,7 +108,7 @@ export function PlayerCard({ player }: { player: PlayerReport }) {
                 </span>
               </summary>
               <div className="pt-3">
-                <PositionBlock stats={ps} />
+                <PositionBlock stats={ps} pubWindowDays={pubWindowDays} />
               </div>
             </details>
           ))

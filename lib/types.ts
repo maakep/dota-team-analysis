@@ -50,7 +50,9 @@ export interface PositionStats {
   /** Share of the player's total team games at this position (0..1). */
   share: number;
   teamHeroes: HeroPerf[];
-  /** Pub matchmaking stats at this position (last ~90 days). */
+  /** Pub matchmaking stats at this position, scoped to the
+   *  `PUB_WINDOW_DAYS` env knob (defaults to 270d, synced with the team
+   *  window). */
   pubGames: number;
   pubWins: number;
   pubHeroes: HeroPerf[];

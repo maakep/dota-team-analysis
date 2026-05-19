@@ -9,7 +9,13 @@ function fmtDate(unix: number | null): string {
 /** Stand-ins are rendered with the same per-position breakdown as roster
  *  players. The "last appeared" timestamp is shown as a small subtitle so
  *  it's obvious how recent the data is. */
-export function Standins({ standins }: { standins: StandinReport[] }) {
+export function Standins({
+  standins,
+  pubWindowDays,
+}: {
+  standins: StandinReport[];
+  pubWindowDays: number;
+}) {
   if (standins.length === 0) {
     return (
       <p className="rounded-lg border border-ink-700 bg-ink-800 p-4 text-sm italic text-ink-400">
@@ -21,7 +27,7 @@ export function Standins({ standins }: { standins: StandinReport[] }) {
     <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
       {standins.map((s) => (
         <div key={s.accountId} className="flex flex-col">
-          <PlayerCard player={s} />
+          <PlayerCard player={s} pubWindowDays={pubWindowDays} />
           <p className="mt-1 px-1 text-[11px] text-ink-400">
             last appeared with team {fmtDate(s.lastTeamMatchAt)}
           </p>

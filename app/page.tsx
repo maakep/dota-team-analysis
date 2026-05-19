@@ -33,6 +33,14 @@ function orderRoster(players: PlayerReport[]): PlayerReport[] {
 }
 
 export default function Page() {
+  // Derive the pub-window length once from the report so per-player /
+  // per-position captions ("Recent pubs (270d)") track the actual
+  // PUB_WINDOW_DAYS env knob baked at prefetch time. Matches the same
+  // formula RosterOverview uses for its window caption.
+  const pubWindowDays = Math.max(
+    1,
+    Math.round((Date.now() / 1000 - data.pubWindowStart) / 86400),
+  );
   return (
     <main className="mx-auto max-w-[1680px] px-4 py-8 sm:px-6 lg:px-8">
       <TeamHeader report={data} />
@@ -70,7 +78,11 @@ export default function Page() {
         </h2>
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
           {orderRoster(data.players).map((p) => (
-            <PlayerCard key={p.accountId} player={p} />
+            <PlayerCard
+              key={p.accountId}
+              player={p}
+              pubWindowDays={pubWindowDays}
+            />
           ))}
         </div>
       </section>
@@ -82,7 +94,7 @@ export default function Page() {
             off-roster players who appeared with the team
           </span>
         </h2>
-        <Standins standins={data.standins} />
+        <Standins standins={data.standins} pubWindowDays={pubWindowDays} />
       </section>
 
       <footer className="mt-12 border-t border-ink-700 pt-4 text-xs text-ink-400">

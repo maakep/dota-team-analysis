@@ -3,7 +3,19 @@ import { PickList } from "./PickList";
 
 // Just the two parallel columns. The enclosing PlayerCard <details> already
 // labels the position, so we don't repeat it here.
-export function PositionBlock({ stats }: { stats: PositionStats }) {
+//
+// `pubWindowDays` is threaded down from the page so the caption tracks the
+// actual `PUB_WINDOW_DAYS` env knob instead of being hard-coded. We accept
+// it as a prop (rather than re-deriving from the report inside the
+// component) to keep PositionBlock pure and avoid a second TeamReport
+// dependency on a leaf component.
+export function PositionBlock({
+  stats,
+  pubWindowDays,
+}: {
+  stats: PositionStats;
+  pubWindowDays: number;
+}) {
   const teamWr =
     stats.teamGames > 0 ? (stats.teamWins / stats.teamGames) * 100 : 0;
   const pubWr =
@@ -24,13 +36,16 @@ export function PositionBlock({ stats }: { stats: PositionStats }) {
       <div>
         <div className="mb-2 flex items-baseline justify-between">
           <h5 className="text-[11px] font-semibold uppercase tracking-wider text-ink-300">
-            Recent pubs (90d)
+            Recent pubs ({pubWindowDays}d)
           </h5>
           <span className="font-mono text-[11px] text-ink-400">
             {stats.pubGames}g · {pubWr.toFixed(0)}%
           </span>
         </div>
-        <PickList heroes={stats.pubHeroes} empty="No pubs in last 90d." />
+        <PickList
+          heroes={stats.pubHeroes}
+          empty={`No pubs in last ${pubWindowDays}d.`}
+        />
       </div>
     </div>
   );

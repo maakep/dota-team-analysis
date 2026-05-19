@@ -88,7 +88,7 @@ is read by `scripts/prefetch.ts`. It is never bundled into the client.
 - **Team header** — name, lifetime W-L (9-month window), last match, sample size.
 - **5 player cards** — each with primary position, flex tag, and a collapsible
   block per position they actually play. Each position block shows team-scrim
-  hero pool side-by-side with last-90-days pub picks.
+  hero pool side-by-side with their pub picks over the same window.
 - **Ban targets by position** — top 10 ranked threats per slot, aggregated
   across the roster, with flex boosts and team/pub provenance.
 
