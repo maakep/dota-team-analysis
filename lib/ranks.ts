@@ -5,10 +5,13 @@
 // the star (1-5; 0 or unused for Immortal). `seasonLeaderboardRank` is the
 // Immortal ladder position.
 //
-// Tier medal art is on the dota2.com CDN at
-// /apps/dota2/images/dota_react/icons/seasonal_rank/medal_<tier>.png.
-// Star is shown as a small text overlay (the combined tier+star asset URL
-// pattern isn't a stable public path).
+// Medal art used to live on Valve's Steam CDN at
+// `cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/seasonal_rank/medal_<tier>.png`
+// but Valve removed that path some time in late 2026 (hero portraits at the
+// same CDN still work — only the rank medals are gone). We mirror from
+// OpenDota, which hosts both the tier base medals and per-star transparent
+// overlays so we can compose the canonical look instead of stamping a text
+// star on top.
 
 import type { PlayerRank } from "./types";
 
@@ -34,8 +37,7 @@ const TIER_COLORS: Record<number, string> = {
   8: "text-yellow-300",
 };
 
-const MEDAL_BASE =
-  "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/seasonal_rank";
+const MEDAL_BASE = "https://www.opendota.com/assets/images/dota2/rank_icons";
 
 export function decodeRank(
   seasonRank: number | null | undefined,
@@ -66,7 +68,13 @@ export function decodeRank(
 }
 
 export function rankMedalUrl(tier: number): string {
-  return `${MEDAL_BASE}/medal_${tier}.png`;
+  return `${MEDAL_BASE}/rank_icon_${tier}.png`;
+}
+
+/** Transparent star-pip overlay (1-5). Composited on top of the tier
+ *  medal to produce the full "Ancient 3" look. Immortal has no stars. */
+export function rankStarUrl(star: number): string {
+  return `${MEDAL_BASE}/rank_star_${star}.png`;
 }
 
 export function rankTierColor(tier: number): string {

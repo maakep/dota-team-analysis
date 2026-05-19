@@ -45,7 +45,7 @@ function envInt(key: string, fallback: number): number {
 }
 
 const TEAM_WINDOW_DAYS = envInt("TEAM_WINDOW_DAYS", 270); // ~9 months for team scrim history
-const PUB_WINDOW_DAYS = envInt("PUB_WINDOW_DAYS", 90);    // tighter — "what are they spamming right now"
+const PUB_WINDOW_DAYS = envInt("PUB_WINDOW_DAYS", 270);   // matched to team window by default so the roster overview can present a single combined volume number
 const TEAM_MATCH_TAKE = 100;  // matches pulled to derive roster
 const HERO_TAKE_TEAM = 30;
 const HERO_TAKE_PUB = 50;     // top N hero rows; aggregates ~hundreds of games

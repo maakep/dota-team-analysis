@@ -5,6 +5,7 @@ import { PlayerCard } from "@/components/PlayerCard";
 import { BanTargets } from "@/components/BanTargets";
 import { TopBans } from "@/components/TopBans";
 import { Standins } from "@/components/Standins";
+import { RosterOverview } from "@/components/RosterOverview";
 
 const data = report as unknown as TeamReport;
 
@@ -37,6 +38,16 @@ export default function Page() {
       <TeamHeader report={data} />
 
       <section className="mt-8">
+        <h2 className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-ink-300">
+          Roster overview
+          <span className="ml-2 text-[10px] font-normal normal-case text-ink-400">
+            primary roles · rank · combined team + pub volume in window
+          </span>
+        </h2>
+        <RosterOverview report={data} />
+      </section>
+
+      <section className="mt-10">
         <h2 className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-ink-300">
           Priority bans
           <span className="ml-2 text-[10px] font-normal normal-case text-ink-400">

@@ -23,9 +23,12 @@ export function PlayerCard({ player }: { player: PlayerReport }) {
       : null;
   return (
     <article className="rounded-lg border border-ink-700 bg-ink-800 p-4">
-      <header className="mb-3 flex flex-wrap items-baseline justify-between gap-2">
-        <div>
-          <div className="flex flex-wrap items-center gap-2.5">
+      <header className="mb-3 flex flex-wrap items-start justify-between gap-3">
+        {/* Medal sits to the LEFT of the name, in the classic Dota client
+            layout: rank glyph first, then handle. */}
+        <div className="flex items-center gap-3">
+          <RankBadge rank={player.rank} size="lg" />
+          <div>
             <h3 className="text-lg font-semibold text-ink-100">
               <a
                 href={`https://stratz.com/players/${player.accountId}`}
@@ -37,33 +40,32 @@ export function PlayerCard({ player }: { player: PlayerReport }) {
                 {cardTitle}
               </a>
             </h3>
-            <RankBadge rank={player.rank} size="sm" />
-          </div>
-          <div className="mt-0.5 flex flex-wrap items-center gap-2 text-xs text-ink-300">
-            {player.primaryPosition !== null && (
-              <span>
-                Pos {player.primaryPosition}{" "}
-                <span className="text-ink-400">
-                  ({POSITION_NAMES[player.primaryPosition]})
+            <div className="mt-0.5 flex flex-wrap items-center gap-2 text-xs text-ink-300">
+              {player.primaryPosition !== null && (
+                <span>
+                  Pos {player.primaryPosition}{" "}
+                  <span className="text-ink-400">
+                    ({POSITION_NAMES[player.primaryPosition]})
+                  </span>
                 </span>
-              </span>
-            )}
-            {subtitle && (
-              <span className="text-ink-400" title="Steam display name">
-                · {subtitle}
-              </span>
-            )}
-            {(() => {
-              const extras = player.flexPositions.filter(
-                (p) => p !== player.primaryPosition,
-              );
-              if (extras.length === 0) return null;
-              return (
-                <span className="text-ink-400">
-                  + {extras.map((p) => `pos ${p}`).join(", ")}
+              )}
+              {subtitle && (
+                <span className="text-ink-400" title="Steam display name">
+                  · {subtitle}
                 </span>
-              );
-            })()}
+              )}
+              {(() => {
+                const extras = player.flexPositions.filter(
+                  (p) => p !== player.primaryPosition,
+                );
+                if (extras.length === 0) return null;
+                return (
+                  <span className="text-ink-400">
+                    + {extras.map((p) => `pos ${p}`).join(", ")}
+                  </span>
+                );
+              })()}
+            </div>
           </div>
         </div>
         <div className="font-mono text-xs text-ink-300">
