@@ -55,10 +55,18 @@ function BanColumn({
 }
 
 function BanCard({ rank, b }: { rank: number; b: BanCandidate }) {
-  // FLEX cards get a faint tint stripe.
-  const rowCls = b.flexBoosted
-    ? "bg-accent-flex/5 hover:bg-accent-flex/10"
-    : "hover:bg-ink-700/30";
+  // Pub-sourced rows get a left-border accent so they're visually
+  // anchored as "secondary signal" without leaving the column. FLEX
+  // (hero-flex: ≥2 players play this hero in league) gets a faint tint
+  // stripe. Pub rows can also be flex-boosted in theory, but in
+  // practice we don't compute hero-flex over pub heroes — the tag here
+  // really only applies to league rows.
+  const isPub = b.source === "pub";
+  const rowCls = isPub
+    ? "border-l-2 border-accent-mid/40 bg-ink-900/40 hover:bg-ink-700/30"
+    : b.flexBoosted
+      ? "bg-accent-flex/5 hover:bg-accent-flex/10"
+      : "hover:bg-ink-700/30";
   return (
     <li className={`flex gap-2.5 px-3 py-2.5 ${rowCls}`}>
       <div className="flex w-5 shrink-0 flex-col items-center pt-0.5 font-mono text-[10px] text-ink-400">
@@ -80,8 +88,8 @@ function BanCard({ rank, b }: { rank: number; b: BanCandidate }) {
           )}
         </div>
 
-        {/* Player names only — no per-player stats. Comma-separated, each
-            linked to STRATZ. Wraps to multiple lines if needed. */}
+        {/* Player names. viaFlex is currently always false (per-position
+            attribution is primary-only); kept as a hook for future use. */}
         <p className="mt-0.5 text-[11px] text-ink-300">
           {b.players.map((pl, i) => (
             <span key={pl.accountId}>
@@ -90,8 +98,12 @@ function BanCard({ rank, b }: { rank: number; b: BanCandidate }) {
                 href={`https://stratz.com/players/${pl.accountId}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-ink-100 hover:underline"
-                title={`STRATZ: ${pl.playerName ?? pl.accountId}`}
+                className={`hover:underline ${pl.viaFlex ? "text-accent-flex hover:text-accent-flex" : "hover:text-ink-100"}`}
+                title={
+                  pl.viaFlex
+                    ? `${pl.playerName ?? pl.accountId} — contributing via flex (non-primary)`
+                    : `STRATZ: ${pl.playerName ?? pl.accountId}`
+                }
               >
                 {pl.playerName ?? `#${pl.accountId}`}
               </a>
@@ -99,26 +111,15 @@ function BanCard({ rank, b }: { rank: number; b: BanCandidate }) {
           ))}
         </p>
 
-        {/* Aggregated stats — team and pub on separate lines so neither
-            overflows the narrow column. Lines are hidden when irrelevant. */}
-        <div className="mt-1 space-y-0.5 font-mono text-[11px]">
-          {b.teamMatches > 0 && (
-            <StatLine
-              label="team"
-              games={b.teamMatches}
-              wins={b.teamWins}
-              wr={b.teamWinRate}
-            />
-          )}
-          {b.pubMatches > 0 && (
-            <StatLine
-              label="pub"
-              games={b.pubMatches}
-              wins={b.pubWins}
-              wr={b.pubWinRate}
-              muted
-            />
-          )}
+        {/* Stats line — label tracks the data source so coaches can tell
+            league signal (CM/tournament) from pub signal (MM). */}
+        <div className="mt-1 font-mono text-[11px]">
+          <StatLine
+            label={isPub ? "pub" : "league"}
+            games={b.teamMatches}
+            wins={b.teamWins}
+            wr={b.teamWinRate}
+          />
         </div>
       </div>
     </li>
@@ -130,18 +131,14 @@ function StatLine({
   games,
   wins,
   wr,
-  muted = false,
 }: {
   label: string;
   games: number;
   wins: number;
   wr: number;
-  muted?: boolean;
 }) {
   return (
-    <div
-      className={`flex items-baseline justify-between gap-2 ${muted ? "opacity-70" : ""}`}
-    >
+    <div className="flex items-baseline justify-between gap-2">
       <span className="text-[10px] uppercase tracking-wider text-ink-400">
         {label}
       </span>
@@ -166,7 +163,9 @@ function MiniTag({ tag }: { tag: string }) {
           ? "bg-accent-mid/15 text-accent-mid"
           : tag === "FLEX"
             ? "bg-accent-flex/20 text-accent-flex"
-            : "bg-ink-600 text-ink-200";
+            : tag === "PUB"
+              ? "bg-ink-600/60 text-ink-300 ring-1 ring-ink-500"
+              : "bg-ink-600 text-ink-200";
   return (
     <span
       className={`rounded px-1 py-0.5 text-[9px] font-semibold uppercase tracking-wider ${cls}`}

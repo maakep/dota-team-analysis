@@ -28,12 +28,12 @@ on:
       team_window_days:
         description: "Days of team-scrim history to analyze"
         required: false
-        default: "270"
+        default: "180"
         type: string
       pub_window_days:
         description: "Days of pub history to analyze"
         required: false
-        default: "270"
+        default: "180"
         type: string
       ban_min_games_team:
         description: "Minimum team-scrim games for a (hero, position) ban card"

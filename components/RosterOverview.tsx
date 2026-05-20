@@ -16,14 +16,8 @@ const COLUMN_ORDER: Position[] = [4, 3, 2, 1, 5];
  *  Visually mirrors `BanTargets` so the page reads as a stack of 5-wide
  *  grids, but each card here represents a person, not a hero. */
 export function RosterOverview({ report }: { report: TeamReport }) {
-  // The team and pub windows default to the same length (see
-  // lib/fetch-team-data.ts), so we pick whichever is older as the
-  // "effective" window for the caption. If a future tweak desyncs them,
-  // this still reads sensibly — it just means a few pub games might
-  // predate the team-window cutoff, which is harmless.
-  const nowSec = Date.now() / 1000;
-  const windowStart = Math.min(report.windowStart, report.pubWindowStart);
-  const windowDays = Math.max(1, Math.round((nowSec - windowStart) / 86400));
+  // The window length is now baked on the report (team + pub unified).
+  const windowDays = report.windowDays;
 
   // Bucket roster by primary position so we can render the 5 columns
   // even when two players share a position (rare but possible — e.g.,
@@ -104,17 +98,15 @@ function RosterCard({
   // form — the column is narrow and the team tag is already implied by
   // being on the team page.
   const handle = player.name ?? `Account ${player.accountId}`;
-  // Roll pub volume up across every position the player covers (the
-  // data lives per-position on PlayerReport.positions[]), then combine
-  // with team-scrim totals into a single "all games" summary.
-  let pubGames = 0;
-  let pubWins = 0;
-  for (const ps of player.positions) {
-    pubGames += ps.pubGames;
-    pubWins += ps.pubWins;
-  }
-  const totalGames = player.totalMatches + pubGames;
-  const totalWins = player.totalWins + pubWins;
+  // Combined volume across all three data sources for a single
+  // at-a-glance number. League + pub come from OpenDota (complete);
+  // team-scrim comes from STRATZ (the canonical "matches with this
+  // team" count). Sum them for the headline; expose the breakdown via
+  // tooltip so a coach can drill in without losing the overview.
+  const totalGames =
+    player.totalTeamMatches + player.leagueGames + player.pubGames;
+  const totalWins =
+    player.totalTeamWins + player.leagueWins + player.pubWins;
   const wr = totalGames > 0 ? (totalWins / totalGames) * 100 : 0;
   // Player is treated as "flexes" if they covered at least 2 distinct
   // positions in the team window — same threshold the rest of the
@@ -152,7 +144,7 @@ function RosterCard({
         </div>
         <div
           className="mt-0.5 font-mono text-[11px] text-ink-300"
-          title={`${player.totalMatches}g team · ${pubGames}g pub`}
+          title={`${player.totalTeamMatches}g team · ${player.leagueGames}g league · ${player.pubGames}g pub`}
         >
           {totalGames}g · {totalGames > 0 ? `${wr.toFixed(0)}% WR` : "—"}
           <span className="ml-1 text-ink-500">/ {windowDays}d</span>

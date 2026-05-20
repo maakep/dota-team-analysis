@@ -148,8 +148,8 @@ them as `workflow_dispatch` inputs).
 
 | Constant | Default | Env override | Meaning |
 | --- | --- | --- | --- |
-| `TEAM_WINDOW_DAYS` | 270 | `TEAM_WINDOW_DAYS` | How far back to look at team scrims. |
-| `PUB_WINDOW_DAYS` | 270 | `PUB_WINDOW_DAYS` | Pub-matchmaking window (default synced to the team window). |
+| `TEAM_WINDOW_DAYS` | 180 | `TEAM_WINDOW_DAYS` | How far back to look at team scrims. |
+| `PUB_WINDOW_DAYS` | 180 | `PUB_WINDOW_DAYS` | Pub-matchmaking window (default synced to the team window). |
 | `BAN_MIN_GAMES_TEAM` | 3 | `BAN_MIN_GAMES_TEAM` | Min team games to surface a ban card. |
 | `BAN_MIN_GAMES_PUB` | 5 | `BAN_MIN_GAMES_PUB` | Min pub games to surface a ban card. |
 | `TOP_BAN_MIN_GAMES` | 3 | `TOP_BAN_MIN_GAMES` | Min team games for the priority-bans list. |

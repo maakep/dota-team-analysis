@@ -7,7 +7,7 @@
     "prefetch": "tsx scripts/prefetch.ts",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "npm run prefetch && next build && next start",
     "lint": "next lint",
     "format": "prettier --write .",
     "refresh": "npm run prefetch && git add data/team.json && git commit -m \"data: refresh team.json\" && git push"

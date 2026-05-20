@@ -24,8 +24,12 @@ export function TopBans({ bans }: { bans: TeamBanCandidate[] }) {
 }
 
 function TopBanCard({ rank, b }: { rank: number; b: TeamBanCandidate }) {
+  // Win rate and game count come from the league-only pool now; pickRate
+  // was dropped during the OpenDota refactor since we can't define
+  // "what fraction of the team's matches featured this hero" cheaply
+  // across the two data sources (STRATZ team-scrim totals vs OpenDota
+  // per-player league pulls don't share a denominator).
   const wrPct = (b.teamWinRate * 100).toFixed(0);
-  const pickPct = (b.pickRate * 100).toFixed(0);
   const isFlex = b.tags.includes("FLEX");
   // FLEX cards get a colored border + faint accent tint so they pop in the row.
   const containerCls = isFlex
@@ -46,8 +50,6 @@ function TopBanCard({ rank, b }: { rank: number; b: TeamBanCandidate }) {
             </span>
             <span className="text-ink-500"> · </span>
             <span>{b.teamMatches}g</span>
-            <span className="text-ink-500"> · </span>
-            <span className="text-ink-400">{pickPct}% picked</span>
           </div>
         </div>
       </div>
