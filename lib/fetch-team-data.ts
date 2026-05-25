@@ -34,6 +34,8 @@ import { ALL_POSITIONS, type Position, stratzPositionEnum } from "./positions";
 import type {
   BanCandidate,
   HeroPerf,
+  MatchHero,
+  MatchRecord,
   PlayerReport,
   PositionCount,
   StandinReport,
@@ -58,6 +60,10 @@ function envInt(key: string, fallback: number): number {
 
 const WINDOW_DAYS = envInt("TEAM_WINDOW_DAYS", 180); // ~6 months, used for both team-scrim history (STRATZ) and pub/league history (OpenDota) — unified
 const TEAM_MATCH_TAKE = 100; // matches pulled to derive roster
+// How many recent matches to include in the match history panel. We
+// derive the roster from all TEAM_MATCH_TAKE matches but only surface
+// the N most recent to the UI so the JSON stays lean.
+const MATCH_HISTORY_TAKE = 30;
 
 // Comfort/gem tag thresholds (applied to league heroes — pub heroes use
 // the same thresholds for consistency, even though the data shape is the
@@ -162,8 +168,12 @@ const TEAM_QUERY = `query Team($teamId: Int!, $since: Long!) {
     id name tag winCount lossCount lastMatchDateTime
     matches(request: { startDateTime: $since, take: ${TEAM_MATCH_TAKE}, skip: 0 }) {
       id startDateTime didRadiantWin radiantTeamId direTeamId
+      durationSeconds
+      radiantKills direKills
+      radiantTeam { id name tag }
+      direTeam { id name tag }
       players {
-        steamAccountId isRadiant
+        steamAccountId isRadiant heroId kills
         steamAccount {
           name
           proSteamAccount { name team { tag } }
@@ -181,6 +191,8 @@ interface RawProSteamAccount {
 interface TeamMatchPlayer {
   steamAccountId: number | null;
   isRadiant: boolean;
+  heroId: number | null;
+  kills: number | null;
   steamAccount: {
     name: string | null;
     proSteamAccount?: RawProSteamAccount | null;
@@ -192,6 +204,12 @@ interface TeamMatch {
   didRadiantWin: boolean;
   radiantTeamId: number | null;
   direTeamId: number | null;
+  durationSeconds: number | null;
+  /** Per-minute kill arrays (one entry per minute). Sum for total. */
+  radiantKills: number[] | null;
+  direKills: number[] | null;
+  radiantTeam: { id: number; name: string | null; tag: string | null } | null;
+  direTeam: { id: number; name: string | null; tag: string | null } | null;
   players: TeamMatchPlayer[];
 }
 interface RawTeam {
@@ -210,6 +228,7 @@ async function fetchTeamAndRoster(
   windowStart: number,
 ): Promise<{
   team: RawTeam;
+  matches: TeamMatch[];
   accounts: TeamAccount[];
   standins: TeamAccount[];
   matchesAnalyzed: number;
@@ -261,6 +280,7 @@ async function fetchTeamAndRoster(
   });
   return {
     team: data.team,
+    matches,
     accounts: ranked.slice(0, 5),
     standins: ranked.slice(5),
     matchesAnalyzed: matches.length,
@@ -929,8 +949,124 @@ function aggregateTopBans(report: PlayerReport[]): TeamBanCandidate[] {
 }
 
 // ──────────────────────────────────────────────────────────────────────────
-// Main entry point: STRATZ + OpenDota orchestration.
+// Match history builder.
+//
+// Takes the raw matches already fetched for roster derivation, the
+// confirmed top-5 roster account IDs, and a hero shortName map, then
+// produces a clean list of MatchRecord rows for the UI.
+//
+// Stand-in detection: we consider a player a stand-in if their accountId
+// does NOT appear in the top-5 `rosterIds` set. We do NOT flag the
+// opponents — we have no reliable way to know their intended roster.
 // ──────────────────────────────────────────────────────────────────────────
+function buildMatchHistory(
+  matches: TeamMatch[],
+  teamId: number,
+  rosterIds: Set<number>,
+  /** Roster account IDs in display order (e.g. [pos4, pos3, pos2, pos1, pos5]).
+   *  Team heroes in each match row will be sorted into this slot order; a
+   *  stand-in or unknown player fills the slot they actually played in
+   *  (their STRATZ position in the match isn't available so they go at the
+   *  end, after all known roster slots). */
+  rosterOrder: number[],
+  heroes: Map<number, HeroMeta>,
+): MatchRecord[] {
+  // Build a lookup: accountId → slot index (0-based display position).
+  const slotOf = new Map<number, number>();
+  rosterOrder.forEach((id, idx) => slotOf.set(id, idx));
+
+  // Matches come in newest-first from STRATZ when we skip=0 and take=N
+  // (STRATZ orders by startDateTime desc by default). We still sort
+  // explicitly to be safe, then take the top MATCH_HISTORY_TAKE.
+  const sorted = [...matches].sort((a, b) => b.startDateTime - a.startDateTime);
+  const recent = sorted.slice(0, MATCH_HISTORY_TAKE);
+
+  const result: MatchRecord[] = [];
+  for (const m of recent) {
+    const teamIsRadiant =
+      m.radiantTeamId === teamId
+        ? true
+        : m.direTeamId === teamId
+          ? false
+          : null;
+    // Skip matches where we couldn't place the team on either side.
+    if (teamIsRadiant === null) continue;
+
+    const won = teamIsRadiant ? m.didRadiantWin : !m.didRadiantWin;
+
+    // Partition players by side.
+    const ourPlayers = m.players.filter((p) => p.isRadiant === teamIsRadiant);
+    const theirPlayers = m.players.filter((p) => p.isRadiant !== teamIsRadiant);
+
+    const toMatchHero = (
+      p: TeamMatchPlayer,
+      ours: boolean,
+    ): MatchHero => ({
+      heroId: p.heroId ?? 0,
+      shortName: heroMeta(heroes, p.heroId ?? 0).shortName,
+      accountId: ours && p.steamAccountId != null ? p.steamAccountId : null,
+    });
+
+    // Sort team heroes into roster display order. Known roster members
+    // occupy their slot index; stand-ins (unknown accountId or not in
+    // rosterOrder) are appended after all known slots, preserving their
+    // relative order among themselves.
+    const teamHeroesRaw = ourPlayers.map((p) => toMatchHero(p, true));
+    const teamHeroes = [...teamHeroesRaw].sort((a, b) => {
+      const sa = a.accountId != null ? (slotOf.get(a.accountId) ?? 999) : 999;
+      const sb = b.accountId != null ? (slotOf.get(b.accountId) ?? 999) : 999;
+      return sa - sb;
+    });
+
+    const opponentHeroes = theirPlayers
+      .map((p) => toMatchHero(p, false))
+      .sort((a, b) => a.heroId - b.heroId);
+
+    // Kill totals: STRATZ returns radiantKills / direKills as per-minute
+    // arrays (one entry per minute of game time). Sum the array to get
+    // the total, or fall back to summing per-player kill fields if the
+    // array is absent (rare for private lobbies without parse data).
+    const sumArray = (arr: number[] | null | undefined): number =>
+      arr ? arr.reduce((s, v) => s + v, 0) : 0;
+    const radiantKillsTotal =
+      m.radiantKills != null ? sumArray(m.radiantKills as unknown as number[]) : null;
+    const direKillsTotal =
+      m.direKills != null ? sumArray(m.direKills as unknown as number[]) : null;
+    const teamKills =
+      teamIsRadiant
+        ? (radiantKillsTotal ?? ourPlayers.reduce((s, p) => s + (p.kills ?? 0), 0))
+        : (direKillsTotal ?? ourPlayers.reduce((s, p) => s + (p.kills ?? 0), 0));
+    const opponentKills =
+      teamIsRadiant
+        ? (direKillsTotal ?? theirPlayers.reduce((s, p) => s + (p.kills ?? 0), 0))
+        : (radiantKillsTotal ?? theirPlayers.reduce((s, p) => s + (p.kills ?? 0), 0));
+
+    // Opponent team identity.
+    const opponentTeam = teamIsRadiant ? m.direTeam : m.radiantTeam;
+
+    // Stand-in: any player on our side whose accountId isn't in the
+    // confirmed top-5 roster.
+    const hasStandin = ourPlayers.some(
+      (p) => p.steamAccountId != null && !rosterIds.has(p.steamAccountId),
+    );
+
+    result.push({
+      matchId: m.id,
+      startDateTime: m.startDateTime,
+      side: teamIsRadiant ? "radiant" : "dire",
+      won,
+      durationSeconds: m.durationSeconds ?? 0,
+      teamKills,
+      opponentKills,
+      teamHeroes,
+      opponentHeroes,
+      opponentName: opponentTeam?.name ?? null,
+      opponentTag: opponentTeam?.tag ?? null,
+      hasStandin,
+    });
+  }
+  return result;
+}
 export async function buildTeamReport(teamId: number, token: string): Promise<TeamReport> {
   const stratz = createStratzClient(token);
   const openDota = createOpenDotaClient();
@@ -974,6 +1110,35 @@ export async function buildTeamReport(teamId: number, token: string): Promise<Te
   const bansByPosition = aggregateBans(players);
   const topBans = aggregateTopBans(players);
 
+  // Step 4: match history for the UI panel. The confirmed roster IDs
+  // come from `accounts` (top-5 by match count). Anyone else who
+  // played for the team in any match is flagged as a stand-in.
+  const rosterIds = new Set(accounts.map((a) => a.accountId));
+
+  // Display order for hero strips: [4,3,2,1,5] matches the RosterOverview
+  // column order. Sort players by their primary position slot index, then
+  // extract their accountIds as the ordered list passed to buildMatchHistory.
+  const DISPLAY_POSITIONS: ReadonlyArray<number> = [4, 3, 2, 1, 5];
+  const rosterOrder = [...players]
+    .sort((a, b) => {
+      const ai = a.primaryPosition != null
+        ? DISPLAY_POSITIONS.indexOf(a.primaryPosition)
+        : DISPLAY_POSITIONS.length;
+      const bi = b.primaryPosition != null
+        ? DISPLAY_POSITIONS.indexOf(b.primaryPosition)
+        : DISPLAY_POSITIONS.length;
+      return ai - bi;
+    })
+    .map((p) => p.accountId);
+
+  const matchHistory = buildMatchHistory(
+    teamPart.matches,
+    teamId,
+    rosterIds,
+    rosterOrder,
+    heroes,
+  );
+
   return {
     generatedAt: new Date().toISOString(),
     teamId: team.id,
@@ -987,6 +1152,7 @@ export async function buildTeamReport(teamId: number, token: string): Promise<Te
     lastMatchAt: team.lastMatchDateTime,
     players,
     standins: standinReports,
+    matchHistory,
     topBans,
     bansByPosition,
   };

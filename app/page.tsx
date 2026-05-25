@@ -6,6 +6,7 @@ import { BanTargets } from "@/components/BanTargets";
 import { TopBans } from "@/components/TopBans";
 import { Standins } from "@/components/Standins";
 import { RosterOverview } from "@/components/RosterOverview";
+import { MatchHistory } from "@/components/MatchHistory";
 
 const data = report as unknown as TeamReport;
 
@@ -45,6 +46,10 @@ export default function Page() {
           </span>
         </h2>
         <RosterOverview report={data} />
+      </section>
+
+      <section className="mt-6">
+        <MatchHistory matches={data.matchHistory} />
       </section>
 
       <section className="mt-10">

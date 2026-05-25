@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-05-25T07:41:19.716Z",
+  "generatedAt": "2026-05-25T09:22:11.276Z",
   "teamId": 9838881,
   "teamName": "De 4 clownerna och Poppe",
   "teamTag": null,
   "totalWins": 19,
   "totalLosses": 14,
-  "windowStart": 1764142876,
+  "windowStart": 1764148929,
   "windowDays": 180,
   "matchesAnalyzed": 22,
   "lastMatchAt": 1779648731,
@@ -1154,6 +1154,1460 @@
         }
       ],
       "lastTeamMatchAt": 1771786755
+    }
+  ],
+  "matchHistory": [
+    {
+      "matchId": 8824131297,
+      "startDateTime": 1779646292,
+      "side": "radiant",
+      "won": true,
+      "durationSeconds": 2439,
+      "teamKills": 44,
+      "opponentKills": 27,
+      "teamHeroes": [
+        {
+          "heroId": 111,
+          "shortName": "oracle",
+          "accountId": 26852904
+        },
+        {
+          "heroId": 100,
+          "shortName": "tusk",
+          "accountId": 81955501
+        },
+        {
+          "heroId": 86,
+          "shortName": "rubick",
+          "accountId": 1089531
+        },
+        {
+          "heroId": 70,
+          "shortName": "ursa",
+          "accountId": 54437353
+        },
+        {
+          "heroId": 64,
+          "shortName": "jakiro",
+          "accountId": 28064250
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 27,
+          "shortName": "shadow_shaman",
+          "accountId": null
+        },
+        {
+          "heroId": 31,
+          "shortName": "lich",
+          "accountId": null
+        },
+        {
+          "heroId": 53,
+          "shortName": "furion",
+          "accountId": null
+        },
+        {
+          "heroId": 108,
+          "shortName": "abyssal_underlord",
+          "accountId": null
+        },
+        {
+          "heroId": 128,
+          "shortName": "snapfire",
+          "accountId": null
+        }
+      ],
+      "opponentName": "Färskt Kaffe",
+      "opponentTag": null,
+      "hasStandin": false
+    },
+    {
+      "matchId": 8824048948,
+      "startDateTime": 1779642448,
+      "side": "dire",
+      "won": true,
+      "durationSeconds": 2491,
+      "teamKills": 61,
+      "opponentKills": 28,
+      "teamHeroes": [
+        {
+          "heroId": 64,
+          "shortName": "jakiro",
+          "accountId": 26852904
+        },
+        {
+          "heroId": 60,
+          "shortName": "night_stalker",
+          "accountId": 81955501
+        },
+        {
+          "heroId": 17,
+          "shortName": "storm_spirit",
+          "accountId": 1089531
+        },
+        {
+          "heroId": 6,
+          "shortName": "drow_ranger",
+          "accountId": 54437353
+        },
+        {
+          "heroId": 87,
+          "shortName": "disruptor",
+          "accountId": 28064250
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 11,
+          "shortName": "nevermore",
+          "accountId": null
+        },
+        {
+          "heroId": 88,
+          "shortName": "nyx_assassin",
+          "accountId": null
+        },
+        {
+          "heroId": 96,
+          "shortName": "centaur",
+          "accountId": null
+        },
+        {
+          "heroId": 121,
+          "shortName": "grimstroke",
+          "accountId": null
+        },
+        {
+          "heroId": 128,
+          "shortName": "snapfire",
+          "accountId": null
+        }
+      ],
+      "opponentName": "Färskt Kaffe",
+      "opponentTag": null,
+      "hasStandin": false
+    },
+    {
+      "matchId": 8815194172,
+      "startDateTime": 1779043163,
+      "side": "radiant",
+      "won": true,
+      "durationSeconds": 2276,
+      "teamKills": 35,
+      "opponentKills": 17,
+      "teamHeroes": [
+        {
+          "heroId": 22,
+          "shortName": "zuus",
+          "accountId": 26852904
+        },
+        {
+          "heroId": 73,
+          "shortName": "alchemist",
+          "accountId": 81955501
+        },
+        {
+          "heroId": 35,
+          "shortName": "sniper",
+          "accountId": 1089531
+        },
+        {
+          "heroId": 41,
+          "shortName": "faceless_void",
+          "accountId": 54437353
+        },
+        {
+          "heroId": 64,
+          "shortName": "jakiro",
+          "accountId": 28064250
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 11,
+          "shortName": "nevermore",
+          "accountId": null
+        },
+        {
+          "heroId": 28,
+          "shortName": "slardar",
+          "accountId": null
+        },
+        {
+          "heroId": 37,
+          "shortName": "warlock",
+          "accountId": null
+        },
+        {
+          "heroId": 39,
+          "shortName": "queenofpain",
+          "accountId": null
+        },
+        {
+          "heroId": 110,
+          "shortName": "phoenix",
+          "accountId": null
+        }
+      ],
+      "opponentName": "Epicenter n Chill",
+      "opponentTag": null,
+      "hasStandin": false
+    },
+    {
+      "matchId": 8815072903,
+      "startDateTime": 1779037284,
+      "side": "dire",
+      "won": true,
+      "durationSeconds": 4322,
+      "teamKills": 68,
+      "opponentKills": 45,
+      "teamHeroes": [
+        {
+          "heroId": 22,
+          "shortName": "zuus",
+          "accountId": 26852904
+        },
+        {
+          "heroId": 60,
+          "shortName": "night_stalker",
+          "accountId": 81955501
+        },
+        {
+          "heroId": 120,
+          "shortName": "pangolier",
+          "accountId": 1089531
+        },
+        {
+          "heroId": 93,
+          "shortName": "slark",
+          "accountId": 54437353
+        },
+        {
+          "heroId": 87,
+          "shortName": "disruptor",
+          "accountId": 28064250
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 4,
+          "shortName": "bloodseeker",
+          "accountId": null
+        },
+        {
+          "heroId": 21,
+          "shortName": "windrunner",
+          "accountId": null
+        },
+        {
+          "heroId": 26,
+          "shortName": "lion",
+          "accountId": null
+        },
+        {
+          "heroId": 29,
+          "shortName": "tidehunter",
+          "accountId": null
+        },
+        {
+          "heroId": 100,
+          "shortName": "tusk",
+          "accountId": null
+        }
+      ],
+      "opponentName": "Epicenter n Chill",
+      "opponentTag": null,
+      "hasStandin": false
+    },
+    {
+      "matchId": 8796844400,
+      "startDateTime": 1777831562,
+      "side": "dire",
+      "won": false,
+      "durationSeconds": 2726,
+      "teamKills": 37,
+      "opponentKills": 44,
+      "teamHeroes": [
+        {
+          "heroId": 22,
+          "shortName": "zuus",
+          "accountId": 26852904
+        },
+        {
+          "heroId": 71,
+          "shortName": "spirit_breaker",
+          "accountId": 81955501
+        },
+        {
+          "heroId": 17,
+          "shortName": "storm_spirit",
+          "accountId": 1089531
+        },
+        {
+          "heroId": 73,
+          "shortName": "alchemist",
+          "accountId": 54437353
+        },
+        {
+          "heroId": 87,
+          "shortName": "disruptor",
+          "accountId": 28064250
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 5,
+          "shortName": "crystal_maiden",
+          "accountId": null
+        },
+        {
+          "heroId": 19,
+          "shortName": "tiny",
+          "accountId": null
+        },
+        {
+          "heroId": 51,
+          "shortName": "rattletrap",
+          "accountId": null
+        },
+        {
+          "heroId": 59,
+          "shortName": "huskar",
+          "accountId": null
+        },
+        {
+          "heroId": 98,
+          "shortName": "shredder",
+          "accountId": null
+        }
+      ],
+      "opponentName": "Colony of Weirdos",
+      "opponentTag": null,
+      "hasStandin": false
+    },
+    {
+      "matchId": 8796769844,
+      "startDateTime": 1777827983,
+      "side": "radiant",
+      "won": false,
+      "durationSeconds": 2055,
+      "teamKills": 33,
+      "opponentKills": 50,
+      "teamHeroes": [
+        {
+          "heroId": 22,
+          "shortName": "zuus",
+          "accountId": 26852904
+        },
+        {
+          "heroId": 41,
+          "shortName": "faceless_void",
+          "accountId": 81955501
+        },
+        {
+          "heroId": 106,
+          "shortName": "ember_spirit",
+          "accountId": 1089531
+        },
+        {
+          "heroId": 135,
+          "shortName": "dawnbreaker",
+          "accountId": 54437353
+        },
+        {
+          "heroId": 64,
+          "shortName": "jakiro",
+          "accountId": 28064250
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 27,
+          "shortName": "shadow_shaman",
+          "accountId": null
+        },
+        {
+          "heroId": 54,
+          "shortName": "life_stealer",
+          "accountId": null
+        },
+        {
+          "heroId": 60,
+          "shortName": "night_stalker",
+          "accountId": null
+        },
+        {
+          "heroId": 74,
+          "shortName": "invoker",
+          "accountId": null
+        },
+        {
+          "heroId": 105,
+          "shortName": "techies",
+          "accountId": null
+        }
+      ],
+      "opponentName": "Colony of Weirdos",
+      "opponentTag": null,
+      "hasStandin": false
+    },
+    {
+      "matchId": 8778322295,
+      "startDateTime": 1776621851,
+      "side": "radiant",
+      "won": false,
+      "durationSeconds": 3314,
+      "teamKills": 43,
+      "opponentKills": 48,
+      "teamHeroes": [
+        {
+          "heroId": 22,
+          "shortName": "zuus",
+          "accountId": 26852904
+        },
+        {
+          "heroId": 129,
+          "shortName": "mars",
+          "accountId": 81955501
+        },
+        {
+          "heroId": 13,
+          "shortName": "puck",
+          "accountId": 1089531
+        },
+        {
+          "heroId": 38,
+          "shortName": "beastmaster",
+          "accountId": 54437353
+        },
+        {
+          "heroId": 26,
+          "shortName": "lion",
+          "accountId": 28064250
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 71,
+          "shortName": "spirit_breaker",
+          "accountId": null
+        },
+        {
+          "heroId": 106,
+          "shortName": "ember_spirit",
+          "accountId": null
+        },
+        {
+          "heroId": 120,
+          "shortName": "pangolier",
+          "accountId": null
+        },
+        {
+          "heroId": 123,
+          "shortName": "hoodwink",
+          "accountId": null
+        },
+        {
+          "heroId": 138,
+          "shortName": "muerta",
+          "accountId": null
+        }
+      ],
+      "opponentName": "Lich Gaming",
+      "opponentTag": null,
+      "hasStandin": false
+    },
+    {
+      "matchId": 8778240268,
+      "startDateTime": 1776618103,
+      "side": "radiant",
+      "won": true,
+      "durationSeconds": 2362,
+      "teamKills": 37,
+      "opponentKills": 26,
+      "teamHeroes": [
+        {
+          "heroId": 64,
+          "shortName": "jakiro",
+          "accountId": 26852904
+        },
+        {
+          "heroId": 71,
+          "shortName": "spirit_breaker",
+          "accountId": 81955501
+        },
+        {
+          "heroId": 39,
+          "shortName": "queenofpain",
+          "accountId": 1089531
+        },
+        {
+          "heroId": 73,
+          "shortName": "alchemist",
+          "accountId": 54437353
+        },
+        {
+          "heroId": 27,
+          "shortName": "shadow_shaman",
+          "accountId": 28064250
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 51,
+          "shortName": "rattletrap",
+          "accountId": null
+        },
+        {
+          "heroId": 74,
+          "shortName": "invoker",
+          "accountId": null
+        },
+        {
+          "heroId": 93,
+          "shortName": "slark",
+          "accountId": null
+        },
+        {
+          "heroId": 101,
+          "shortName": "skywrath_mage",
+          "accountId": null
+        },
+        {
+          "heroId": 120,
+          "shortName": "pangolier",
+          "accountId": null
+        }
+      ],
+      "opponentName": "Lich Gaming",
+      "opponentTag": null,
+      "hasStandin": false
+    },
+    {
+      "matchId": 8769136640,
+      "startDateTime": 1776017036,
+      "side": "radiant",
+      "won": false,
+      "durationSeconds": 2002,
+      "teamKills": 14,
+      "opponentKills": 67,
+      "teamHeroes": [
+        {
+          "heroId": 35,
+          "shortName": "sniper",
+          "accountId": 26852904
+        },
+        {
+          "heroId": 82,
+          "shortName": "meepo",
+          "accountId": 81955501
+        },
+        {
+          "heroId": 120,
+          "shortName": "pangolier",
+          "accountId": 1089531
+        },
+        {
+          "heroId": 135,
+          "shortName": "dawnbreaker",
+          "accountId": 54437353
+        },
+        {
+          "heroId": 27,
+          "shortName": "shadow_shaman",
+          "accountId": 28064250
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 71,
+          "shortName": "spirit_breaker",
+          "accountId": null
+        },
+        {
+          "heroId": 93,
+          "shortName": "slark",
+          "accountId": null
+        },
+        {
+          "heroId": 121,
+          "shortName": "grimstroke",
+          "accountId": null
+        },
+        {
+          "heroId": 126,
+          "shortName": "void_spirit",
+          "accountId": null
+        },
+        {
+          "heroId": 137,
+          "shortName": "primal_beast",
+          "accountId": null
+        }
+      ],
+      "opponentName": "Josagrogg & Co",
+      "opponentTag": null,
+      "hasStandin": false
+    },
+    {
+      "matchId": 8769052915,
+      "startDateTime": 1776013331,
+      "side": "radiant",
+      "won": false,
+      "durationSeconds": 2336,
+      "teamKills": 30,
+      "opponentKills": 56,
+      "teamHeroes": [
+        {
+          "heroId": 64,
+          "shortName": "jakiro",
+          "accountId": 26852904
+        },
+        {
+          "heroId": 14,
+          "shortName": "pudge",
+          "accountId": 81955501
+        },
+        {
+          "heroId": 120,
+          "shortName": "pangolier",
+          "accountId": 1089531
+        },
+        {
+          "heroId": 53,
+          "shortName": "furion",
+          "accountId": 54437353
+        },
+        {
+          "heroId": 84,
+          "shortName": "ogre_magi",
+          "accountId": 28064250
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 40,
+          "shortName": "venomancer",
+          "accountId": null
+        },
+        {
+          "heroId": 54,
+          "shortName": "life_stealer",
+          "accountId": null
+        },
+        {
+          "heroId": 106,
+          "shortName": "ember_spirit",
+          "accountId": null
+        },
+        {
+          "heroId": 108,
+          "shortName": "abyssal_underlord",
+          "accountId": null
+        },
+        {
+          "heroId": 123,
+          "shortName": "hoodwink",
+          "accountId": null
+        }
+      ],
+      "opponentName": "Josagrogg & Co",
+      "opponentTag": null,
+      "hasStandin": false
+    },
+    {
+      "matchId": 8739945817,
+      "startDateTime": 1774206899,
+      "side": "dire",
+      "won": false,
+      "durationSeconds": 1854,
+      "teamKills": 20,
+      "opponentKills": 73,
+      "teamHeroes": [
+        {
+          "heroId": 71,
+          "shortName": "spirit_breaker",
+          "accountId": 26852904
+        },
+        {
+          "heroId": 74,
+          "shortName": "invoker",
+          "accountId": 81955501
+        },
+        {
+          "heroId": 35,
+          "shortName": "sniper",
+          "accountId": 1089531
+        },
+        {
+          "heroId": 41,
+          "shortName": "faceless_void",
+          "accountId": 54437353
+        },
+        {
+          "heroId": 68,
+          "shortName": "ancient_apparition",
+          "accountId": 28064250
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 9,
+          "shortName": "mirana",
+          "accountId": null
+        },
+        {
+          "heroId": 11,
+          "shortName": "nevermore",
+          "accountId": null
+        },
+        {
+          "heroId": 21,
+          "shortName": "windrunner",
+          "accountId": null
+        },
+        {
+          "heroId": 101,
+          "shortName": "skywrath_mage",
+          "accountId": null
+        },
+        {
+          "heroId": 155,
+          "shortName": "largo",
+          "accountId": null
+        }
+      ],
+      "opponentName": "Loving everyone is not Gay",
+      "opponentTag": "LenG",
+      "hasStandin": false
+    },
+    {
+      "matchId": 8739867930,
+      "startDateTime": 1774203057,
+      "side": "dire",
+      "won": false,
+      "durationSeconds": 2712,
+      "teamKills": 29,
+      "opponentKills": 53,
+      "teamHeroes": [
+        {
+          "heroId": 35,
+          "shortName": "sniper",
+          "accountId": 26852904
+        },
+        {
+          "heroId": 100,
+          "shortName": "tusk",
+          "accountId": 81955501
+        },
+        {
+          "heroId": 17,
+          "shortName": "storm_spirit",
+          "accountId": 1089531
+        },
+        {
+          "heroId": 53,
+          "shortName": "furion",
+          "accountId": 54437353
+        },
+        {
+          "heroId": 84,
+          "shortName": "ogre_magi",
+          "accountId": 28064250
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 11,
+          "shortName": "nevermore",
+          "accountId": null
+        },
+        {
+          "heroId": 13,
+          "shortName": "puck",
+          "accountId": null
+        },
+        {
+          "heroId": 25,
+          "shortName": "lina",
+          "accountId": null
+        },
+        {
+          "heroId": 41,
+          "shortName": "faceless_void",
+          "accountId": null
+        },
+        {
+          "heroId": 105,
+          "shortName": "techies",
+          "accountId": null
+        }
+      ],
+      "opponentName": "Loving everyone is not Gay",
+      "opponentTag": "LenG",
+      "hasStandin": false
+    },
+    {
+      "matchId": 8721448598,
+      "startDateTime": 1772999913,
+      "side": "dire",
+      "won": true,
+      "durationSeconds": 2416,
+      "teamKills": 50,
+      "opponentKills": 35,
+      "teamHeroes": [
+        {
+          "heroId": 35,
+          "shortName": "sniper",
+          "accountId": 26852904
+        },
+        {
+          "heroId": 29,
+          "shortName": "tidehunter",
+          "accountId": 81955501
+        },
+        {
+          "heroId": 120,
+          "shortName": "pangolier",
+          "accountId": 1089531
+        },
+        {
+          "heroId": 99,
+          "shortName": "bristleback",
+          "accountId": 54437353
+        },
+        {
+          "heroId": 68,
+          "shortName": "ancient_apparition",
+          "accountId": 28064250
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 15,
+          "shortName": "razor",
+          "accountId": null
+        },
+        {
+          "heroId": 47,
+          "shortName": "viper",
+          "accountId": null
+        },
+        {
+          "heroId": 79,
+          "shortName": "shadow_demon",
+          "accountId": null
+        },
+        {
+          "heroId": 93,
+          "shortName": "slark",
+          "accountId": null
+        },
+        {
+          "heroId": 123,
+          "shortName": "hoodwink",
+          "accountId": null
+        }
+      ],
+      "opponentName": "Oyster Boys",
+      "opponentTag": null,
+      "hasStandin": false
+    },
+    {
+      "matchId": 8721371290,
+      "startDateTime": 1772996035,
+      "side": "radiant",
+      "won": true,
+      "durationSeconds": 2035,
+      "teamKills": 45,
+      "opponentKills": 21,
+      "teamHeroes": [
+        {
+          "heroId": 64,
+          "shortName": "jakiro",
+          "accountId": 26852904
+        },
+        {
+          "heroId": 100,
+          "shortName": "tusk",
+          "accountId": 81955501
+        },
+        {
+          "heroId": 106,
+          "shortName": "ember_spirit",
+          "accountId": 1089531
+        },
+        {
+          "heroId": 53,
+          "shortName": "furion",
+          "accountId": 54437353
+        },
+        {
+          "heroId": 84,
+          "shortName": "ogre_magi",
+          "accountId": 28064250
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 19,
+          "shortName": "tiny",
+          "accountId": null
+        },
+        {
+          "heroId": 45,
+          "shortName": "pugna",
+          "accountId": null
+        },
+        {
+          "heroId": 49,
+          "shortName": "dragon_knight",
+          "accountId": null
+        },
+        {
+          "heroId": 57,
+          "shortName": "omniknight",
+          "accountId": null
+        },
+        {
+          "heroId": 108,
+          "shortName": "abyssal_underlord",
+          "accountId": null
+        }
+      ],
+      "opponentName": "Oyster Boys",
+      "opponentTag": null,
+      "hasStandin": false
+    },
+    {
+      "matchId": 8702203040,
+      "startDateTime": 1771786755,
+      "side": "radiant",
+      "won": true,
+      "durationSeconds": 3126,
+      "teamKills": 45,
+      "opponentKills": 36,
+      "teamHeroes": [
+        {
+          "heroId": 35,
+          "shortName": "sniper",
+          "accountId": 26852904
+        },
+        {
+          "heroId": 13,
+          "shortName": "puck",
+          "accountId": 1089531
+        },
+        {
+          "heroId": 19,
+          "shortName": "tiny",
+          "accountId": 54437353
+        },
+        {
+          "heroId": 87,
+          "shortName": "disruptor",
+          "accountId": 28064250
+        },
+        {
+          "heroId": 138,
+          "shortName": "muerta",
+          "accountId": 29838178
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 14,
+          "shortName": "pudge",
+          "accountId": null
+        },
+        {
+          "heroId": 26,
+          "shortName": "lion",
+          "accountId": null
+        },
+        {
+          "heroId": 31,
+          "shortName": "lich",
+          "accountId": null
+        },
+        {
+          "heroId": 57,
+          "shortName": "omniknight",
+          "accountId": null
+        },
+        {
+          "heroId": 74,
+          "shortName": "invoker",
+          "accountId": null
+        }
+      ],
+      "opponentName": "Dansbanders",
+      "opponentTag": null,
+      "hasStandin": true
+    },
+    {
+      "matchId": 8702122955,
+      "startDateTime": 1771783361,
+      "side": "dire",
+      "won": true,
+      "durationSeconds": 1824,
+      "teamKills": 39,
+      "opponentKills": 9,
+      "teamHeroes": [
+        {
+          "heroId": 35,
+          "shortName": "sniper",
+          "accountId": 26852904
+        },
+        {
+          "heroId": 17,
+          "shortName": "storm_spirit",
+          "accountId": 1089531
+        },
+        {
+          "heroId": 53,
+          "shortName": "furion",
+          "accountId": 54437353
+        },
+        {
+          "heroId": 84,
+          "shortName": "ogre_magi",
+          "accountId": 28064250
+        },
+        {
+          "heroId": 11,
+          "shortName": "nevermore",
+          "accountId": 29838178
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 15,
+          "shortName": "razor",
+          "accountId": null
+        },
+        {
+          "heroId": 19,
+          "shortName": "tiny",
+          "accountId": null
+        },
+        {
+          "heroId": 31,
+          "shortName": "lich",
+          "accountId": null
+        },
+        {
+          "heroId": 51,
+          "shortName": "rattletrap",
+          "accountId": null
+        },
+        {
+          "heroId": 129,
+          "shortName": "mars",
+          "accountId": null
+        }
+      ],
+      "opponentName": "Dansbanders",
+      "opponentTag": null,
+      "hasStandin": true
+    },
+    {
+      "matchId": 8683441063,
+      "startDateTime": 1770577455,
+      "side": "radiant",
+      "won": false,
+      "durationSeconds": 2482,
+      "teamKills": 37,
+      "opponentKills": 41,
+      "teamHeroes": [
+        {
+          "heroId": 111,
+          "shortName": "oracle",
+          "accountId": 26852904
+        },
+        {
+          "heroId": 129,
+          "shortName": "mars",
+          "accountId": 81955501
+        },
+        {
+          "heroId": 39,
+          "shortName": "queenofpain",
+          "accountId": 1089531
+        },
+        {
+          "heroId": 53,
+          "shortName": "furion",
+          "accountId": 54437353
+        },
+        {
+          "heroId": 64,
+          "shortName": "jakiro",
+          "accountId": 28064250
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 6,
+          "shortName": "drow_ranger",
+          "accountId": null
+        },
+        {
+          "heroId": 36,
+          "shortName": "necrolyte",
+          "accountId": null
+        },
+        {
+          "heroId": 52,
+          "shortName": "leshrac",
+          "accountId": null
+        },
+        {
+          "heroId": 71,
+          "shortName": "spirit_breaker",
+          "accountId": null
+        },
+        {
+          "heroId": 84,
+          "shortName": "ogre_magi",
+          "accountId": null
+        }
+      ],
+      "opponentName": "Bobban bättre än Bänke?",
+      "opponentTag": null,
+      "hasStandin": false
+    },
+    {
+      "matchId": 8683366246,
+      "startDateTime": 1770573879,
+      "side": "radiant",
+      "won": false,
+      "durationSeconds": 2183,
+      "teamKills": 23,
+      "opponentKills": 41,
+      "teamHeroes": [
+        {
+          "heroId": 111,
+          "shortName": "oracle",
+          "accountId": 26852904
+        },
+        {
+          "heroId": 104,
+          "shortName": "legion_commander",
+          "accountId": 81955501
+        },
+        {
+          "heroId": 25,
+          "shortName": "lina",
+          "accountId": 1089531
+        },
+        {
+          "heroId": 155,
+          "shortName": "largo",
+          "accountId": 54437353
+        },
+        {
+          "heroId": 26,
+          "shortName": "lion",
+          "accountId": 28064250
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 43,
+          "shortName": "death_prophet",
+          "accountId": null
+        },
+        {
+          "heroId": 56,
+          "shortName": "clinkz",
+          "accountId": null
+        },
+        {
+          "heroId": 82,
+          "shortName": "meepo",
+          "accountId": null
+        },
+        {
+          "heroId": 83,
+          "shortName": "treant",
+          "accountId": null
+        },
+        {
+          "heroId": 110,
+          "shortName": "phoenix",
+          "accountId": null
+        }
+      ],
+      "opponentName": "Bobban bättre än Bänke?",
+      "opponentTag": null,
+      "hasStandin": false
+    },
+    {
+      "matchId": 8605547952,
+      "startDateTime": 1765740509,
+      "side": "radiant",
+      "won": true,
+      "durationSeconds": 3152,
+      "teamKills": 45,
+      "opponentKills": 36,
+      "teamHeroes": [
+        {
+          "heroId": 111,
+          "shortName": "oracle",
+          "accountId": 26852904
+        },
+        {
+          "heroId": 96,
+          "shortName": "centaur",
+          "accountId": 81955501
+        },
+        {
+          "heroId": 106,
+          "shortName": "ember_spirit",
+          "accountId": 1089531
+        },
+        {
+          "heroId": 49,
+          "shortName": "dragon_knight",
+          "accountId": 54437353
+        },
+        {
+          "heroId": 30,
+          "shortName": "witch_doctor",
+          "accountId": 28064250
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 23,
+          "shortName": "kunkka",
+          "accountId": null
+        },
+        {
+          "heroId": 35,
+          "shortName": "sniper",
+          "accountId": null
+        },
+        {
+          "heroId": 37,
+          "shortName": "warlock",
+          "accountId": null
+        },
+        {
+          "heroId": 39,
+          "shortName": "queenofpain",
+          "accountId": null
+        },
+        {
+          "heroId": 70,
+          "shortName": "ursa",
+          "accountId": null
+        }
+      ],
+      "opponentName": "TIF",
+      "opponentTag": null,
+      "hasStandin": false
+    },
+    {
+      "matchId": 8605441952,
+      "startDateTime": 1765735703,
+      "side": "dire",
+      "won": true,
+      "durationSeconds": 2225,
+      "teamKills": 45,
+      "opponentKills": 18,
+      "teamHeroes": [
+        {
+          "heroId": 71,
+          "shortName": "spirit_breaker",
+          "accountId": 26852904
+        },
+        {
+          "heroId": 29,
+          "shortName": "tidehunter",
+          "accountId": 81955501
+        },
+        {
+          "heroId": 49,
+          "shortName": "dragon_knight",
+          "accountId": 1089531
+        },
+        {
+          "heroId": 102,
+          "shortName": "abaddon",
+          "accountId": 54437353
+        },
+        {
+          "heroId": 68,
+          "shortName": "ancient_apparition",
+          "accountId": 28064250
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 20,
+          "shortName": "vengefulspirit",
+          "accountId": null
+        },
+        {
+          "heroId": 37,
+          "shortName": "warlock",
+          "accountId": null
+        },
+        {
+          "heroId": 40,
+          "shortName": "venomancer",
+          "accountId": null
+        },
+        {
+          "heroId": 72,
+          "shortName": "gyrocopter",
+          "accountId": null
+        },
+        {
+          "heroId": 96,
+          "shortName": "centaur",
+          "accountId": null
+        }
+      ],
+      "opponentName": "TIF",
+      "opponentTag": null,
+      "hasStandin": false
+    },
+    {
+      "matchId": 8595104718,
+      "startDateTime": 1765136363,
+      "side": "dire",
+      "won": false,
+      "durationSeconds": 2483,
+      "teamKills": 33,
+      "opponentKills": 35,
+      "teamHeroes": [
+        {
+          "heroId": 128,
+          "shortName": "snapfire",
+          "accountId": 26852904
+        },
+        {
+          "heroId": 104,
+          "shortName": "legion_commander",
+          "accountId": 81955501
+        },
+        {
+          "heroId": 47,
+          "shortName": "viper",
+          "accountId": 1089531
+        },
+        {
+          "heroId": 6,
+          "shortName": "drow_ranger",
+          "accountId": 54437353
+        },
+        {
+          "heroId": 87,
+          "shortName": "disruptor",
+          "accountId": 28064250
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 2,
+          "shortName": "axe",
+          "accountId": null
+        },
+        {
+          "heroId": 18,
+          "shortName": "sven",
+          "accountId": null
+        },
+        {
+          "heroId": 27,
+          "shortName": "shadow_shaman",
+          "accountId": null
+        },
+        {
+          "heroId": 30,
+          "shortName": "witch_doctor",
+          "accountId": null
+        },
+        {
+          "heroId": 76,
+          "shortName": "obsidian_destroyer",
+          "accountId": null
+        }
+      ],
+      "opponentName": "Tornknäckarna",
+      "opponentTag": null,
+      "hasStandin": false
+    },
+    {
+      "matchId": 8594990532,
+      "startDateTime": 1765131378,
+      "side": "dire",
+      "won": false,
+      "durationSeconds": 3405,
+      "teamKills": 30,
+      "opponentKills": 57,
+      "teamHeroes": [
+        {
+          "heroId": 35,
+          "shortName": "sniper",
+          "accountId": 26852904
+        },
+        {
+          "heroId": 100,
+          "shortName": "tusk",
+          "accountId": 81955501
+        },
+        {
+          "heroId": 7,
+          "shortName": "earthshaker",
+          "accountId": 1089531
+        },
+        {
+          "heroId": 70,
+          "shortName": "ursa",
+          "accountId": 54437353
+        },
+        {
+          "heroId": 27,
+          "shortName": "shadow_shaman",
+          "accountId": 28064250
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 12,
+          "shortName": "phantom_lancer",
+          "accountId": null
+        },
+        {
+          "heroId": 30,
+          "shortName": "witch_doctor",
+          "accountId": null
+        },
+        {
+          "heroId": 43,
+          "shortName": "death_prophet",
+          "accountId": null
+        },
+        {
+          "heroId": 107,
+          "shortName": "earth_spirit",
+          "accountId": null
+        },
+        {
+          "heroId": 135,
+          "shortName": "dawnbreaker",
+          "accountId": null
+        }
+      ],
+      "opponentName": "Tornknäckarna",
+      "opponentTag": null,
+      "hasStandin": false
     }
   ],
   "topBans": [

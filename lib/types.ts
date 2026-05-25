@@ -198,6 +198,44 @@ export interface BanCandidate {
   }>;
 }
 
+/** One hero pick in a match (for a single side). */
+export interface MatchHero {
+  heroId: number;
+  shortName: string;
+  /** Account ID of the team player who played this hero. Null for opponents
+   *  (we don't track their identity, only their heroes). */
+  accountId: number | null;
+}
+
+/** A single team match row for the match history panel. */
+export interface MatchRecord {
+  matchId: number;
+  /** Unix seconds. */
+  startDateTime: number;
+  /** Which side the team played on. */
+  side: "radiant" | "dire";
+  /** True = our team won. */
+  won: boolean;
+  /** Duration in seconds. */
+  durationSeconds: number;
+  /** Total kills by our team side. */
+  teamKills: number;
+  /** Total kills by the opponent side. */
+  opponentKills: number;
+  /** Heroes our team played, ordered by hero ID (stable). */
+  teamHeroes: MatchHero[];
+  /** Heroes the opponent played, ordered by hero ID. */
+  opponentHeroes: MatchHero[];
+  /** Opponent team name (from STRATZ team registration). Null for unregistered
+   *  teams / private lobbies where STRATZ has no team metadata. */
+  opponentName: string | null;
+  /** Opponent team tag (e.g. "FLCN"). Null when opponentName is null. */
+  opponentTag: string | null;
+  /** True when our team fielded a player who is NOT in the top-5 roster
+   *  derived from this analysis window — i.e. a stand-in. */
+  hasStandin: boolean;
+}
+
 export interface TeamReport {
   generatedAt: string; // ISO-8601
   teamId: number;
@@ -217,6 +255,8 @@ export interface TeamReport {
   players: PlayerReport[];
   /** Stand-ins (everyone else who played with the team in the window). */
   standins: StandinReport[];
+  /** Recent team matches, newest first, capped at MATCH_HISTORY_TAKE. */
+  matchHistory: MatchRecord[];
   /** Cross-roster top-N priority bans from league pools. */
   topBans: TeamBanCandidate[];
   /** Pre-computed top ban candidates per position (top 8 each). */
