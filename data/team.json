@@ -1,20 +1,22 @@
 {
-  "generatedAt": "2026-05-25T09:22:11.276Z",
-  "teamId": 9838881,
-  "teamName": "De 4 clownerna och Poppe",
+  "generatedAt": "2026-05-25T14:09:53.526Z",
+  "windowFrom": "2025-11-26",
+  "windowTo": "2026-05-25",
+  "teamId": 9254880,
+  "teamName": "Dansbanders",
   "teamTag": null,
-  "totalWins": 19,
-  "totalLosses": 14,
-  "windowStart": 1764148929,
+  "totalWins": 29,
+  "totalLosses": 44,
+  "windowStart": 1764166190,
   "windowDays": 180,
-  "matchesAnalyzed": 22,
-  "lastMatchAt": 1779648731,
+  "matchesAnalyzed": 21,
+  "lastMatchAt": 1779043371,
   "players": [
     {
-      "accountId": 1089531,
-      "name": "bUxU",
+      "accountId": 61988095,
+      "name": "Big Frankie",
       "proName": null,
-      "steamName": "bUxU",
+      "steamName": "Big Frankie",
       "teamTag": null,
       "rank": {
         "seasonRank": 80,
@@ -31,994 +33,180 @@
       "positionCounts": [
         {
           "position": 2,
-          "teamGames": 20,
-          "teamWins": 11
-        }
-      ],
-      "totalTeamMatches": 20,
-      "totalTeamWins": 11,
-      "leagueGames": 22,
-      "leagueWins": 10,
-      "leagueHeroes": [
-        {
-          "heroId": 17,
-          "heroName": "Storm Spirit",
-          "shortName": "storm_spirit",
-          "matches": 4,
-          "wins": 2,
-          "winRate": 0.5,
-          "lastPlayed": 1779642448,
-          "score": 0.34948500216800943,
-          "share": 0.18181818181818182,
-          "tags": []
-        },
-        {
-          "heroId": 120,
-          "heroName": "Pangolier",
-          "shortName": "pangolier",
-          "matches": 4,
-          "wins": 2,
-          "winRate": 0.5,
-          "lastPlayed": 1779037284,
-          "score": 0.34948500216800943,
-          "share": 0.18181818181818182,
-          "tags": []
-        },
-        {
-          "heroId": 106,
-          "heroName": "Ember Spirit",
-          "shortName": "ember_spirit",
-          "matches": 3,
-          "wins": 1,
-          "winRate": 0.3333333333333333,
-          "lastPlayed": 1777827983,
-          "score": 0.20068666377598746,
-          "share": 0.13636363636363635,
-          "tags": []
-        },
-        {
-          "heroId": 35,
-          "heroName": "Sniper",
-          "shortName": "sniper",
-          "matches": 2,
-          "wins": 1,
-          "winRate": 0.5,
-          "lastPlayed": 1779043163,
-          "score": 0.23856062735983122,
-          "share": 0.09090909090909091,
-          "tags": []
-        },
-        {
-          "heroId": 13,
-          "heroName": "Puck",
-          "shortName": "puck",
-          "matches": 2,
-          "wins": 1,
-          "winRate": 0.5,
-          "lastPlayed": 1776621851,
-          "score": 0.23856062735983122,
-          "share": 0.09090909090909091,
-          "tags": []
-        },
-        {
-          "heroId": 39,
-          "heroName": "Queen of Pain",
-          "shortName": "queenofpain",
-          "matches": 2,
-          "wins": 1,
-          "winRate": 0.5,
-          "lastPlayed": 1776618103,
-          "score": 0.23856062735983122,
-          "share": 0.09090909090909091,
-          "tags": []
-        }
-      ],
-      "pubGames": 264,
-      "pubWins": 144,
-      "pubHeroes": [
-        {
-          "heroId": 39,
-          "heroName": "Queen of Pain",
-          "shortName": "queenofpain",
-          "matches": 25,
-          "wins": 18,
-          "winRate": 0.72,
-          "lastPlayed": 1778522480,
-          "score": 1.0187808105389888,
-          "share": 0.0946969696969697,
-          "tags": [
-            "COMF"
-          ]
-        },
-        {
-          "heroId": 17,
-          "heroName": "Storm Spirit",
-          "shortName": "storm_spirit",
-          "matches": 25,
-          "wins": 16,
-          "winRate": 0.64,
-          "lastPlayed": 1779033305,
-          "score": 0.9055829427013236,
-          "share": 0.0946969696969697,
-          "tags": [
-            "COMF"
-          ]
-        },
-        {
-          "heroId": 120,
-          "heroName": "Pangolier",
-          "shortName": "pangolier",
-          "matches": 15,
-          "wins": 10,
-          "winRate": 0.6666666666666666,
-          "lastPlayed": 1778519971,
-          "score": 0.8027466551039498,
-          "share": 0.056818181818181816,
-          "tags": [
-            "COMF"
-          ]
-        },
-        {
-          "heroId": 106,
-          "heroName": "Ember Spirit",
-          "shortName": "ember_spirit",
-          "matches": 14,
-          "wins": 5,
-          "winRate": 0.35714285714285715,
-          "lastPlayed": 1779398896,
-          "score": 0.4200325925198862,
-          "share": 0.05303030303030303,
-          "tags": []
-        },
-        {
-          "heroId": 84,
-          "heroName": "Ogre Magi",
-          "shortName": "ogre_magi",
-          "matches": 11,
-          "wins": 6,
-          "winRate": 0.5454545454545454,
-          "lastPlayed": 1776884566,
-          "score": 0.5886443160259772,
-          "share": 0.041666666666666664,
-          "tags": []
-        },
-        {
-          "heroId": 64,
-          "heroName": "Jakiro",
-          "shortName": "jakiro",
-          "matches": 11,
-          "wins": 4,
-          "winRate": 0.36363636363636365,
-          "lastPlayed": 1778186354,
-          "score": 0.39242954401731817,
-          "share": 0.041666666666666664,
-          "tags": []
-        },
-        {
-          "heroId": 13,
-          "heroName": "Puck",
-          "shortName": "puck",
-          "matches": 10,
-          "wins": 4,
-          "winRate": 0.4,
-          "lastPlayed": 1779478187,
-          "score": 0.41655707406329,
-          "share": 0.03787878787878788,
-          "tags": []
-        }
-      ]
-    },
-    {
-      "accountId": 26852904,
-      "name": "Jorel",
-      "proName": null,
-      "steamName": "Jorel",
-      "teamTag": null,
-      "rank": {
-        "seasonRank": 80,
-        "tier": 8,
-        "stars": null,
-        "label": "Immortal",
-        "leaderboardRank": null
-      },
-      "primaryPosition": 4,
-      "flex": false,
-      "flexPositions": [
-        4
-      ],
-      "positionCounts": [
-        {
-          "position": 4,
-          "teamGames": 20,
-          "teamWins": 10
-        },
-        {
-          "position": 5,
-          "teamGames": 1,
-          "teamWins": 1
-        }
-      ],
-      "totalTeamMatches": 21,
-      "totalTeamWins": 11,
-      "leagueGames": 22,
-      "leagueWins": 10,
-      "leagueHeroes": [
-        {
-          "heroId": 35,
-          "heroName": "Sniper",
-          "shortName": "sniper",
-          "matches": 6,
-          "wins": 3,
-          "winRate": 0.5,
-          "lastPlayed": 1776017036,
-          "score": 0.4225490200071284,
-          "share": 0.2727272727272727,
-          "tags": [
-            "SPAM"
-          ]
-        },
-        {
-          "heroId": 22,
-          "heroName": "Zeus",
-          "shortName": "zuus",
-          "matches": 5,
-          "wins": 2,
-          "winRate": 0.4,
-          "lastPlayed": 1779043163,
-          "score": 0.31126050015345746,
-          "share": 0.22727272727272727,
-          "tags": []
-        },
-        {
-          "heroId": 64,
-          "heroName": "Jakiro",
-          "shortName": "jakiro",
-          "matches": 4,
-          "wins": 3,
-          "winRate": 0.75,
-          "lastPlayed": 1779642448,
-          "score": 0.5242275032520142,
-          "share": 0.18181818181818182,
-          "tags": []
-        },
-        {
-          "heroId": 111,
-          "heroName": "Oracle",
-          "shortName": "oracle",
-          "matches": 4,
-          "wins": 1,
-          "winRate": 0.25,
-          "lastPlayed": 1779646292,
-          "score": 0.17474250108400471,
-          "share": 0.18181818181818182,
-          "tags": []
-        },
-        {
-          "heroId": 71,
-          "heroName": "Spirit Breaker",
-          "shortName": "spirit_breaker",
-          "matches": 2,
-          "wins": 1,
-          "winRate": 0.5,
-          "lastPlayed": 1774206899,
-          "score": 0.23856062735983122,
-          "share": 0.09090909090909091,
-          "tags": []
-        }
-      ],
-      "pubGames": 122,
-      "pubWins": 64,
-      "pubHeroes": [
-        {
-          "heroId": 64,
-          "heroName": "Jakiro",
-          "shortName": "jakiro",
-          "matches": 32,
-          "wins": 21,
-          "winRate": 0.65625,
-          "lastPlayed": 1777729907,
-          "score": 0.9965247730448636,
-          "share": 0.26229508196721313,
-          "tags": [
-            "COMF",
-            "SPAM"
-          ]
-        },
-        {
-          "heroId": 35,
-          "heroName": "Sniper",
-          "shortName": "sniper",
-          "matches": 30,
-          "wins": 12,
-          "winRate": 0.4,
-          "lastPlayed": 1768332177,
-          "score": 0.5965446775337091,
-          "share": 0.2459016393442623,
-          "tags": []
-        },
-        {
-          "heroId": 111,
-          "heroName": "Oracle",
-          "shortName": "oracle",
-          "matches": 27,
-          "wins": 16,
-          "winRate": 0.5925925925925926,
-          "lastPlayed": 1777817344,
-          "score": 0.857575129684278,
-          "share": 0.22131147540983606,
-          "tags": []
-        },
-        {
-          "heroId": 71,
-          "heroName": "Spirit Breaker",
-          "shortName": "spirit_breaker",
-          "matches": 11,
-          "wins": 5,
-          "winRate": 0.45454545454545453,
-          "lastPlayed": 1769363385,
-          "score": 0.49053693002164767,
-          "share": 0.09016393442622951,
-          "tags": []
-        },
-        {
-          "heroId": 36,
-          "heroName": "Necrophos",
-          "shortName": "necrolyte",
-          "matches": 10,
-          "wins": 4,
-          "winRate": 0.4,
-          "lastPlayed": 1778966964,
-          "score": 0.41655707406329,
-          "share": 0.08196721311475409,
-          "tags": []
-        },
-        {
-          "heroId": 54,
-          "heroName": "Lifestealer",
-          "shortName": "life_stealer",
-          "matches": 4,
-          "wins": 3,
-          "winRate": 0.75,
-          "lastPlayed": 1778959223,
-          "score": 0.5242275032520142,
-          "share": 0.03278688524590164,
-          "tags": []
-        },
-        {
-          "heroId": 22,
-          "heroName": "Zeus",
-          "shortName": "zuus",
-          "matches": 3,
-          "wins": 2,
-          "winRate": 0.6666666666666666,
-          "lastPlayed": 1777822723,
-          "score": 0.4013733275519749,
-          "share": 0.02459016393442623,
-          "tags": []
-        }
-      ]
-    },
-    {
-      "accountId": 54437353,
-      "name": "Haj",
-      "proName": null,
-      "steamName": "Haj",
-      "teamTag": null,
-      "rank": {
-        "seasonRank": 80,
-        "tier": 8,
-        "stars": null,
-        "label": "Immortal",
-        "leaderboardRank": null
-      },
-      "primaryPosition": 1,
-      "flex": true,
-      "flexPositions": [
-        1,
-        3
-      ],
-      "positionCounts": [
-        {
-          "position": 1,
-          "teamGames": 16,
-          "teamWins": 9
-        },
-        {
-          "position": 3,
-          "teamGames": 5,
-          "teamWins": 2
-        }
-      ],
-      "totalTeamMatches": 21,
-      "totalTeamWins": 11,
-      "leagueGames": 22,
-      "leagueWins": 10,
-      "leagueHeroes": [
-        {
-          "heroId": 53,
-          "heroName": "Nature's Prophet",
-          "shortName": "furion",
-          "matches": 5,
-          "wins": 2,
-          "winRate": 0.4,
-          "lastPlayed": 1776013331,
-          "score": 0.31126050015345746,
-          "share": 0.22727272727272727,
-          "tags": []
-        },
-        {
-          "heroId": 70,
-          "heroName": "Ursa",
-          "shortName": "ursa",
-          "matches": 2,
-          "wins": 1,
-          "winRate": 0.5,
-          "lastPlayed": 1779646292,
-          "score": 0.23856062735983122,
-          "share": 0.09090909090909091,
-          "tags": []
-        },
-        {
-          "heroId": 6,
-          "heroName": "Drow Ranger",
-          "shortName": "drow_ranger",
-          "matches": 2,
-          "wins": 1,
-          "winRate": 0.5,
-          "lastPlayed": 1779642448,
-          "score": 0.23856062735983122,
-          "share": 0.09090909090909091,
-          "tags": []
-        },
-        {
-          "heroId": 41,
-          "heroName": "Faceless Void",
-          "shortName": "faceless_void",
-          "matches": 2,
-          "wins": 1,
-          "winRate": 0.5,
-          "lastPlayed": 1779043163,
-          "score": 0.23856062735983122,
-          "share": 0.09090909090909091,
-          "tags": []
-        },
-        {
-          "heroId": 73,
-          "heroName": "Alchemist",
-          "shortName": "alchemist",
-          "matches": 2,
-          "wins": 1,
-          "winRate": 0.5,
-          "lastPlayed": 1777831562,
-          "score": 0.23856062735983122,
-          "share": 0.09090909090909091,
-          "tags": []
-        },
-        {
-          "heroId": 135,
-          "heroName": "Dawnbreaker",
-          "shortName": "dawnbreaker",
-          "matches": 2,
-          "wins": 0,
-          "winRate": 0,
-          "lastPlayed": 1777827983,
-          "score": 0,
-          "share": 0.09090909090909091,
-          "tags": []
-        }
-      ],
-      "pubGames": 444,
-      "pubWins": 225,
-      "pubHeroes": [
-        {
-          "heroId": 21,
-          "heroName": "Windranger",
-          "shortName": "windrunner",
-          "matches": 39,
-          "wins": 26,
-          "winRate": 0.6666666666666666,
-          "lastPlayed": 1777670330,
-          "score": 1.0680399942186416,
-          "share": 0.08783783783783784,
-          "tags": [
-            "COMF"
-          ]
-        },
-        {
-          "heroId": 98,
-          "heroName": "Timbersaw",
-          "shortName": "shredder",
-          "matches": 32,
-          "wins": 17,
-          "winRate": 0.53125,
-          "lastPlayed": 1779629676,
-          "score": 0.8067105305601278,
-          "share": 0.07207207207207207,
-          "tags": []
-        },
-        {
-          "heroId": 46,
-          "heroName": "Templar Assassin",
-          "shortName": "templar_assassin",
-          "matches": 27,
-          "wins": 15,
-          "winRate": 0.5555555555555556,
-          "lastPlayed": 1777405141,
-          "score": 0.8039766840790107,
-          "share": 0.060810810810810814,
-          "tags": []
-        },
-        {
-          "heroId": 10,
-          "heroName": "Morphling",
-          "shortName": "morphling",
-          "matches": 26,
-          "wins": 13,
-          "winRate": 0.5,
-          "lastPlayed": 1774986635,
-          "score": 0.7156818820794937,
-          "share": 0.05855855855855856,
-          "tags": []
-        },
-        {
-          "heroId": 38,
-          "heroName": "Beastmaster",
-          "shortName": "beastmaster",
-          "matches": 19,
-          "wins": 8,
-          "winRate": 0.42105263157894735,
-          "lastPlayed": 1778428135,
-          "score": 0.5478021034374657,
-          "share": 0.04279279279279279,
-          "tags": []
-        },
-        {
-          "heroId": 138,
-          "heroName": "Muerta",
-          "shortName": "muerta",
-          "matches": 17,
-          "wins": 12,
-          "winRate": 0.7058823529411765,
-          "lastPlayed": 1778277051,
-          "score": 0.8860747094846867,
-          "share": 0.038288288288288286,
-          "tags": [
-            "COMF"
-          ]
-        },
-        {
-          "heroId": 63,
-          "heroName": "Weaver",
-          "shortName": "weaver",
-          "matches": 17,
-          "wins": 10,
-          "winRate": 0.5882352941176471,
-          "lastPlayed": 1779391756,
-          "score": 0.7383955912372389,
-          "share": 0.038288288288288286,
-          "tags": []
-        }
-      ]
-    },
-    {
-      "accountId": 28064250,
-      "name": "Poppmaister6000",
-      "proName": null,
-      "steamName": "Poppmaister6000",
-      "teamTag": null,
-      "rank": {
-        "seasonRank": 62,
-        "tier": 6,
-        "stars": 2,
-        "label": "Ancient 2",
-        "leaderboardRank": null
-      },
-      "primaryPosition": 5,
-      "flex": false,
-      "flexPositions": [
-        5
-      ],
-      "positionCounts": [
-        {
-          "position": 5,
-          "teamGames": 20,
-          "teamWins": 10
-        },
-        {
-          "position": 4,
-          "teamGames": 1,
-          "teamWins": 1
-        }
-      ],
-      "totalTeamMatches": 21,
-      "totalTeamWins": 11,
-      "leagueGames": 22,
-      "leagueWins": 10,
-      "leagueHeroes": [
-        {
-          "heroId": 87,
-          "heroName": "Disruptor",
-          "shortName": "disruptor",
-          "matches": 5,
-          "wins": 3,
-          "winRate": 0.6,
-          "lastPlayed": 1779642448,
-          "score": 0.46689075023018617,
-          "share": 0.22727272727272727,
-          "tags": [
-            "COMF"
-          ]
-        },
-        {
-          "heroId": 64,
-          "heroName": "Jakiro",
-          "shortName": "jakiro",
-          "matches": 4,
-          "wins": 2,
-          "winRate": 0.5,
-          "lastPlayed": 1779646292,
-          "score": 0.34948500216800943,
-          "share": 0.18181818181818182,
-          "tags": []
-        },
-        {
-          "heroId": 84,
-          "heroName": "Ogre Magi",
-          "shortName": "ogre_magi",
-          "matches": 4,
-          "wins": 2,
-          "winRate": 0.5,
-          "lastPlayed": 1776013331,
-          "score": 0.34948500216800943,
-          "share": 0.18181818181818182,
-          "tags": []
-        },
-        {
-          "heroId": 68,
-          "heroName": "Ancient Apparition",
-          "shortName": "ancient_apparition",
-          "matches": 3,
-          "wins": 2,
-          "winRate": 0.6666666666666666,
-          "lastPlayed": 1774206899,
-          "score": 0.4013733275519749,
-          "share": 0.13636363636363635,
-          "tags": []
-        },
-        {
-          "heroId": 27,
-          "heroName": "Shadow Shaman",
-          "shortName": "shadow_shaman",
-          "matches": 3,
-          "wins": 1,
-          "winRate": 0.3333333333333333,
-          "lastPlayed": 1776618103,
-          "score": 0.20068666377598746,
-          "share": 0.13636363636363635,
-          "tags": []
-        },
-        {
-          "heroId": 26,
-          "heroName": "Lion",
-          "shortName": "lion",
-          "matches": 2,
-          "wins": 0,
-          "winRate": 0,
-          "lastPlayed": 1776621851,
-          "score": 0,
-          "share": 0.09090909090909091,
-          "tags": []
-        }
-      ],
-      "pubGames": 348,
-      "pubWins": 175,
-      "pubHeroes": [
-        {
-          "heroId": 30,
-          "heroName": "Witch Doctor",
-          "shortName": "witch_doctor",
-          "matches": 67,
-          "wins": 40,
-          "winRate": 0.5970149253731343,
-          "lastPlayed": 1778858714,
-          "score": 1.094035171764917,
-          "share": 0.1925287356321839,
-          "tags": []
-        },
-        {
-          "heroId": 64,
-          "heroName": "Jakiro",
-          "shortName": "jakiro",
-          "matches": 49,
-          "wins": 26,
-          "winRate": 0.5306122448979592,
-          "lastPlayed": 1779391756,
-          "score": 0.9014942880150304,
-          "share": 0.14080459770114942,
-          "tags": []
-        },
-        {
-          "heroId": 27,
-          "heroName": "Shadow Shaman",
-          "shortName": "shadow_shaman",
-          "matches": 46,
-          "wins": 27,
-          "winRate": 0.5869565217391305,
-          "lastPlayed": 1779566020,
-          "score": 0.9814487427013995,
-          "share": 0.13218390804597702,
-          "tags": []
-        },
-        {
-          "heroId": 68,
-          "heroName": "Ancient Apparition",
-          "shortName": "ancient_apparition",
-          "matches": 31,
-          "wins": 19,
-          "winRate": 0.6129032258064516,
-          "lastPlayed": 1778952754,
-          "score": 0.9225112770347812,
-          "share": 0.08908045977011494,
-          "tags": [
-            "COMF"
-          ]
-        },
-        {
-          "heroId": 155,
-          "heroName": "Largo",
-          "shortName": "largo",
-          "matches": 28,
-          "wins": 12,
-          "winRate": 0.42857142857142855,
-          "lastPlayed": 1778955944,
-          "score": 0.6267419990995525,
-          "share": 0.08045977011494253,
-          "tags": []
-        },
-        {
-          "heroId": 105,
-          "heroName": "Techies",
-          "shortName": "techies",
-          "matches": 23,
-          "wins": 13,
-          "winRate": 0.5652173913043478,
-          "lastPlayed": 1778609889,
-          "score": 0.7801193974891685,
-          "share": 0.06609195402298851,
-          "tags": []
-        },
-        {
-          "heroId": 35,
-          "heroName": "Sniper",
-          "shortName": "sniper",
-          "matches": 18,
-          "wins": 7,
-          "winRate": 0.3888888888888889,
-          "lastPlayed": 1778962984,
-          "score": 0.4972930670372112,
-          "share": 0.05172413793103448,
-          "tags": []
-        }
-      ]
-    },
-    {
-      "accountId": 81955501,
-      "name": "Shadow Fin-Kedinn",
-      "proName": null,
-      "steamName": "Shadow Fin-Kedinn",
-      "teamTag": null,
-      "rank": {
-        "seasonRank": 64,
-        "tier": 6,
-        "stars": 4,
-        "label": "Ancient 4",
-        "leaderboardRank": null
-      },
-      "primaryPosition": 3,
-      "flex": false,
-      "flexPositions": [
-        3
-      ],
-      "positionCounts": [
-        {
-          "position": 3,
-          "teamGames": 16,
-          "teamWins": 9
-        },
-        {
-          "position": 1,
-          "teamGames": 3,
-          "teamWins": 0
+          "teamGames": 19,
+          "teamWins": 8
         }
       ],
       "totalTeamMatches": 19,
-      "totalTeamWins": 9,
-      "leagueGames": 20,
-      "leagueWins": 8,
+      "totalTeamWins": 8,
+      "leagueGames": 21,
+      "leagueWins": 9,
       "leagueHeroes": [
         {
-          "heroId": 100,
-          "heroName": "Tusk",
-          "shortName": "tusk",
+          "heroId": 39,
+          "heroName": "Queen of Pain",
+          "shortName": "queenofpain",
           "matches": 4,
           "wins": 2,
           "winRate": 0.5,
-          "lastPlayed": 1779646292,
+          "lastPlayed": 1775582113,
           "score": 0.34948500216800943,
-          "share": 0.2,
+          "share": 0.19047619047619047,
           "tags": []
         },
         {
-          "heroId": 60,
-          "heroName": "Night Stalker",
-          "shortName": "night_stalker",
-          "matches": 2,
+          "heroId": 25,
+          "heroName": "Lina",
+          "shortName": "lina",
+          "matches": 4,
+          "wins": 0,
+          "winRate": 0,
+          "lastPlayed": 1775586038,
+          "score": 0,
+          "share": 0.19047619047619047,
+          "tags": []
+        },
+        {
+          "heroId": 106,
+          "heroName": "Ember Spirit",
+          "shortName": "ember_spirit",
+          "matches": 3,
           "wins": 2,
-          "winRate": 1,
-          "lastPlayed": 1779642448,
-          "score": 0.47712125471966244,
-          "share": 0.1,
+          "winRate": 0.6666666666666666,
+          "lastPlayed": 1777922381,
+          "score": 0.4013733275519749,
+          "share": 0.14285714285714285,
           "tags": []
         },
         {
-          "heroId": 29,
-          "heroName": "Tidehunter",
-          "shortName": "tidehunter",
-          "matches": 2,
-          "wins": 2,
-          "winRate": 1,
-          "lastPlayed": 1772999913,
-          "score": 0.47712125471966244,
-          "share": 0.1,
-          "tags": []
-        },
-        {
-          "heroId": 71,
-          "heroName": "Spirit Breaker",
-          "shortName": "spirit_breaker",
+          "heroId": 13,
+          "heroName": "Puck",
+          "shortName": "puck",
           "matches": 2,
           "wins": 1,
           "winRate": 0.5,
-          "lastPlayed": 1777831562,
+          "lastPlayed": 1779037486,
           "score": 0.23856062735983122,
-          "share": 0.1,
+          "share": 0.09523809523809523,
           "tags": []
         },
         {
-          "heroId": 129,
-          "heroName": "Mars",
-          "shortName": "mars",
+          "heroId": 52,
+          "heroName": "Leshrac",
+          "shortName": "leshrac",
           "matches": 2,
-          "wins": 0,
-          "winRate": 0,
-          "lastPlayed": 1776621851,
-          "score": 0,
-          "share": 0.1,
-          "tags": []
-        },
-        {
-          "heroId": 104,
-          "heroName": "Legion Commander",
-          "shortName": "legion_commander",
-          "matches": 2,
-          "wins": 0,
-          "winRate": 0,
-          "lastPlayed": 1770573879,
-          "score": 0,
-          "share": 0.1,
+          "wins": 1,
+          "winRate": 0.5,
+          "lastPlayed": 1774637922,
+          "score": 0.23856062735983122,
+          "share": 0.09523809523809523,
           "tags": []
         }
       ],
-      "pubGames": 220,
-      "pubWins": 109,
+      "pubGames": 243,
+      "pubWins": 119,
       "pubHeroes": [
         {
           "heroId": 74,
           "heroName": "Invoker",
           "shortName": "invoker",
-          "matches": 53,
-          "wins": 27,
-          "winRate": 0.5094339622641509,
-          "lastPlayed": 1779451531,
-          "score": 0.8825402172683048,
-          "share": 0.2409090909090909,
+          "matches": 23,
+          "wins": 10,
+          "winRate": 0.43478260869565216,
+          "lastPlayed": 1775157210,
+          "score": 0.6000918442224373,
+          "share": 0.09465020576131687,
           "tags": []
         },
         {
-          "heroId": 129,
-          "heroName": "Mars",
-          "shortName": "mars",
-          "matches": 10,
-          "wins": 7,
-          "winRate": 0.7,
-          "lastPlayed": 1774359641,
-          "score": 0.7289748796107574,
-          "share": 0.045454545454545456,
+          "heroId": 126,
+          "heroName": "Void Spirit",
+          "shortName": "void_spirit",
+          "matches": 18,
+          "wins": 9,
+          "winRate": 0.5,
+          "lastPlayed": 1778961365,
+          "score": 0.6393768004764144,
+          "share": 0.07407407407407407,
+          "tags": []
+        },
+        {
+          "heroId": 25,
+          "heroName": "Lina",
+          "shortName": "lina",
+          "matches": 17,
+          "wins": 13,
+          "winRate": 0.7647058823529411,
+          "lastPlayed": 1779210811,
+          "score": 0.9599142686084104,
+          "share": 0.06995884773662552,
           "tags": [
             "COMF"
           ]
         },
         {
-          "heroId": 86,
-          "heroName": "Rubick",
-          "shortName": "rubick",
-          "matches": 9,
-          "wins": 5,
-          "winRate": 0.5555555555555556,
-          "lastPlayed": 1777296317,
-          "score": 0.5555555555555556,
-          "share": 0.04090909090909091,
-          "tags": []
-        },
-        {
-          "heroId": 17,
-          "heroName": "Storm Spirit",
-          "shortName": "storm_spirit",
-          "matches": 8,
-          "wins": 3,
-          "winRate": 0.375,
-          "lastPlayed": 1774878398,
-          "score": 0.35784094103974684,
-          "share": 0.03636363636363636,
-          "tags": []
-        },
-        {
-          "heroId": 27,
-          "heroName": "Shadow Shaman",
-          "shortName": "shadow_shaman",
-          "matches": 6,
-          "wins": 5,
-          "winRate": 0.8333333333333334,
-          "lastPlayed": 1766006436,
-          "score": 0.7042483666785474,
-          "share": 0.02727272727272727,
-          "tags": [
-            "COMF"
-          ]
-        },
-        {
-          "heroId": 12,
-          "heroName": "Phantom Lancer",
-          "shortName": "phantom_lancer",
-          "matches": 6,
+          "heroId": 19,
+          "heroName": "Tiny",
+          "shortName": "tiny",
+          "matches": 13,
           "wins": 4,
-          "winRate": 0.6666666666666666,
-          "lastPlayed": 1777822723,
-          "score": 0.5633986933428379,
-          "share": 0.02727272727272727,
-          "tags": [
-            "COMF"
-          ]
+          "winRate": 0.3076923076923077,
+          "lastPlayed": 1779479682,
+          "score": 0.3526547802086886,
+          "share": 0.053497942386831275,
+          "tags": []
         },
         {
-          "heroId": 106,
-          "heroName": "Ember Spirit",
-          "shortName": "ember_spirit",
-          "matches": 5,
-          "wins": 3,
-          "winRate": 0.6,
-          "lastPlayed": 1779109741,
-          "score": 0.46689075023018617,
-          "share": 0.022727272727272728,
+          "heroId": 23,
+          "heroName": "Kunkka",
+          "shortName": "kunkka",
+          "matches": 12,
+          "wins": 7,
+          "winRate": 0.5833333333333334,
+          "lastPlayed": 1779389715,
+          "score": 0.6498002888456548,
+          "share": 0.04938271604938271,
+          "tags": []
+        },
+        {
+          "heroId": 39,
+          "heroName": "Queen of Pain",
+          "shortName": "queenofpain",
+          "matches": 12,
+          "wins": 7,
+          "winRate": 0.5833333333333334,
+          "lastPlayed": 1778005133,
+          "score": 0.6498002888456548,
+          "share": 0.04938271604938271,
+          "tags": []
+        },
+        {
+          "heroId": 16,
+          "heroName": "Sand King",
+          "shortName": "sand_king",
+          "matches": 11,
+          "wins": 9,
+          "winRate": 0.8181818181818182,
+          "lastPlayed": 1777831363,
+          "score": 0.8829664740389659,
+          "share": 0.04526748971193416,
           "tags": [
             "COMF"
           ]
         }
       ]
-    }
-  ],
-  "standins": [
+    },
     {
-      "accountId": 29838178,
-      "name": "Maakep",
+      "accountId": 159010079,
+      "name": "Dr Görts",
       "proName": null,
-      "steamName": "Maakep",
+      "steamName": "Dr Görts",
       "teamTag": null,
       "rank": {
-        "seasonRank": 73,
-        "tier": 7,
-        "stars": 3,
-        "label": "Divine 3",
+        "seasonRank": 80,
+        "tier": 8,
+        "stars": null,
+        "label": "Immortal",
         "leaderboardRank": null
       },
       "primaryPosition": 1,
@@ -1029,1031 +217,997 @@
       "positionCounts": [
         {
           "position": 1,
-          "teamGames": 2,
-          "teamWins": 2
+          "teamGames": 15,
+          "teamWins": 8
         }
       ],
-      "totalTeamMatches": 2,
-      "totalTeamWins": 2,
-      "leagueGames": 2,
-      "leagueWins": 2,
+      "totalTeamMatches": 15,
+      "totalTeamWins": 8,
+      "leagueGames": 29,
+      "leagueWins": 14,
       "leagueHeroes": [
         {
-          "heroId": 138,
-          "heroName": "Muerta",
-          "shortName": "muerta",
-          "matches": 1,
-          "wins": 1,
-          "winRate": 1,
-          "lastPlayed": 1771786755,
-          "score": 0.3010299956639812,
-          "share": 0.5,
-          "tags": []
-        },
-        {
-          "heroId": 11,
-          "heroName": "Shadow Fiend",
-          "shortName": "nevermore",
-          "matches": 1,
-          "wins": 1,
-          "winRate": 1,
-          "lastPlayed": 1771783361,
-          "score": 0.3010299956639812,
-          "share": 0.5,
-          "tags": []
-        }
-      ],
-      "pubGames": 62,
-      "pubWins": 32,
-      "pubHeroes": [
-        {
-          "heroId": 128,
-          "heroName": "Snapfire",
-          "shortName": "snapfire",
-          "matches": 13,
-          "wins": 8,
-          "winRate": 0.6153846153846154,
-          "lastPlayed": 1779639402,
-          "score": 0.7053095604173772,
-          "share": 0.20967741935483872,
+          "heroId": 12,
+          "heroName": "Phantom Lancer",
+          "shortName": "phantom_lancer",
+          "matches": 5,
+          "wins": 3,
+          "winRate": 0.6,
+          "lastPlayed": 1777917745,
+          "score": 0.46689075023018617,
+          "share": 0.1724137931034483,
           "tags": [
             "COMF"
           ]
         },
         {
-          "heroId": 39,
-          "heroName": "Queen of Pain",
-          "shortName": "queenofpain",
-          "matches": 7,
+          "heroId": 63,
+          "heroName": "Weaver",
+          "shortName": "weaver",
+          "matches": 4,
           "wins": 3,
-          "winRate": 0.42857142857142855,
-          "lastPlayed": 1779299924,
-          "score": 0.38703856585369006,
-          "share": 0.11290322580645161,
+          "winRate": 0.75,
+          "lastPlayed": 1770576300,
+          "score": 0.5242275032520142,
+          "share": 0.13793103448275862,
           "tags": []
         },
         {
-          "heroId": 106,
-          "heroName": "Ember Spirit",
-          "shortName": "ember_spirit",
+          "heroId": 56,
+          "heroName": "Clinkz",
+          "shortName": "clinkz",
           "matches": 4,
+          "wins": 1,
+          "winRate": 0.25,
+          "lastPlayed": 1777222813,
+          "score": 0.17474250108400471,
+          "share": 0.13793103448275862,
+          "tags": []
+        },
+        {
+          "heroId": 102,
+          "heroName": "Abaddon",
+          "shortName": "abaddon",
+          "matches": 3,
           "wins": 2,
+          "winRate": 0.6666666666666666,
+          "lastPlayed": 1768943900,
+          "score": 0.4013733275519749,
+          "share": 0.10344827586206896,
+          "tags": []
+        },
+        {
+          "heroId": 94,
+          "heroName": "Medusa",
+          "shortName": "medusa",
+          "matches": 2,
+          "wins": 2,
+          "winRate": 1,
+          "lastPlayed": 1777922381,
+          "score": 0.47712125471966244,
+          "share": 0.06896551724137931,
+          "tags": []
+        },
+        {
+          "heroId": 67,
+          "heroName": "Spectre",
+          "shortName": "spectre",
+          "matches": 2,
+          "wins": 1,
           "winRate": 0.5,
-          "lastPlayed": 1776524295,
-          "score": 0.34948500216800943,
-          "share": 0.06451612903225806,
+          "lastPlayed": 1779037486,
+          "score": 0.23856062735983122,
+          "share": 0.06896551724137931,
+          "tags": []
+        },
+        {
+          "heroId": 42,
+          "heroName": "Wraith King",
+          "shortName": "skeleton_king",
+          "matches": 2,
+          "wins": 1,
+          "winRate": 0.5,
+          "lastPlayed": 1774641542,
+          "score": 0.23856062735983122,
+          "share": 0.06896551724137931,
+          "tags": []
+        }
+      ],
+      "pubGames": 181,
+      "pubWins": 102,
+      "pubHeroes": [
+        {
+          "heroId": 67,
+          "heroName": "Spectre",
+          "shortName": "spectre",
+          "matches": 24,
+          "wins": 18,
+          "winRate": 0.75,
+          "lastPlayed": 1778524705,
+          "score": 1.0484550065040283,
+          "share": 0.13259668508287292,
+          "tags": [
+            "COMF"
+          ]
+        },
+        {
+          "heroId": 12,
+          "heroName": "Phantom Lancer",
+          "shortName": "phantom_lancer",
+          "matches": 19,
+          "wins": 11,
+          "winRate": 0.5789473684210527,
+          "lastPlayed": 1778430216,
+          "score": 0.7532278922265155,
+          "share": 0.10497237569060773,
+          "tags": []
+        },
+        {
+          "heroId": 6,
+          "heroName": "Drow Ranger",
+          "shortName": "drow_ranger",
+          "matches": 13,
+          "wins": 9,
+          "winRate": 0.6923076923076923,
+          "lastPlayed": 1779032176,
+          "score": 0.7934732554695494,
+          "share": 0.0718232044198895,
+          "tags": [
+            "COMF"
+          ]
+        },
+        {
+          "heroId": 56,
+          "heroName": "Clinkz",
+          "shortName": "clinkz",
+          "matches": 13,
+          "wins": 7,
+          "winRate": 0.5384615384615384,
+          "lastPlayed": 1778762282,
+          "score": 0.617145865365205,
+          "share": 0.0718232044198895,
+          "tags": []
+        },
+        {
+          "heroId": 63,
+          "heroName": "Weaver",
+          "shortName": "weaver",
+          "matches": 9,
+          "wins": 4,
+          "winRate": 0.4444444444444444,
+          "lastPlayed": 1772441294,
+          "score": 0.4444444444444444,
+          "share": 0.049723756906077346,
+          "tags": []
+        },
+        {
+          "heroId": 102,
+          "heroName": "Abaddon",
+          "shortName": "abaddon",
+          "matches": 8,
+          "wins": 6,
+          "winRate": 0.75,
+          "lastPlayed": 1768059833,
+          "score": 0.7156818820794937,
+          "share": 0.04419889502762431,
+          "tags": [
+            "COMF"
+          ]
+        },
+        {
+          "heroId": 93,
+          "heroName": "Slark",
+          "shortName": "slark",
+          "matches": 8,
+          "wins": 5,
+          "winRate": 0.625,
+          "lastPlayed": 1778605320,
+          "score": 0.596401568399578,
+          "share": 0.04419889502762431,
+          "tags": [
+            "COMF"
+          ]
+        }
+      ]
+    },
+    {
+      "accountId": 81459751,
+      "name": "KIT",
+      "proName": null,
+      "steamName": "KIT",
+      "teamTag": null,
+      "rank": {
+        "seasonRank": 61,
+        "tier": 6,
+        "stars": 1,
+        "label": "Ancient 1",
+        "leaderboardRank": null
+      },
+      "primaryPosition": 3,
+      "flex": true,
+      "flexPositions": [
+        3,
+        5
+      ],
+      "positionCounts": [
+        {
+          "position": 3,
+          "teamGames": 11,
+          "teamWins": 5
+        },
+        {
+          "position": 5,
+          "teamGames": 8,
+          "teamWins": 3
+        }
+      ],
+      "totalTeamMatches": 19,
+      "totalTeamWins": 8,
+      "leagueGames": 21,
+      "leagueWins": 9,
+      "leagueHeroes": [
+        {
+          "heroId": 29,
+          "heroName": "Tidehunter",
+          "shortName": "tidehunter",
+          "matches": 3,
+          "wins": 2,
+          "winRate": 0.6666666666666666,
+          "lastPlayed": 1779041168,
+          "score": 0.4013733275519749,
+          "share": 0.14285714285714285,
+          "tags": []
+        },
+        {
+          "heroId": 45,
+          "heroName": "Pugna",
+          "shortName": "pugna",
+          "matches": 3,
+          "wins": 1,
+          "winRate": 0.3333333333333333,
+          "lastPlayed": 1770576300,
+          "score": 0.20068666377598746,
+          "share": 0.14285714285714285,
+          "tags": []
+        },
+        {
+          "heroId": 60,
+          "heroName": "Night Stalker",
+          "shortName": "night_stalker",
+          "matches": 2,
+          "wins": 2,
+          "winRate": 1,
+          "lastPlayed": 1777922381,
+          "score": 0.47712125471966244,
+          "share": 0.09523809523809523,
+          "tags": []
+        },
+        {
+          "heroId": 99,
+          "heroName": "Bristleback",
+          "shortName": "bristleback",
+          "matches": 2,
+          "wins": 2,
+          "winRate": 1,
+          "lastPlayed": 1777222813,
+          "score": 0.47712125471966244,
+          "share": 0.09523809523809523,
+          "tags": []
+        },
+        {
+          "heroId": 84,
+          "heroName": "Ogre Magi",
+          "shortName": "ogre_magi",
+          "matches": 2,
+          "wins": 1,
+          "winRate": 0.5,
+          "lastPlayed": 1770573291,
+          "score": 0.23856062735983122,
+          "share": 0.09523809523809523,
+          "tags": []
+        },
+        {
+          "heroId": 108,
+          "heroName": "Underlord",
+          "shortName": "abyssal_underlord",
+          "matches": 2,
+          "wins": 0,
+          "winRate": 0,
+          "lastPlayed": 1775586038,
+          "score": 0,
+          "share": 0.09523809523809523,
+          "tags": []
+        }
+      ],
+      "pubGames": 223,
+      "pubWins": 105,
+      "pubHeroes": [
+        {
+          "heroId": 28,
+          "heroName": "Slardar",
+          "shortName": "slardar",
+          "matches": 19,
+          "wins": 9,
+          "winRate": 0.47368421052631576,
+          "lastPlayed": 1779527495,
+          "score": 0.616277366367149,
+          "share": 0.08520179372197309,
+          "tags": []
+        },
+        {
+          "heroId": 60,
+          "heroName": "Night Stalker",
+          "shortName": "night_stalker",
+          "matches": 19,
+          "wins": 8,
+          "winRate": 0.42105263157894735,
+          "lastPlayed": 1778771202,
+          "score": 0.5478021034374657,
+          "share": 0.08520179372197309,
+          "tags": []
+        },
+        {
+          "heroId": 108,
+          "heroName": "Underlord",
+          "shortName": "abyssal_underlord",
+          "matches": 13,
+          "wins": 9,
+          "winRate": 0.6923076923076923,
+          "lastPlayed": 1778872033,
+          "score": 0.7934732554695494,
+          "share": 0.05829596412556054,
+          "tags": [
+            "COMF"
+          ]
+        },
+        {
+          "heroId": 135,
+          "heroName": "Dawnbreaker",
+          "shortName": "dawnbreaker",
+          "matches": 13,
+          "wins": 7,
+          "winRate": 0.5384615384615384,
+          "lastPlayed": 1779530525,
+          "score": 0.617145865365205,
+          "share": 0.05829596412556054,
+          "tags": []
+        },
+        {
+          "heroId": 104,
+          "heroName": "Legion Commander",
+          "shortName": "legion_commander",
+          "matches": 13,
+          "wins": 6,
+          "winRate": 0.46153846153846156,
+          "lastPlayed": 1779479682,
+          "score": 0.528982170313033,
+          "share": 0.05829596412556054,
+          "tags": []
+        },
+        {
+          "heroId": 36,
+          "heroName": "Necrophos",
+          "shortName": "necrolyte",
+          "matches": 12,
+          "wins": 5,
+          "winRate": 0.4166666666666667,
+          "lastPlayed": 1778522921,
+          "score": 0.464143063461182,
+          "share": 0.053811659192825115,
+          "tags": []
+        },
+        {
+          "heroId": 29,
+          "heroName": "Tidehunter",
+          "shortName": "tidehunter",
+          "matches": 11,
+          "wins": 7,
+          "winRate": 0.6363636363636364,
+          "lastPlayed": 1778599558,
+          "score": 0.6867517020303068,
+          "share": 0.04932735426008968,
+          "tags": [
+            "COMF"
+          ]
+        }
+      ]
+    },
+    {
+      "accountId": 30751656,
+      "name": "wilton",
+      "proName": null,
+      "steamName": "wilton",
+      "teamTag": null,
+      "rank": {
+        "seasonRank": 73,
+        "tier": 7,
+        "stars": 3,
+        "label": "Divine 3",
+        "leaderboardRank": null
+      },
+      "primaryPosition": 3,
+      "flex": true,
+      "flexPositions": [
+        3,
+        4,
+        5
+      ],
+      "positionCounts": [
+        {
+          "position": 3,
+          "teamGames": 7,
+          "teamWins": 3
+        },
+        {
+          "position": 5,
+          "teamGames": 6,
+          "teamWins": 2
+        },
+        {
+          "position": 4,
+          "teamGames": 5,
+          "teamWins": 3
+        }
+      ],
+      "totalTeamMatches": 18,
+      "totalTeamWins": 8,
+      "leagueGames": 19,
+      "leagueWins": 9,
+      "leagueHeroes": [
+        {
+          "heroId": 71,
+          "heroName": "Spirit Breaker",
+          "shortName": "spirit_breaker",
+          "matches": 5,
+          "wins": 4,
+          "winRate": 0.8,
+          "lastPlayed": 1779041168,
+          "score": 0.6225210003069149,
+          "share": 0.2631578947368421,
+          "tags": [
+            "COMF",
+            "SPAM"
+          ]
+        },
+        {
+          "heroId": 86,
+          "heroName": "Rubick",
+          "shortName": "rubick",
+          "matches": 2,
+          "wins": 1,
+          "winRate": 0.5,
+          "lastPlayed": 1779037486,
+          "score": 0.23856062735983122,
+          "share": 0.10526315789473684,
+          "tags": []
+        },
+        {
+          "heroId": 100,
+          "heroName": "Tusk",
+          "shortName": "tusk",
+          "matches": 2,
+          "wins": 1,
+          "winRate": 0.5,
+          "lastPlayed": 1775586038,
+          "score": 0.23856062735983122,
+          "share": 0.10526315789473684,
+          "tags": []
+        },
+        {
+          "heroId": 14,
+          "heroName": "Pudge",
+          "shortName": "pudge",
+          "matches": 2,
+          "wins": 1,
+          "winRate": 0.5,
+          "lastPlayed": 1771786755,
+          "score": 0.23856062735983122,
+          "share": 0.10526315789473684,
+          "tags": []
+        },
+        {
+          "heroId": 129,
+          "heroName": "Mars",
+          "shortName": "mars",
+          "matches": 2,
+          "wins": 1,
+          "winRate": 0.5,
+          "lastPlayed": 1771783361,
+          "score": 0.23856062735983122,
+          "share": 0.10526315789473684,
+          "tags": []
+        }
+      ],
+      "pubGames": 474,
+      "pubWins": 238,
+      "pubHeroes": [
+        {
+          "heroId": 86,
+          "heroName": "Rubick",
+          "shortName": "rubick",
+          "matches": 24,
+          "wins": 14,
+          "winRate": 0.5833333333333334,
+          "lastPlayed": 1779482138,
+          "score": 0.8154650050586887,
+          "share": 0.05063291139240506,
+          "tags": []
+        },
+        {
+          "heroId": 110,
+          "heroName": "Phoenix",
+          "shortName": "phoenix",
+          "matches": 19,
+          "wins": 12,
+          "winRate": 0.631578947368421,
+          "lastPlayed": 1779476287,
+          "score": 0.8217031551561986,
+          "share": 0.04008438818565401,
+          "tags": [
+            "COMF"
+          ]
+        },
+        {
+          "heroId": 14,
+          "heroName": "Pudge",
+          "shortName": "pudge",
+          "matches": 19,
+          "wins": 8,
+          "winRate": 0.42105263157894735,
+          "lastPlayed": 1777491040,
+          "score": 0.5478021034374657,
+          "share": 0.04008438818565401,
+          "tags": []
+        },
+        {
+          "heroId": 137,
+          "heroName": "Primal Beast",
+          "shortName": "primal_beast",
+          "matches": 19,
+          "wins": 6,
+          "winRate": 0.3157894736842105,
+          "lastPlayed": 1777835099,
+          "score": 0.4108515775780993,
+          "share": 0.04008438818565401,
+          "tags": []
+        },
+        {
+          "heroId": 74,
+          "heroName": "Invoker",
+          "shortName": "invoker",
+          "matches": 17,
+          "wins": 8,
+          "winRate": 0.47058823529411764,
+          "lastPlayed": 1779570152,
+          "score": 0.590716472989791,
+          "share": 0.035864978902953586,
+          "tags": []
+        },
+        {
+          "heroId": 75,
+          "heroName": "Silencer",
+          "shortName": "silencer",
+          "matches": 14,
+          "wins": 10,
+          "winRate": 0.7142857142857143,
+          "lastPlayed": 1779548055,
+          "score": 0.8400651850397725,
+          "share": 0.029535864978902954,
+          "tags": [
+            "COMF"
+          ]
+        },
+        {
+          "heroId": 31,
+          "heroName": "Lich",
+          "shortName": "lich",
+          "matches": 11,
+          "wins": 8,
+          "winRate": 0.7272727272727273,
+          "lastPlayed": 1779458882,
+          "score": 0.7848590880346363,
+          "share": 0.023206751054852322,
+          "tags": [
+            "COMF"
+          ]
+        }
+      ]
+    },
+    {
+      "accountId": 44346572,
+      "name": "Humble",
+      "proName": null,
+      "steamName": "Humble",
+      "teamTag": null,
+      "rank": {
+        "seasonRank": 64,
+        "tier": 6,
+        "stars": 4,
+        "label": "Ancient 4",
+        "leaderboardRank": null
+      },
+      "primaryPosition": 4,
+      "flex": false,
+      "flexPositions": [
+        4
+      ],
+      "positionCounts": [
+        {
+          "position": 4,
+          "teamGames": 13,
+          "teamWins": 4
+        }
+      ],
+      "totalTeamMatches": 13,
+      "totalTeamWins": 4,
+      "leagueGames": 15,
+      "leagueWins": 5,
+      "leagueHeroes": [
+        {
+          "heroId": 26,
+          "heroName": "Lion",
+          "shortName": "lion",
+          "matches": 5,
+          "wins": 2,
+          "winRate": 0.4,
+          "lastPlayed": 1771786755,
+          "score": 0.31126050015345746,
+          "share": 0.3333333333333333,
+          "tags": []
+        },
+        {
+          "heroId": 105,
+          "heroName": "Techies",
+          "shortName": "techies",
+          "matches": 3,
+          "wins": 2,
+          "winRate": 0.6666666666666666,
+          "lastPlayed": 1777922381,
+          "score": 0.4013733275519749,
+          "share": 0.2,
+          "tags": []
+        },
+        {
+          "heroId": 9,
+          "heroName": "Mirana",
+          "shortName": "mirana",
+          "matches": 2,
+          "wins": 1,
+          "winRate": 0.5,
+          "lastPlayed": 1770576300,
+          "score": 0.23856062735983122,
+          "share": 0.13333333333333333,
+          "tags": []
+        },
+        {
+          "heroId": 101,
+          "heroName": "Skywrath Mage",
+          "shortName": "skywrath_mage",
+          "matches": 2,
+          "wins": 0,
+          "winRate": 0,
+          "lastPlayed": 1779037486,
+          "score": 0,
+          "share": 0.13333333333333333,
+          "tags": []
+        }
+      ],
+      "pubGames": 176,
+      "pubWins": 77,
+      "pubHeroes": [
+        {
+          "heroId": 26,
+          "heroName": "Lion",
+          "shortName": "lion",
+          "matches": 22,
+          "wins": 12,
+          "winRate": 0.5454545454545454,
+          "lastPlayed": 1779552955,
+          "score": 0.7427606378277779,
+          "share": 0.125,
+          "tags": []
+        },
+        {
+          "heroId": 9,
+          "heroName": "Mirana",
+          "shortName": "mirana",
+          "matches": 20,
+          "wins": 12,
+          "winRate": 0.6,
+          "lastPlayed": 1779210811,
+          "score": 0.7933315768403516,
+          "share": 0.11363636363636363,
+          "tags": [
+            "COMF"
+          ]
+        },
+        {
+          "heroId": 21,
+          "heroName": "Windranger",
+          "shortName": "windrunner",
+          "matches": 17,
+          "wins": 9,
+          "winRate": 0.5294117647058824,
+          "lastPlayed": 1779032176,
+          "score": 0.664556032113515,
+          "share": 0.09659090909090909,
+          "tags": []
+        },
+        {
+          "heroId": 27,
+          "heroName": "Shadow Shaman",
+          "shortName": "shadow_shaman",
+          "matches": 12,
+          "wins": 5,
+          "winRate": 0.4166666666666667,
+          "lastPlayed": 1778759367,
+          "score": 0.464143063461182,
+          "share": 0.06818181818181818,
+          "tags": []
+        },
+        {
+          "heroId": 40,
+          "heroName": "Venomancer",
+          "shortName": "venomancer",
+          "matches": 11,
+          "wins": 2,
+          "winRate": 0.18181818181818182,
+          "lastPlayed": 1778857553,
+          "score": 0.19621477200865908,
+          "share": 0.0625,
+          "tags": []
+        },
+        {
+          "heroId": 101,
+          "heroName": "Skywrath Mage",
+          "shortName": "skywrath_mage",
+          "matches": 10,
+          "wins": 4,
+          "winRate": 0.4,
+          "lastPlayed": 1774203634,
+          "score": 0.41655707406329,
+          "share": 0.056818181818181816,
+          "tags": []
+        },
+        {
+          "heroId": 37,
+          "heroName": "Warlock",
+          "shortName": "warlock",
+          "matches": 8,
+          "wins": 6,
+          "winRate": 0.75,
+          "lastPlayed": 1779208060,
+          "score": 0.7156818820794937,
+          "share": 0.045454545454545456,
+          "tags": [
+            "COMF"
+          ]
+        }
+      ]
+    }
+  ],
+  "standins": [
+    {
+      "accountId": 50613992,
+      "name": "Zittow",
+      "proName": null,
+      "steamName": "Zittow",
+      "teamTag": null,
+      "rank": {
+        "seasonRank": 80,
+        "tier": 8,
+        "stars": null,
+        "label": "Immortal",
+        "leaderboardRank": null
+      },
+      "primaryPosition": 5,
+      "flex": false,
+      "flexPositions": [
+        3,
+        4,
+        5
+      ],
+      "positionCounts": [
+        {
+          "position": 5,
+          "teamGames": 5,
+          "teamWins": 3
+        },
+        {
+          "position": 3,
+          "teamGames": 1,
+          "teamWins": 0
+        },
+        {
+          "position": 4,
+          "teamGames": 1,
+          "teamWins": 1
+        }
+      ],
+      "totalTeamMatches": 7,
+      "totalTeamWins": 4,
+      "leagueGames": 12,
+      "leagueWins": 5,
+      "leagueHeroes": [
+        {
+          "heroId": 75,
+          "heroName": "Silencer",
+          "shortName": "silencer",
+          "matches": 3,
+          "wins": 3,
+          "winRate": 1,
+          "lastPlayed": 1777222813,
+          "score": 0.6020599913279624,
+          "share": 0.25,
           "tags": []
         },
         {
           "heroId": 17,
           "heroName": "Storm Spirit",
           "shortName": "storm_spirit",
-          "matches": 3,
-          "wins": 3,
-          "winRate": 1,
-          "lastPlayed": 1779635747,
-          "score": 0.6020599913279624,
-          "share": 0.04838709677419355,
+          "matches": 2,
+          "wins": 0,
+          "winRate": 0,
+          "lastPlayed": 1765311188,
+          "score": 0,
+          "share": 0.16666666666666666,
           "tags": []
         },
         {
-          "heroId": 58,
-          "heroName": "Enchantress",
-          "shortName": "enchantress",
-          "matches": 2,
-          "wins": 2,
-          "winRate": 1,
-          "lastPlayed": 1779629676,
-          "score": 0.47712125471966244,
-          "share": 0.03225806451612903,
-          "tags": []
-        },
-        {
-          "heroId": 7,
-          "heroName": "Earthshaker",
-          "shortName": "earthshaker",
-          "matches": 2,
-          "wins": 2,
-          "winRate": 1,
-          "lastPlayed": 1778322867,
-          "score": 0.47712125471966244,
-          "share": 0.03225806451612903,
-          "tags": []
-        },
-        {
-          "heroId": 49,
-          "heroName": "Dragon Knight",
-          "shortName": "dragon_knight",
-          "matches": 2,
+          "heroId": 91,
+          "heroName": "Io",
+          "shortName": "wisp",
+          "matches": 1,
           "wins": 1,
-          "winRate": 0.5,
-          "lastPlayed": 1778758936,
-          "score": 0.23856062735983122,
-          "share": 0.03225806451612903,
+          "winRate": 1,
+          "lastPlayed": 1777226650,
+          "score": 0.3010299956639812,
+          "share": 0.08333333333333333,
           "tags": []
         }
       ],
-      "lastTeamMatchAt": 1771786755
+      "pubGames": 594,
+      "pubWins": 299,
+      "pubHeroes": [
+        {
+          "heroId": 82,
+          "heroName": "Meepo",
+          "shortName": "meepo",
+          "matches": 52,
+          "wins": 26,
+          "winRate": 0.5,
+          "lastPlayed": 1779570152,
+          "score": 0.8621379348003946,
+          "share": 0.08754208754208755,
+          "tags": []
+        },
+        {
+          "heroId": 80,
+          "heroName": "Lone Druid",
+          "shortName": "lone_druid",
+          "matches": 30,
+          "wins": 15,
+          "winRate": 0.5,
+          "lastPlayed": 1774214514,
+          "score": 0.7456808469171363,
+          "share": 0.050505050505050504,
+          "tags": []
+        },
+        {
+          "heroId": 78,
+          "heroName": "Brewmaster",
+          "shortName": "brewmaster",
+          "matches": 21,
+          "wins": 8,
+          "winRate": 0.38095238095238093,
+          "lastPlayed": 1774190259,
+          "score": 0.5113991165036975,
+          "share": 0.03535353535353535,
+          "tags": []
+        },
+        {
+          "heroId": 79,
+          "heroName": "Shadow Demon",
+          "shortName": "shadow_demon",
+          "matches": 20,
+          "wins": 15,
+          "winRate": 0.75,
+          "lastPlayed": 1778938489,
+          "score": 0.9916644710504394,
+          "share": 0.03367003367003367,
+          "tags": [
+            "COMF"
+          ]
+        },
+        {
+          "heroId": 6,
+          "heroName": "Drow Ranger",
+          "shortName": "drow_ranger",
+          "matches": 19,
+          "wins": 9,
+          "winRate": 0.47368421052631576,
+          "lastPlayed": 1779377616,
+          "score": 0.616277366367149,
+          "share": 0.03198653198653199,
+          "tags": []
+        },
+        {
+          "heroId": 75,
+          "heroName": "Silencer",
+          "shortName": "silencer",
+          "matches": 18,
+          "wins": 13,
+          "winRate": 0.7222222222222222,
+          "lastPlayed": 1779631577,
+          "score": 0.9235442673548209,
+          "share": 0.030303030303030304,
+          "tags": [
+            "COMF"
+          ]
+        },
+        {
+          "heroId": 11,
+          "heroName": "Shadow Fiend",
+          "shortName": "nevermore",
+          "matches": 17,
+          "wins": 11,
+          "winRate": 0.6470588235294118,
+          "lastPlayed": 1778326277,
+          "score": 0.8122351503609627,
+          "share": 0.02861952861952862,
+          "tags": [
+            "COMF"
+          ]
+        }
+      ],
+      "lastTeamMatchAt": 1777226650
     }
   ],
   "matchHistory": [
     {
-      "matchId": 8824131297,
-      "startDateTime": 1779646292,
+      "matchId": 8815154353,
+      "startDateTime": 1779041168,
       "side": "radiant",
-      "won": true,
-      "durationSeconds": 2439,
-      "teamKills": 44,
-      "opponentKills": 27,
+      "won": false,
+      "durationSeconds": 2203,
+      "teamKills": 24,
+      "opponentKills": 32,
       "teamHeroes": [
-        {
-          "heroId": 111,
-          "shortName": "oracle",
-          "accountId": 26852904
-        },
-        {
-          "heroId": 100,
-          "shortName": "tusk",
-          "accountId": 81955501
-        },
-        {
-          "heroId": 86,
-          "shortName": "rubick",
-          "accountId": 1089531
-        },
-        {
-          "heroId": 70,
-          "shortName": "ursa",
-          "accountId": 54437353
-        },
-        {
-          "heroId": 64,
-          "shortName": "jakiro",
-          "accountId": 28064250
-        }
-      ],
-      "opponentHeroes": [
-        {
-          "heroId": 27,
-          "shortName": "shadow_shaman",
-          "accountId": null
-        },
-        {
-          "heroId": 31,
-          "shortName": "lich",
-          "accountId": null
-        },
         {
           "heroId": 53,
           "shortName": "furion",
-          "accountId": null
-        },
-        {
-          "heroId": 108,
-          "shortName": "abyssal_underlord",
-          "accountId": null
-        },
-        {
-          "heroId": 128,
-          "shortName": "snapfire",
-          "accountId": null
-        }
-      ],
-      "opponentName": "Färskt Kaffe",
-      "opponentTag": null,
-      "hasStandin": false
-    },
-    {
-      "matchId": 8824048948,
-      "startDateTime": 1779642448,
-      "side": "dire",
-      "won": true,
-      "durationSeconds": 2491,
-      "teamKills": 61,
-      "opponentKills": 28,
-      "teamHeroes": [
-        {
-          "heroId": 64,
-          "shortName": "jakiro",
-          "accountId": 26852904
-        },
-        {
-          "heroId": 60,
-          "shortName": "night_stalker",
-          "accountId": 81955501
-        },
-        {
-          "heroId": 17,
-          "shortName": "storm_spirit",
-          "accountId": 1089531
-        },
-        {
-          "heroId": 6,
-          "shortName": "drow_ranger",
-          "accountId": 54437353
-        },
-        {
-          "heroId": 87,
-          "shortName": "disruptor",
-          "accountId": 28064250
-        }
-      ],
-      "opponentHeroes": [
-        {
-          "heroId": 11,
-          "shortName": "nevermore",
-          "accountId": null
-        },
-        {
-          "heroId": 88,
-          "shortName": "nyx_assassin",
-          "accountId": null
-        },
-        {
-          "heroId": 96,
-          "shortName": "centaur",
-          "accountId": null
-        },
-        {
-          "heroId": 121,
-          "shortName": "grimstroke",
-          "accountId": null
-        },
-        {
-          "heroId": 128,
-          "shortName": "snapfire",
-          "accountId": null
-        }
-      ],
-      "opponentName": "Färskt Kaffe",
-      "opponentTag": null,
-      "hasStandin": false
-    },
-    {
-      "matchId": 8815194172,
-      "startDateTime": 1779043163,
-      "side": "radiant",
-      "won": true,
-      "durationSeconds": 2276,
-      "teamKills": 35,
-      "opponentKills": 17,
-      "teamHeroes": [
-        {
-          "heroId": 22,
-          "shortName": "zuus",
-          "accountId": 26852904
-        },
-        {
-          "heroId": 73,
-          "shortName": "alchemist",
-          "accountId": 81955501
-        },
-        {
-          "heroId": 35,
-          "shortName": "sniper",
-          "accountId": 1089531
-        },
-        {
-          "heroId": 41,
-          "shortName": "faceless_void",
-          "accountId": 54437353
-        },
-        {
-          "heroId": 64,
-          "shortName": "jakiro",
-          "accountId": 28064250
-        }
-      ],
-      "opponentHeroes": [
-        {
-          "heroId": 11,
-          "shortName": "nevermore",
-          "accountId": null
-        },
-        {
-          "heroId": 28,
-          "shortName": "slardar",
-          "accountId": null
-        },
-        {
-          "heroId": 37,
-          "shortName": "warlock",
-          "accountId": null
-        },
-        {
-          "heroId": 39,
-          "shortName": "queenofpain",
-          "accountId": null
-        },
-        {
-          "heroId": 110,
-          "shortName": "phoenix",
-          "accountId": null
-        }
-      ],
-      "opponentName": "Epicenter n Chill",
-      "opponentTag": null,
-      "hasStandin": false
-    },
-    {
-      "matchId": 8815072903,
-      "startDateTime": 1779037284,
-      "side": "dire",
-      "won": true,
-      "durationSeconds": 4322,
-      "teamKills": 68,
-      "opponentKills": 45,
-      "teamHeroes": [
-        {
-          "heroId": 22,
-          "shortName": "zuus",
-          "accountId": 26852904
-        },
-        {
-          "heroId": 60,
-          "shortName": "night_stalker",
-          "accountId": 81955501
-        },
-        {
-          "heroId": 120,
-          "shortName": "pangolier",
-          "accountId": 1089531
-        },
-        {
-          "heroId": 93,
-          "shortName": "slark",
-          "accountId": 54437353
-        },
-        {
-          "heroId": 87,
-          "shortName": "disruptor",
-          "accountId": 28064250
-        }
-      ],
-      "opponentHeroes": [
-        {
-          "heroId": 4,
-          "shortName": "bloodseeker",
-          "accountId": null
-        },
-        {
-          "heroId": 21,
-          "shortName": "windrunner",
-          "accountId": null
-        },
-        {
-          "heroId": 26,
-          "shortName": "lion",
-          "accountId": null
+          "accountId": 44346572
         },
         {
           "heroId": 29,
           "shortName": "tidehunter",
-          "accountId": null
-        },
-        {
-          "heroId": 100,
-          "shortName": "tusk",
-          "accountId": null
-        }
-      ],
-      "opponentName": "Epicenter n Chill",
-      "opponentTag": null,
-      "hasStandin": false
-    },
-    {
-      "matchId": 8796844400,
-      "startDateTime": 1777831562,
-      "side": "dire",
-      "won": false,
-      "durationSeconds": 2726,
-      "teamKills": 37,
-      "opponentKills": 44,
-      "teamHeroes": [
-        {
-          "heroId": 22,
-          "shortName": "zuus",
-          "accountId": 26852904
+          "accountId": 81459751
         },
         {
           "heroId": 71,
           "shortName": "spirit_breaker",
-          "accountId": 81955501
-        },
-        {
-          "heroId": 17,
-          "shortName": "storm_spirit",
-          "accountId": 1089531
-        },
-        {
-          "heroId": 73,
-          "shortName": "alchemist",
-          "accountId": 54437353
-        },
-        {
-          "heroId": 87,
-          "shortName": "disruptor",
-          "accountId": 28064250
-        }
-      ],
-      "opponentHeroes": [
-        {
-          "heroId": 5,
-          "shortName": "crystal_maiden",
-          "accountId": null
-        },
-        {
-          "heroId": 19,
-          "shortName": "tiny",
-          "accountId": null
-        },
-        {
-          "heroId": 51,
-          "shortName": "rattletrap",
-          "accountId": null
-        },
-        {
-          "heroId": 59,
-          "shortName": "huskar",
-          "accountId": null
-        },
-        {
-          "heroId": 98,
-          "shortName": "shredder",
-          "accountId": null
-        }
-      ],
-      "opponentName": "Colony of Weirdos",
-      "opponentTag": null,
-      "hasStandin": false
-    },
-    {
-      "matchId": 8796769844,
-      "startDateTime": 1777827983,
-      "side": "radiant",
-      "won": false,
-      "durationSeconds": 2055,
-      "teamKills": 33,
-      "opponentKills": 50,
-      "teamHeroes": [
-        {
-          "heroId": 22,
-          "shortName": "zuus",
-          "accountId": 26852904
-        },
-        {
-          "heroId": 41,
-          "shortName": "faceless_void",
-          "accountId": 81955501
-        },
-        {
-          "heroId": 106,
-          "shortName": "ember_spirit",
-          "accountId": 1089531
-        },
-        {
-          "heroId": 135,
-          "shortName": "dawnbreaker",
-          "accountId": 54437353
-        },
-        {
-          "heroId": 64,
-          "shortName": "jakiro",
-          "accountId": 28064250
-        }
-      ],
-      "opponentHeroes": [
-        {
-          "heroId": 27,
-          "shortName": "shadow_shaman",
-          "accountId": null
-        },
-        {
-          "heroId": 54,
-          "shortName": "life_stealer",
-          "accountId": null
-        },
-        {
-          "heroId": 60,
-          "shortName": "night_stalker",
-          "accountId": null
-        },
-        {
-          "heroId": 74,
-          "shortName": "invoker",
-          "accountId": null
-        },
-        {
-          "heroId": 105,
-          "shortName": "techies",
-          "accountId": null
-        }
-      ],
-      "opponentName": "Colony of Weirdos",
-      "opponentTag": null,
-      "hasStandin": false
-    },
-    {
-      "matchId": 8778322295,
-      "startDateTime": 1776621851,
-      "side": "radiant",
-      "won": false,
-      "durationSeconds": 3314,
-      "teamKills": 43,
-      "opponentKills": 48,
-      "teamHeroes": [
-        {
-          "heroId": 22,
-          "shortName": "zuus",
-          "accountId": 26852904
-        },
-        {
-          "heroId": 129,
-          "shortName": "mars",
-          "accountId": 81955501
-        },
-        {
-          "heroId": 13,
-          "shortName": "puck",
-          "accountId": 1089531
-        },
-        {
-          "heroId": 38,
-          "shortName": "beastmaster",
-          "accountId": 54437353
-        },
-        {
-          "heroId": 26,
-          "shortName": "lion",
-          "accountId": 28064250
-        }
-      ],
-      "opponentHeroes": [
-        {
-          "heroId": 71,
-          "shortName": "spirit_breaker",
-          "accountId": null
-        },
-        {
-          "heroId": 106,
-          "shortName": "ember_spirit",
-          "accountId": null
-        },
-        {
-          "heroId": 120,
-          "shortName": "pangolier",
-          "accountId": null
-        },
-        {
-          "heroId": 123,
-          "shortName": "hoodwink",
-          "accountId": null
-        },
-        {
-          "heroId": 138,
-          "shortName": "muerta",
-          "accountId": null
-        }
-      ],
-      "opponentName": "Lich Gaming",
-      "opponentTag": null,
-      "hasStandin": false
-    },
-    {
-      "matchId": 8778240268,
-      "startDateTime": 1776618103,
-      "side": "radiant",
-      "won": true,
-      "durationSeconds": 2362,
-      "teamKills": 37,
-      "opponentKills": 26,
-      "teamHeroes": [
-        {
-          "heroId": 64,
-          "shortName": "jakiro",
-          "accountId": 26852904
-        },
-        {
-          "heroId": 71,
-          "shortName": "spirit_breaker",
-          "accountId": 81955501
-        },
-        {
-          "heroId": 39,
-          "shortName": "queenofpain",
-          "accountId": 1089531
-        },
-        {
-          "heroId": 73,
-          "shortName": "alchemist",
-          "accountId": 54437353
-        },
-        {
-          "heroId": 27,
-          "shortName": "shadow_shaman",
-          "accountId": 28064250
-        }
-      ],
-      "opponentHeroes": [
-        {
-          "heroId": 51,
-          "shortName": "rattletrap",
-          "accountId": null
-        },
-        {
-          "heroId": 74,
-          "shortName": "invoker",
-          "accountId": null
-        },
-        {
-          "heroId": 93,
-          "shortName": "slark",
-          "accountId": null
-        },
-        {
-          "heroId": 101,
-          "shortName": "skywrath_mage",
-          "accountId": null
-        },
-        {
-          "heroId": 120,
-          "shortName": "pangolier",
-          "accountId": null
-        }
-      ],
-      "opponentName": "Lich Gaming",
-      "opponentTag": null,
-      "hasStandin": false
-    },
-    {
-      "matchId": 8769136640,
-      "startDateTime": 1776017036,
-      "side": "radiant",
-      "won": false,
-      "durationSeconds": 2002,
-      "teamKills": 14,
-      "opponentKills": 67,
-      "teamHeroes": [
-        {
-          "heroId": 35,
-          "shortName": "sniper",
-          "accountId": 26852904
-        },
-        {
-          "heroId": 82,
-          "shortName": "meepo",
-          "accountId": 81955501
-        },
-        {
-          "heroId": 120,
-          "shortName": "pangolier",
-          "accountId": 1089531
-        },
-        {
-          "heroId": 135,
-          "shortName": "dawnbreaker",
-          "accountId": 54437353
-        },
-        {
-          "heroId": 27,
-          "shortName": "shadow_shaman",
-          "accountId": 28064250
-        }
-      ],
-      "opponentHeroes": [
-        {
-          "heroId": 71,
-          "shortName": "spirit_breaker",
-          "accountId": null
-        },
-        {
-          "heroId": 93,
-          "shortName": "slark",
-          "accountId": null
-        },
-        {
-          "heroId": 121,
-          "shortName": "grimstroke",
-          "accountId": null
+          "accountId": 30751656
         },
         {
           "heroId": 126,
           "shortName": "void_spirit",
-          "accountId": null
+          "accountId": 61988095
         },
         {
-          "heroId": 137,
-          "shortName": "primal_beast",
-          "accountId": null
-        }
-      ],
-      "opponentName": "Josagrogg & Co",
-      "opponentTag": null,
-      "hasStandin": false
-    },
-    {
-      "matchId": 8769052915,
-      "startDateTime": 1776013331,
-      "side": "radiant",
-      "won": false,
-      "durationSeconds": 2336,
-      "teamKills": 30,
-      "opponentKills": 56,
-      "teamHeroes": [
-        {
-          "heroId": 64,
-          "shortName": "jakiro",
-          "accountId": 26852904
-        },
-        {
-          "heroId": 14,
-          "shortName": "pudge",
-          "accountId": 81955501
-        },
-        {
-          "heroId": 120,
-          "shortName": "pangolier",
-          "accountId": 1089531
-        },
-        {
-          "heroId": 53,
-          "shortName": "furion",
-          "accountId": 54437353
-        },
-        {
-          "heroId": 84,
-          "shortName": "ogre_magi",
-          "accountId": 28064250
-        }
-      ],
-      "opponentHeroes": [
-        {
-          "heroId": 40,
-          "shortName": "venomancer",
-          "accountId": null
-        },
-        {
-          "heroId": 54,
-          "shortName": "life_stealer",
-          "accountId": null
-        },
-        {
-          "heroId": 106,
-          "shortName": "ember_spirit",
-          "accountId": null
-        },
-        {
-          "heroId": 108,
-          "shortName": "abyssal_underlord",
-          "accountId": null
-        },
-        {
-          "heroId": 123,
-          "shortName": "hoodwink",
-          "accountId": null
-        }
-      ],
-      "opponentName": "Josagrogg & Co",
-      "opponentTag": null,
-      "hasStandin": false
-    },
-    {
-      "matchId": 8739945817,
-      "startDateTime": 1774206899,
-      "side": "dire",
-      "won": false,
-      "durationSeconds": 1854,
-      "teamKills": 20,
-      "opponentKills": 73,
-      "teamHeroes": [
-        {
-          "heroId": 71,
-          "shortName": "spirit_breaker",
-          "accountId": 26852904
-        },
-        {
-          "heroId": 74,
-          "shortName": "invoker",
-          "accountId": 81955501
-        },
-        {
-          "heroId": 35,
-          "shortName": "sniper",
-          "accountId": 1089531
-        },
-        {
-          "heroId": 41,
-          "shortName": "faceless_void",
-          "accountId": 54437353
-        },
-        {
-          "heroId": 68,
-          "shortName": "ancient_apparition",
-          "accountId": 28064250
-        }
-      ],
-      "opponentHeroes": [
-        {
-          "heroId": 9,
-          "shortName": "mirana",
-          "accountId": null
-        },
-        {
-          "heroId": 11,
-          "shortName": "nevermore",
-          "accountId": null
-        },
-        {
-          "heroId": 21,
-          "shortName": "windrunner",
-          "accountId": null
-        },
-        {
-          "heroId": 101,
-          "shortName": "skywrath_mage",
-          "accountId": null
-        },
-        {
-          "heroId": 155,
-          "shortName": "largo",
-          "accountId": null
-        }
-      ],
-      "opponentName": "Loving everyone is not Gay",
-      "opponentTag": "LenG",
-      "hasStandin": false
-    },
-    {
-      "matchId": 8739867930,
-      "startDateTime": 1774203057,
-      "side": "dire",
-      "won": false,
-      "durationSeconds": 2712,
-      "teamKills": 29,
-      "opponentKills": 53,
-      "teamHeroes": [
-        {
-          "heroId": 35,
-          "shortName": "sniper",
-          "accountId": 26852904
-        },
-        {
-          "heroId": 100,
-          "shortName": "tusk",
-          "accountId": 81955501
-        },
-        {
-          "heroId": 17,
-          "shortName": "storm_spirit",
-          "accountId": 1089531
-        },
-        {
-          "heroId": 53,
-          "shortName": "furion",
-          "accountId": 54437353
-        },
-        {
-          "heroId": 84,
-          "shortName": "ogre_magi",
-          "accountId": 28064250
-        }
-      ],
-      "opponentHeroes": [
-        {
-          "heroId": 11,
-          "shortName": "nevermore",
-          "accountId": null
-        },
-        {
-          "heroId": 13,
-          "shortName": "puck",
-          "accountId": null
-        },
-        {
-          "heroId": 25,
-          "shortName": "lina",
-          "accountId": null
-        },
-        {
-          "heroId": 41,
-          "shortName": "faceless_void",
-          "accountId": null
-        },
-        {
-          "heroId": 105,
-          "shortName": "techies",
-          "accountId": null
-        }
-      ],
-      "opponentName": "Loving everyone is not Gay",
-      "opponentTag": "LenG",
-      "hasStandin": false
-    },
-    {
-      "matchId": 8721448598,
-      "startDateTime": 1772999913,
-      "side": "dire",
-      "won": true,
-      "durationSeconds": 2416,
-      "teamKills": 50,
-      "opponentKills": 35,
-      "teamHeroes": [
-        {
-          "heroId": 35,
-          "shortName": "sniper",
-          "accountId": 26852904
-        },
-        {
-          "heroId": 29,
-          "shortName": "tidehunter",
-          "accountId": 81955501
-        },
-        {
-          "heroId": 120,
-          "shortName": "pangolier",
-          "accountId": 1089531
-        },
-        {
-          "heroId": 99,
-          "shortName": "bristleback",
-          "accountId": 54437353
-        },
-        {
-          "heroId": 68,
-          "shortName": "ancient_apparition",
-          "accountId": 28064250
-        }
-      ],
-      "opponentHeroes": [
-        {
-          "heroId": 15,
-          "shortName": "razor",
-          "accountId": null
-        },
-        {
-          "heroId": 47,
-          "shortName": "viper",
-          "accountId": null
-        },
-        {
-          "heroId": 79,
-          "shortName": "shadow_demon",
-          "accountId": null
-        },
-        {
-          "heroId": 93,
-          "shortName": "slark",
-          "accountId": null
-        },
-        {
-          "heroId": 123,
-          "shortName": "hoodwink",
-          "accountId": null
-        }
-      ],
-      "opponentName": "Oyster Boys",
-      "opponentTag": null,
-      "hasStandin": false
-    },
-    {
-      "matchId": 8721371290,
-      "startDateTime": 1772996035,
-      "side": "radiant",
-      "won": true,
-      "durationSeconds": 2035,
-      "teamKills": 45,
-      "opponentKills": 21,
-      "teamHeroes": [
-        {
-          "heroId": 64,
-          "shortName": "jakiro",
-          "accountId": 26852904
-        },
-        {
-          "heroId": 100,
-          "shortName": "tusk",
-          "accountId": 81955501
-        },
-        {
-          "heroId": 106,
-          "shortName": "ember_spirit",
-          "accountId": 1089531
-        },
-        {
-          "heroId": 53,
-          "shortName": "furion",
-          "accountId": 54437353
-        },
-        {
-          "heroId": 84,
-          "shortName": "ogre_magi",
-          "accountId": 28064250
+          "heroId": 6,
+          "shortName": "drow_ranger",
+          "accountId": 159010079
         }
       ],
       "opponentHeroes": [
         {
           "heroId": 19,
           "shortName": "tiny",
+          "accountId": null
+        },
+        {
+          "heroId": 39,
+          "shortName": "queenofpain",
           "accountId": null
         },
         {
@@ -2062,58 +1216,185 @@
           "accountId": null
         },
         {
-          "heroId": 49,
-          "shortName": "dragon_knight",
+          "heroId": 87,
+          "shortName": "disruptor",
           "accountId": null
         },
         {
-          "heroId": 57,
-          "shortName": "omniknight",
-          "accountId": null
-        },
-        {
-          "heroId": 108,
-          "shortName": "abyssal_underlord",
+          "heroId": 120,
+          "shortName": "pangolier",
           "accountId": null
         }
       ],
-      "opponentName": "Oyster Boys",
+      "opponentName": "TIF",
       "opponentTag": null,
       "hasStandin": false
     },
     {
-      "matchId": 8702203040,
-      "startDateTime": 1771786755,
-      "side": "radiant",
-      "won": true,
-      "durationSeconds": 3126,
-      "teamKills": 45,
-      "opponentKills": 36,
+      "matchId": 8815076753,
+      "startDateTime": 1779037486,
+      "side": "dire",
+      "won": false,
+      "durationSeconds": 2303,
+      "teamKills": 19,
+      "opponentKills": 26,
       "teamHeroes": [
         {
-          "heroId": 35,
-          "shortName": "sniper",
-          "accountId": 26852904
+          "heroId": 101,
+          "shortName": "skywrath_mage",
+          "accountId": 44346572
+        },
+        {
+          "heroId": 69,
+          "shortName": "doom_bringer",
+          "accountId": 81459751
+        },
+        {
+          "heroId": 86,
+          "shortName": "rubick",
+          "accountId": 30751656
         },
         {
           "heroId": 13,
           "shortName": "puck",
-          "accountId": 1089531
+          "accountId": 61988095
         },
         {
-          "heroId": 19,
-          "shortName": "tiny",
-          "accountId": 54437353
+          "heroId": 67,
+          "shortName": "spectre",
+          "accountId": 159010079
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 21,
+          "shortName": "windrunner",
+          "accountId": null
         },
         {
-          "heroId": 87,
-          "shortName": "disruptor",
-          "accountId": 28064250
+          "heroId": 29,
+          "shortName": "tidehunter",
+          "accountId": null
         },
         {
-          "heroId": 138,
-          "shortName": "muerta",
-          "accountId": 29838178
+          "heroId": 45,
+          "shortName": "pugna",
+          "accountId": null
+        },
+        {
+          "heroId": 47,
+          "shortName": "viper",
+          "accountId": null
+        },
+        {
+          "heroId": 112,
+          "shortName": "winter_wyvern",
+          "accountId": null
+        }
+      ],
+      "opponentName": "TIF",
+      "opponentTag": null,
+      "hasStandin": false
+    },
+    {
+      "matchId": 8798188975,
+      "startDateTime": 1777922381,
+      "side": "dire",
+      "won": true,
+      "durationSeconds": 5128,
+      "teamKills": 53,
+      "opponentKills": 71,
+      "teamHeroes": [
+        {
+          "heroId": 105,
+          "shortName": "techies",
+          "accountId": 44346572
+        },
+        {
+          "heroId": 60,
+          "shortName": "night_stalker",
+          "accountId": 81459751
+        },
+        {
+          "heroId": 71,
+          "shortName": "spirit_breaker",
+          "accountId": 30751656
+        },
+        {
+          "heroId": 106,
+          "shortName": "ember_spirit",
+          "accountId": 61988095
+        },
+        {
+          "heroId": 94,
+          "shortName": "medusa",
+          "accountId": 159010079
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 7,
+          "shortName": "earthshaker",
+          "accountId": null
+        },
+        {
+          "heroId": 37,
+          "shortName": "warlock",
+          "accountId": null
+        },
+        {
+          "heroId": 39,
+          "shortName": "queenofpain",
+          "accountId": null
+        },
+        {
+          "heroId": 74,
+          "shortName": "invoker",
+          "accountId": null
+        },
+        {
+          "heroId": 99,
+          "shortName": "bristleback",
+          "accountId": null
+        }
+      ],
+      "opponentName": "brAgo",
+      "opponentTag": null,
+      "hasStandin": false
+    },
+    {
+      "matchId": 8798100186,
+      "startDateTime": 1777917745,
+      "side": "dire",
+      "won": true,
+      "durationSeconds": 3063,
+      "teamKills": 43,
+      "opponentKills": 25,
+      "teamHeroes": [
+        {
+          "heroId": 105,
+          "shortName": "techies",
+          "accountId": 44346572
+        },
+        {
+          "heroId": 29,
+          "shortName": "tidehunter",
+          "accountId": 81459751
+        },
+        {
+          "heroId": 86,
+          "shortName": "rubick",
+          "accountId": 30751656
+        },
+        {
+          "heroId": 69,
+          "shortName": "doom_bringer",
+          "accountId": 61988095
+        },
+        {
+          "heroId": 12,
+          "shortName": "phantom_lancer",
+          "accountId": 159010079
         }
       ],
       "opponentHeroes": [
@@ -2123,13 +1404,140 @@
           "accountId": null
         },
         {
+          "heroId": 32,
+          "shortName": "riki",
+          "accountId": null
+        },
+        {
+          "heroId": 55,
+          "shortName": "dark_seer",
+          "accountId": null
+        },
+        {
+          "heroId": 64,
+          "shortName": "jakiro",
+          "accountId": null
+        },
+        {
+          "heroId": 123,
+          "shortName": "hoodwink",
+          "accountId": null
+        }
+      ],
+      "opponentName": "brAgo",
+      "opponentTag": null,
+      "hasStandin": false
+    },
+    {
+      "matchId": 8787655548,
+      "startDateTime": 1777226650,
+      "side": "dire",
+      "won": true,
+      "durationSeconds": 2952,
+      "teamKills": 49,
+      "opponentKills": 26,
+      "teamHeroes": [
+        {
+          "heroId": 29,
+          "shortName": "tidehunter",
+          "accountId": 81459751
+        },
+        {
+          "heroId": 71,
+          "shortName": "spirit_breaker",
+          "accountId": 30751656
+        },
+        {
+          "heroId": 23,
+          "shortName": "kunkka",
+          "accountId": 61988095
+        },
+        {
+          "heroId": 94,
+          "shortName": "medusa",
+          "accountId": 159010079
+        },
+        {
+          "heroId": 91,
+          "shortName": "wisp",
+          "accountId": 50613992
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 6,
+          "shortName": "drow_ranger",
+          "accountId": null
+        },
+        {
           "heroId": 26,
           "shortName": "lion",
           "accountId": null
         },
         {
-          "heroId": 31,
-          "shortName": "lich",
+          "heroId": 35,
+          "shortName": "sniper",
+          "accountId": null
+        },
+        {
+          "heroId": 79,
+          "shortName": "shadow_demon",
+          "accountId": null
+        },
+        {
+          "heroId": 99,
+          "shortName": "bristleback",
+          "accountId": null
+        }
+      ],
+      "opponentName": "Sexy Iridium",
+      "opponentTag": "S-Ir",
+      "hasStandin": true
+    },
+    {
+      "matchId": 8787569050,
+      "startDateTime": 1777222813,
+      "side": "dire",
+      "won": true,
+      "durationSeconds": 2357,
+      "teamKills": 36,
+      "opponentKills": 26,
+      "teamHeroes": [
+        {
+          "heroId": 99,
+          "shortName": "bristleback",
+          "accountId": 81459751
+        },
+        {
+          "heroId": 71,
+          "shortName": "spirit_breaker",
+          "accountId": 30751656
+        },
+        {
+          "heroId": 13,
+          "shortName": "puck",
+          "accountId": 61988095
+        },
+        {
+          "heroId": 56,
+          "shortName": "clinkz",
+          "accountId": 159010079
+        },
+        {
+          "heroId": 75,
+          "shortName": "silencer",
+          "accountId": 50613992
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 25,
+          "shortName": "lina",
+          "accountId": null
+        },
+        {
+          "heroId": 47,
+          "shortName": "viper",
           "accountId": null
         },
         {
@@ -2138,48 +1546,119 @@
           "accountId": null
         },
         {
-          "heroId": 74,
-          "shortName": "invoker",
+          "heroId": 60,
+          "shortName": "night_stalker",
+          "accountId": null
+        },
+        {
+          "heroId": 70,
+          "shortName": "ursa",
           "accountId": null
         }
       ],
-      "opponentName": "Dansbanders",
+      "opponentName": "Sexy Iridium",
+      "opponentTag": "S-Ir",
+      "hasStandin": true
+    },
+    {
+      "matchId": 8762142768,
+      "startDateTime": 1775586038,
+      "side": "dire",
+      "won": false,
+      "durationSeconds": 3676,
+      "teamKills": 24,
+      "opponentKills": 45,
+      "teamHeroes": [
+        {
+          "heroId": 108,
+          "shortName": "abyssal_underlord",
+          "accountId": 81459751
+        },
+        {
+          "heroId": 100,
+          "shortName": "tusk",
+          "accountId": 30751656
+        },
+        {
+          "heroId": 25,
+          "shortName": "lina",
+          "accountId": 61988095
+        },
+        {
+          "heroId": 4,
+          "shortName": "bloodseeker",
+          "accountId": 159010079
+        },
+        {
+          "heroId": 87,
+          "shortName": "disruptor",
+          "accountId": 50613992
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 16,
+          "shortName": "sand_king",
+          "accountId": null
+        },
+        {
+          "heroId": 64,
+          "shortName": "jakiro",
+          "accountId": null
+        },
+        {
+          "heroId": 72,
+          "shortName": "gyrocopter",
+          "accountId": null
+        },
+        {
+          "heroId": 91,
+          "shortName": "wisp",
+          "accountId": null
+        },
+        {
+          "heroId": 120,
+          "shortName": "pangolier",
+          "accountId": null
+        }
+      ],
+      "opponentName": "brAgo",
       "opponentTag": null,
       "hasStandin": true
     },
     {
-      "matchId": 8702122955,
-      "startDateTime": 1771783361,
+      "matchId": 8762057534,
+      "startDateTime": 1775582113,
       "side": "dire",
       "won": true,
-      "durationSeconds": 1824,
-      "teamKills": 39,
-      "opponentKills": 9,
+      "durationSeconds": 2360,
+      "teamKills": 47,
+      "opponentKills": 26,
       "teamHeroes": [
         {
-          "heroId": 35,
-          "shortName": "sniper",
-          "accountId": 26852904
+          "heroId": 99,
+          "shortName": "bristleback",
+          "accountId": 81459751
         },
         {
-          "heroId": 17,
-          "shortName": "storm_spirit",
-          "accountId": 1089531
+          "heroId": 71,
+          "shortName": "spirit_breaker",
+          "accountId": 30751656
         },
         {
-          "heroId": 53,
-          "shortName": "furion",
-          "accountId": 54437353
+          "heroId": 39,
+          "shortName": "queenofpain",
+          "accountId": 61988095
         },
         {
-          "heroId": 84,
-          "shortName": "ogre_magi",
-          "accountId": 28064250
+          "heroId": 67,
+          "shortName": "spectre",
+          "accountId": 159010079
         },
         {
-          "heroId": 11,
-          "shortName": "nevermore",
-          "accountId": 29838178
+          "heroId": 75,
+          "shortName": "silencer",
+          "accountId": 50613992
         }
       ],
       "opponentHeroes": [
@@ -2189,201 +1668,338 @@
           "accountId": null
         },
         {
-          "heroId": 19,
-          "shortName": "tiny",
+          "heroId": 26,
+          "shortName": "lion",
           "accountId": null
         },
         {
-          "heroId": 31,
-          "shortName": "lich",
+          "heroId": 70,
+          "shortName": "ursa",
           "accountId": null
         },
+        {
+          "heroId": 119,
+          "shortName": "dark_willow",
+          "accountId": null
+        },
+        {
+          "heroId": 120,
+          "shortName": "pangolier",
+          "accountId": null
+        }
+      ],
+      "opponentName": "brAgo",
+      "opponentTag": null,
+      "hasStandin": true
+    },
+    {
+      "matchId": 8746538480,
+      "startDateTime": 1774641542,
+      "side": "dire",
+      "won": false,
+      "durationSeconds": 3039,
+      "teamKills": 40,
+      "opponentKills": 39,
+      "teamHeroes": [
+        {
+          "heroId": 104,
+          "shortName": "legion_commander",
+          "accountId": 81459751
+        },
+        {
+          "heroId": 101,
+          "shortName": "skywrath_mage",
+          "accountId": 30751656
+        },
+        {
+          "heroId": 25,
+          "shortName": "lina",
+          "accountId": 61988095
+        },
+        {
+          "heroId": 42,
+          "shortName": "skeleton_king",
+          "accountId": 159010079
+        },
+        {
+          "heroId": 111,
+          "shortName": "oracle",
+          "accountId": 50613992
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 64,
+          "shortName": "jakiro",
+          "accountId": null
+        },
+        {
+          "heroId": 65,
+          "shortName": "batrider",
+          "accountId": null
+        },
+        {
+          "heroId": 78,
+          "shortName": "brewmaster",
+          "accountId": null
+        },
+        {
+          "heroId": 79,
+          "shortName": "shadow_demon",
+          "accountId": null
+        },
+        {
+          "heroId": 145,
+          "shortName": "kez",
+          "accountId": null
+        }
+      ],
+      "opponentName": "Banjopatrullen",
+      "opponentTag": null,
+      "hasStandin": true
+    },
+    {
+      "matchId": 8746462004,
+      "startDateTime": 1774637922,
+      "side": "radiant",
+      "won": true,
+      "durationSeconds": 2346,
+      "teamKills": 43,
+      "opponentKills": 23,
+      "teamHeroes": [
+        {
+          "heroId": 60,
+          "shortName": "night_stalker",
+          "accountId": 81459751
+        },
+        {
+          "heroId": 100,
+          "shortName": "tusk",
+          "accountId": 30751656
+        },
+        {
+          "heroId": 52,
+          "shortName": "leshrac",
+          "accountId": 61988095
+        },
+        {
+          "heroId": 42,
+          "shortName": "skeleton_king",
+          "accountId": 159010079
+        },
+        {
+          "heroId": 75,
+          "shortName": "silencer",
+          "accountId": 50613992
+        }
+      ],
+      "opponentHeroes": [
         {
           "heroId": 51,
           "shortName": "rattletrap",
           "accountId": null
         },
         {
-          "heroId": 129,
-          "shortName": "mars",
+          "heroId": 69,
+          "shortName": "doom_bringer",
+          "accountId": null
+        },
+        {
+          "heroId": 74,
+          "shortName": "invoker",
+          "accountId": null
+        },
+        {
+          "heroId": 86,
+          "shortName": "rubick",
+          "accountId": null
+        },
+        {
+          "heroId": 95,
+          "shortName": "troll_warlord",
           "accountId": null
         }
       ],
-      "opponentName": "Dansbanders",
+      "opponentName": "Banjopatrullen",
       "opponentTag": null,
       "hasStandin": true
     },
     {
-      "matchId": 8683441063,
-      "startDateTime": 1770577455,
-      "side": "radiant",
+      "matchId": 8721397925,
+      "startDateTime": 1772997335,
+      "side": "dire",
       "won": false,
-      "durationSeconds": 2482,
-      "teamKills": 37,
-      "opponentKills": 41,
+      "durationSeconds": 1444,
+      "teamKills": 9,
+      "opponentKills": 25,
       "teamHeroes": [
         {
-          "heroId": 111,
-          "shortName": "oracle",
-          "accountId": 26852904
+          "heroId": 40,
+          "shortName": "venomancer",
+          "accountId": 44346572
         },
         {
           "heroId": 129,
           "shortName": "mars",
-          "accountId": 81955501
+          "accountId": 81459751
         },
         {
-          "heroId": 39,
-          "shortName": "queenofpain",
-          "accountId": 1089531
-        },
-        {
-          "heroId": 53,
-          "shortName": "furion",
-          "accountId": 54437353
-        },
-        {
-          "heroId": 64,
-          "shortName": "jakiro",
-          "accountId": 28064250
-        }
-      ],
-      "opponentHeroes": [
-        {
-          "heroId": 6,
-          "shortName": "drow_ranger",
-          "accountId": null
-        },
-        {
-          "heroId": 36,
-          "shortName": "necrolyte",
-          "accountId": null
-        },
-        {
-          "heroId": 52,
-          "shortName": "leshrac",
-          "accountId": null
-        },
-        {
-          "heroId": 71,
-          "shortName": "spirit_breaker",
-          "accountId": null
-        },
-        {
-          "heroId": 84,
-          "shortName": "ogre_magi",
-          "accountId": null
-        }
-      ],
-      "opponentName": "Bobban bättre än Bänke?",
-      "opponentTag": null,
-      "hasStandin": false
-    },
-    {
-      "matchId": 8683366246,
-      "startDateTime": 1770573879,
-      "side": "radiant",
-      "won": false,
-      "durationSeconds": 2183,
-      "teamKills": 23,
-      "opponentKills": 41,
-      "teamHeroes": [
-        {
-          "heroId": 111,
-          "shortName": "oracle",
-          "accountId": 26852904
-        },
-        {
-          "heroId": 104,
-          "shortName": "legion_commander",
-          "accountId": 81955501
+          "heroId": 31,
+          "shortName": "lich",
+          "accountId": 30751656
         },
         {
           "heroId": 25,
           "shortName": "lina",
-          "accountId": 1089531
+          "accountId": 61988095
         },
         {
-          "heroId": 155,
-          "shortName": "largo",
-          "accountId": 54437353
-        },
-        {
-          "heroId": 26,
-          "shortName": "lion",
-          "accountId": 28064250
+          "heroId": 8,
+          "shortName": "juggernaut",
+          "accountId": 159010079
         }
       ],
       "opponentHeroes": [
         {
-          "heroId": 43,
-          "shortName": "death_prophet",
+          "heroId": 26,
+          "shortName": "lion",
           "accountId": null
+        },
+        {
+          "heroId": 64,
+          "shortName": "jakiro",
+          "accountId": null
+        },
+        {
+          "heroId": 65,
+          "shortName": "batrider",
+          "accountId": null
+        },
+        {
+          "heroId": 77,
+          "shortName": "lycan",
+          "accountId": null
+        },
+        {
+          "heroId": 94,
+          "shortName": "medusa",
+          "accountId": null
+        }
+      ],
+      "opponentName": "Josagrogg & Co",
+      "opponentTag": null,
+      "hasStandin": false
+    },
+    {
+      "matchId": 8721310327,
+      "startDateTime": 1772993061,
+      "side": "radiant",
+      "won": false,
+      "durationSeconds": 2965,
+      "teamKills": 30,
+      "opponentKills": 47,
+      "teamHeroes": [
+        {
+          "heroId": 105,
+          "shortName": "techies",
+          "accountId": 44346572
+        },
+        {
+          "heroId": 108,
+          "shortName": "abyssal_underlord",
+          "accountId": 81459751
+        },
+        {
+          "heroId": 27,
+          "shortName": "shadow_shaman",
+          "accountId": 30751656
+        },
+        {
+          "heroId": 39,
+          "shortName": "queenofpain",
+          "accountId": 61988095
         },
         {
           "heroId": 56,
           "shortName": "clinkz",
+          "accountId": 159010079
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 47,
+          "shortName": "viper",
           "accountId": null
         },
         {
-          "heroId": 82,
-          "shortName": "meepo",
+          "heroId": 53,
+          "shortName": "furion",
+          "accountId": null
+        },
+        {
+          "heroId": 74,
+          "shortName": "invoker",
+          "accountId": null
+        },
+        {
+          "heroId": 79,
+          "shortName": "shadow_demon",
           "accountId": null
         },
         {
           "heroId": 83,
           "shortName": "treant",
           "accountId": null
-        },
-        {
-          "heroId": 110,
-          "shortName": "phoenix",
-          "accountId": null
         }
       ],
-      "opponentName": "Bobban bättre än Bänke?",
+      "opponentName": "Josagrogg & Co",
       "opponentTag": null,
       "hasStandin": false
     },
     {
-      "matchId": 8605547952,
-      "startDateTime": 1765740509,
-      "side": "radiant",
-      "won": true,
-      "durationSeconds": 3152,
-      "teamKills": 45,
-      "opponentKills": 36,
+      "matchId": 8702203040,
+      "startDateTime": 1771786755,
+      "side": "dire",
+      "won": false,
+      "durationSeconds": 3126,
+      "teamKills": 36,
+      "opponentKills": 45,
       "teamHeroes": [
         {
-          "heroId": 111,
-          "shortName": "oracle",
-          "accountId": 26852904
+          "heroId": 26,
+          "shortName": "lion",
+          "accountId": 44346572
         },
         {
-          "heroId": 96,
-          "shortName": "centaur",
-          "accountId": 81955501
+          "heroId": 31,
+          "shortName": "lich",
+          "accountId": 81459751
         },
         {
-          "heroId": 106,
-          "shortName": "ember_spirit",
-          "accountId": 1089531
+          "heroId": 14,
+          "shortName": "pudge",
+          "accountId": 30751656
         },
         {
-          "heroId": 49,
-          "shortName": "dragon_knight",
-          "accountId": 54437353
+          "heroId": 74,
+          "shortName": "invoker",
+          "accountId": 61988095
         },
         {
-          "heroId": 30,
-          "shortName": "witch_doctor",
-          "accountId": 28064250
+          "heroId": 57,
+          "shortName": "omniknight",
+          "accountId": 159010079
         }
       ],
       "opponentHeroes": [
         {
-          "heroId": 23,
-          "shortName": "kunkka",
+          "heroId": 13,
+          "shortName": "puck",
+          "accountId": null
+        },
+        {
+          "heroId": 19,
+          "shortName": "tiny",
           "accountId": null
         },
         {
@@ -2392,124 +2008,317 @@
           "accountId": null
         },
         {
-          "heroId": 37,
-          "shortName": "warlock",
+          "heroId": 87,
+          "shortName": "disruptor",
           "accountId": null
         },
         {
-          "heroId": 39,
-          "shortName": "queenofpain",
-          "accountId": null
-        },
-        {
-          "heroId": 70,
-          "shortName": "ursa",
+          "heroId": 138,
+          "shortName": "muerta",
           "accountId": null
         }
       ],
-      "opponentName": "TIF",
+      "opponentName": "De 4 clownerna och Poppe",
       "opponentTag": null,
       "hasStandin": false
     },
     {
-      "matchId": 8605441952,
-      "startDateTime": 1765735703,
-      "side": "dire",
-      "won": true,
-      "durationSeconds": 2225,
-      "teamKills": 45,
-      "opponentKills": 18,
+      "matchId": 8702122955,
+      "startDateTime": 1771783361,
+      "side": "radiant",
+      "won": false,
+      "durationSeconds": 1824,
+      "teamKills": 9,
+      "opponentKills": 39,
       "teamHeroes": [
         {
-          "heroId": 71,
-          "shortName": "spirit_breaker",
-          "accountId": 26852904
+          "heroId": 31,
+          "shortName": "lich",
+          "accountId": 44346572
         },
         {
-          "heroId": 29,
-          "shortName": "tidehunter",
-          "accountId": 81955501
+          "heroId": 51,
+          "shortName": "rattletrap",
+          "accountId": 81459751
         },
         {
-          "heroId": 49,
-          "shortName": "dragon_knight",
-          "accountId": 1089531
+          "heroId": 129,
+          "shortName": "mars",
+          "accountId": 30751656
         },
         {
-          "heroId": 102,
-          "shortName": "abaddon",
-          "accountId": 54437353
+          "heroId": 19,
+          "shortName": "tiny",
+          "accountId": 61988095
         },
         {
-          "heroId": 68,
-          "shortName": "ancient_apparition",
-          "accountId": 28064250
+          "heroId": 15,
+          "shortName": "razor",
+          "accountId": 159010079
         }
       ],
       "opponentHeroes": [
         {
-          "heroId": 20,
-          "shortName": "vengefulspirit",
+          "heroId": 11,
+          "shortName": "nevermore",
           "accountId": null
         },
         {
-          "heroId": 37,
-          "shortName": "warlock",
+          "heroId": 17,
+          "shortName": "storm_spirit",
           "accountId": null
         },
         {
-          "heroId": 40,
-          "shortName": "venomancer",
+          "heroId": 35,
+          "shortName": "sniper",
           "accountId": null
         },
         {
-          "heroId": 72,
-          "shortName": "gyrocopter",
+          "heroId": 53,
+          "shortName": "furion",
           "accountId": null
         },
         {
-          "heroId": 96,
-          "shortName": "centaur",
+          "heroId": 84,
+          "shortName": "ogre_magi",
           "accountId": null
         }
       ],
-      "opponentName": "TIF",
+      "opponentName": "De 4 clownerna och Poppe",
       "opponentTag": null,
       "hasStandin": false
     },
     {
-      "matchId": 8595104718,
-      "startDateTime": 1765136363,
-      "side": "dire",
+      "matchId": 8683414572,
+      "startDateTime": 1770576300,
+      "side": "radiant",
       "won": false,
-      "durationSeconds": 2483,
-      "teamKills": 33,
-      "opponentKills": 35,
+      "durationSeconds": 1524,
+      "teamKills": 4,
+      "opponentKills": 33,
       "teamHeroes": [
         {
-          "heroId": 128,
-          "shortName": "snapfire",
-          "accountId": 26852904
+          "heroId": 9,
+          "shortName": "mirana",
+          "accountId": 44346572
         },
         {
-          "heroId": 104,
-          "shortName": "legion_commander",
-          "accountId": 81955501
+          "heroId": 45,
+          "shortName": "pugna",
+          "accountId": 81459751
         },
         {
-          "heroId": 47,
-          "shortName": "viper",
-          "accountId": 1089531
+          "heroId": 25,
+          "shortName": "lina",
+          "accountId": 61988095
         },
         {
-          "heroId": 6,
-          "shortName": "drow_ranger",
-          "accountId": 54437353
+          "heroId": 63,
+          "shortName": "weaver",
+          "accountId": 159010079
         },
         {
-          "heroId": 87,
-          "shortName": "disruptor",
-          "accountId": 28064250
+          "heroId": 69,
+          "shortName": "doom_bringer",
+          "accountId": 50613992
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 19,
+          "shortName": "tiny",
+          "accountId": null
+        },
+        {
+          "heroId": 48,
+          "shortName": "luna",
+          "accountId": null
+        },
+        {
+          "heroId": 83,
+          "shortName": "treant",
+          "accountId": null
+        },
+        {
+          "heroId": 129,
+          "shortName": "mars",
+          "accountId": null
+        },
+        {
+          "heroId": 138,
+          "shortName": "muerta",
+          "accountId": null
+        }
+      ],
+      "opponentName": "Team BIGMAN",
+      "opponentTag": null,
+      "hasStandin": true
+    },
+    {
+      "matchId": 8683354513,
+      "startDateTime": 1770573291,
+      "side": "dire",
+      "won": false,
+      "durationSeconds": 1575,
+      "teamKills": 8,
+      "opponentKills": 21,
+      "teamHeroes": [
+        {
+          "heroId": 26,
+          "shortName": "lion",
+          "accountId": 44346572
+        },
+        {
+          "heroId": 84,
+          "shortName": "ogre_magi",
+          "accountId": 81459751
+        },
+        {
+          "heroId": 52,
+          "shortName": "leshrac",
+          "accountId": 61988095
+        },
+        {
+          "heroId": 56,
+          "shortName": "clinkz",
+          "accountId": 159010079
+        },
+        {
+          "heroId": 78,
+          "shortName": "brewmaster",
+          "accountId": 50613992
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 8,
+          "shortName": "juggernaut",
+          "accountId": null
+        },
+        {
+          "heroId": 31,
+          "shortName": "lich",
+          "accountId": null
+        },
+        {
+          "heroId": 38,
+          "shortName": "beastmaster",
+          "accountId": null
+        },
+        {
+          "heroId": 64,
+          "shortName": "jakiro",
+          "accountId": null
+        },
+        {
+          "heroId": 77,
+          "shortName": "lycan",
+          "accountId": null
+        }
+      ],
+      "opponentName": "Team BIGMAN",
+      "opponentTag": null,
+      "hasStandin": true
+    },
+    {
+      "matchId": 8665743584,
+      "startDateTime": 1769454074,
+      "side": "radiant",
+      "won": true,
+      "durationSeconds": 2491,
+      "teamKills": 41,
+      "opponentKills": 16,
+      "teamHeroes": [
+        {
+          "heroId": 9,
+          "shortName": "mirana",
+          "accountId": 44346572
+        },
+        {
+          "heroId": 84,
+          "shortName": "ogre_magi",
+          "accountId": 81459751
+        },
+        {
+          "heroId": 14,
+          "shortName": "pudge",
+          "accountId": 30751656
+        },
+        {
+          "heroId": 39,
+          "shortName": "queenofpain",
+          "accountId": 61988095
+        },
+        {
+          "heroId": 32,
+          "shortName": "riki",
+          "accountId": 159010079
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 21,
+          "shortName": "windrunner",
+          "accountId": null
+        },
+        {
+          "heroId": 54,
+          "shortName": "life_stealer",
+          "accountId": null
+        },
+        {
+          "heroId": 64,
+          "shortName": "jakiro",
+          "accountId": null
+        },
+        {
+          "heroId": 97,
+          "shortName": "magnataur",
+          "accountId": null
+        },
+        {
+          "heroId": 119,
+          "shortName": "dark_willow",
+          "accountId": null
+        }
+      ],
+      "opponentName": "LastMinute",
+      "opponentTag": null,
+      "hasStandin": false
+    },
+    {
+      "matchId": 8665673184,
+      "startDateTime": 1769450480,
+      "side": "dire",
+      "won": true,
+      "durationSeconds": 2286,
+      "teamKills": 55,
+      "opponentKills": 16,
+      "teamHeroes": [
+        {
+          "heroId": 26,
+          "shortName": "lion",
+          "accountId": 44346572
+        },
+        {
+          "heroId": 83,
+          "shortName": "treant",
+          "accountId": 81459751
+        },
+        {
+          "heroId": 129,
+          "shortName": "mars",
+          "accountId": 30751656
+        },
+        {
+          "heroId": 106,
+          "shortName": "ember_spirit",
+          "accountId": 61988095
+        },
+        {
+          "heroId": 63,
+          "shortName": "weaver",
+          "accountId": 159010079
         }
       ],
       "opponentHeroes": [
@@ -2519,13 +2328,13 @@
           "accountId": null
         },
         {
-          "heroId": 18,
-          "shortName": "sven",
+          "heroId": 9,
+          "shortName": "mirana",
           "accountId": null
         },
         {
-          "heroId": 27,
-          "shortName": "shadow_shaman",
+          "heroId": 14,
+          "shortName": "pudge",
           "accountId": null
         },
         {
@@ -2534,8 +2343,74 @@
           "accountId": null
         },
         {
-          "heroId": 76,
-          "shortName": "obsidian_destroyer",
+          "heroId": 39,
+          "shortName": "queenofpain",
+          "accountId": null
+        }
+      ],
+      "opponentName": "LastMinute",
+      "opponentTag": null,
+      "hasStandin": false
+    },
+    {
+      "matchId": 8588839414,
+      "startDateTime": 1764790707,
+      "side": "radiant",
+      "won": false,
+      "durationSeconds": 3104,
+      "teamKills": 29,
+      "opponentKills": 40,
+      "teamHeroes": [
+        {
+          "heroId": 101,
+          "shortName": "skywrath_mage",
+          "accountId": 44346572
+        },
+        {
+          "heroId": 45,
+          "shortName": "pugna",
+          "accountId": 81459751
+        },
+        {
+          "heroId": 2,
+          "shortName": "axe",
+          "accountId": 30751656
+        },
+        {
+          "heroId": 39,
+          "shortName": "queenofpain",
+          "accountId": 61988095
+        },
+        {
+          "heroId": 12,
+          "shortName": "phantom_lancer",
+          "accountId": 159010079
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 14,
+          "shortName": "pudge",
+          "accountId": null
+        },
+        {
+          "heroId": 18,
+          "shortName": "sven",
+          "accountId": null
+        },
+        {
+          "heroId": 37,
+          "shortName": "warlock",
+          "accountId": null
+        },
+        {
+          "heroId": 50,
+          "shortName": "dazzle",
+          "accountId": null
+        },
+        {
+          "heroId": 129,
+          "shortName": "mars",
           "accountId": null
         }
       ],
@@ -2544,49 +2419,115 @@
       "hasStandin": false
     },
     {
-      "matchId": 8594990532,
-      "startDateTime": 1765131378,
+      "matchId": 8588774271,
+      "startDateTime": 1764787628,
       "side": "dire",
       "won": false,
-      "durationSeconds": 3405,
-      "teamKills": 30,
-      "opponentKills": 57,
+      "durationSeconds": 1917,
+      "teamKills": 13,
+      "opponentKills": 38,
       "teamHeroes": [
         {
-          "heroId": 35,
-          "shortName": "sniper",
-          "accountId": 26852904
+          "heroId": 26,
+          "shortName": "lion",
+          "accountId": 44346572
         },
         {
-          "heroId": 100,
-          "shortName": "tusk",
-          "accountId": 81955501
+          "heroId": 87,
+          "shortName": "disruptor",
+          "accountId": 81459751
         },
         {
-          "heroId": 7,
-          "shortName": "earthshaker",
-          "accountId": 1089531
+          "heroId": 98,
+          "shortName": "shredder",
+          "accountId": 30751656
         },
         {
-          "heroId": 70,
-          "shortName": "ursa",
-          "accountId": 54437353
+          "heroId": 106,
+          "shortName": "ember_spirit",
+          "accountId": 61988095
         },
         {
-          "heroId": 27,
-          "shortName": "shadow_shaman",
-          "accountId": 28064250
+          "heroId": 54,
+          "shortName": "life_stealer",
+          "accountId": 159010079
         }
       ],
       "opponentHeroes": [
         {
-          "heroId": 12,
-          "shortName": "phantom_lancer",
+          "heroId": 31,
+          "shortName": "lich",
           "accountId": null
         },
         {
-          "heroId": 30,
-          "shortName": "witch_doctor",
+          "heroId": 94,
+          "shortName": "medusa",
+          "accountId": null
+        },
+        {
+          "heroId": 113,
+          "shortName": "arc_warden",
+          "accountId": null
+        },
+        {
+          "heroId": 128,
+          "shortName": "snapfire",
+          "accountId": null
+        },
+        {
+          "heroId": 129,
+          "shortName": "mars",
+          "accountId": null
+        }
+      ],
+      "opponentName": "Tornknäckarna",
+      "opponentTag": null,
+      "hasStandin": false
+    },
+    {
+      "matchId": 8588650581,
+      "startDateTime": 1764782038,
+      "side": "dire",
+      "won": true,
+      "durationSeconds": 4184,
+      "teamKills": 56,
+      "opponentKills": 46,
+      "teamHeroes": [
+        {
+          "heroId": 26,
+          "shortName": "lion",
+          "accountId": 44346572
+        },
+        {
+          "heroId": 45,
+          "shortName": "pugna",
+          "accountId": 81459751
+        },
+        {
+          "heroId": 104,
+          "shortName": "legion_commander",
+          "accountId": 30751656
+        },
+        {
+          "heroId": 16,
+          "shortName": "sand_king",
+          "accountId": 61988095
+        },
+        {
+          "heroId": 102,
+          "shortName": "abaddon",
+          "accountId": 159010079
+        }
+      ],
+      "opponentHeroes": [
+        {
+          "heroId": 29,
+          "shortName": "tidehunter",
+          "accountId": null
+        },
+        {
+          "heroId": 37,
+          "shortName": "warlock",
           "accountId": null
         },
         {
@@ -2595,13 +2536,13 @@
           "accountId": null
         },
         {
-          "heroId": 107,
-          "shortName": "earth_spirit",
+          "heroId": 94,
+          "shortName": "medusa",
           "accountId": null
         },
         {
-          "heroId": 135,
-          "shortName": "dawnbreaker",
+          "heroId": 107,
+          "shortName": "earth_spirit",
           "accountId": null
         }
       ],
@@ -2610,86 +2551,88 @@
       "hasStandin": false
     }
   ],
+  "recentPatches": [
+    {
+      "patchName": "7.41c",
+      "timestamp": 1778050800,
+      "daysAgo": 19
+    },
+    {
+      "patchName": "7.41b",
+      "timestamp": 1775545200,
+      "daysAgo": 48
+    },
+    {
+      "patchName": "7.41a",
+      "timestamp": 1774594800,
+      "daysAgo": 59
+    },
+    {
+      "patchName": "7.41",
+      "timestamp": 1774335600,
+      "daysAgo": 62
+    }
+  ],
   "topBans": [
     {
-      "heroId": 64,
-      "heroName": "Jakiro",
-      "shortName": "jakiro",
-      "teamMatches": 8,
-      "teamWins": 5,
-      "teamWinRate": 0.625,
-      "score": 0.596401568399578,
-      "picks": [
-        {
-          "accountId": 26852904,
-          "playerName": "Jorel",
-          "positions": [
-            4
-          ],
-          "teamMatches": 4,
-          "teamWins": 3
-        },
-        {
-          "accountId": 28064250,
-          "playerName": "Poppmaister6000",
-          "positions": [
-            5
-          ],
-          "teamMatches": 4,
-          "teamWins": 2
-        }
-      ],
-      "tags": [
-        "FLEX"
-      ]
-    },
-    {
-      "heroId": 35,
-      "heroName": "Sniper",
-      "shortName": "sniper",
-      "teamMatches": 8,
+      "heroId": 71,
+      "heroName": "Spirit Breaker",
+      "shortName": "spirit_breaker",
+      "teamMatches": 5,
       "teamWins": 4,
-      "teamWinRate": 0.5,
-      "score": 0.47712125471966244,
+      "teamWinRate": 0.8,
+      "score": 0.6225210003069149,
       "picks": [
         {
-          "accountId": 26852904,
-          "playerName": "Jorel",
+          "accountId": 30751656,
+          "playerName": "wilton",
           "positions": [
-            4
+            3
           ],
-          "teamMatches": 6,
-          "teamWins": 3
-        },
-        {
-          "accountId": 1089531,
-          "playerName": "bUxU",
-          "positions": [
-            2
-          ],
-          "teamMatches": 2,
-          "teamWins": 1
+          "teamMatches": 5,
+          "teamWins": 4
         }
       ],
       "tags": [
-        "SPAM",
-        "FLEX"
+        "COMF",
+        "SPAM"
       ]
     },
     {
-      "heroId": 87,
-      "heroName": "Disruptor",
-      "shortName": "disruptor",
+      "heroId": 63,
+      "heroName": "Weaver",
+      "shortName": "weaver",
+      "teamMatches": 4,
+      "teamWins": 3,
+      "teamWinRate": 0.75,
+      "score": 0.5242275032520142,
+      "picks": [
+        {
+          "accountId": 159010079,
+          "playerName": "Dr Görts",
+          "positions": [
+            1
+          ],
+          "teamMatches": 4,
+          "teamWins": 3
+        }
+      ],
+      "tags": []
+    },
+    {
+      "heroId": 12,
+      "heroName": "Phantom Lancer",
+      "shortName": "phantom_lancer",
       "teamMatches": 5,
       "teamWins": 3,
       "teamWinRate": 0.6,
       "score": 0.46689075023018617,
       "picks": [
         {
-          "accountId": 28064250,
-          "playerName": "Poppmaister6000",
+          "accountId": 159010079,
+          "playerName": "Dr Görts",
           "positions": [
-            5
+            1
           ],
           "teamMatches": 5,
           "teamWins": 3
@@ -2700,19 +2643,19 @@
       ]
     },
     {
-      "heroId": 68,
-      "heroName": "Ancient Apparition",
-      "shortName": "ancient_apparition",
+      "heroId": 106,
+      "heroName": "Ember Spirit",
+      "shortName": "ember_spirit",
       "teamMatches": 3,
       "teamWins": 2,
       "teamWinRate": 0.6666666666666666,
       "score": 0.4013733275519749,
       "picks": [
         {
-          "accountId": 28064250,
-          "playerName": "Poppmaister6000",
+          "accountId": 61988095,
+          "playerName": "Big Frankie",
           "positions": [
-            5
+            2
           ],
           "teamMatches": 3,
           "teamWins": 2
@@ -2721,476 +2664,76 @@
       "tags": []
     },
     {
-      "heroId": 17,
-      "heroName": "Storm Spirit",
-      "shortName": "storm_spirit",
-      "teamMatches": 4,
+      "heroId": 102,
+      "heroName": "Abaddon",
+      "shortName": "abaddon",
+      "teamMatches": 3,
       "teamWins": 2,
-      "teamWinRate": 0.5,
-      "score": 0.34948500216800943,
+      "teamWinRate": 0.6666666666666666,
+      "score": 0.4013733275519749,
       "picks": [
         {
-          "accountId": 1089531,
-          "playerName": "bUxU",
+          "accountId": 159010079,
+          "playerName": "Dr Görts",
           "positions": [
-            2
+            1
           ],
-          "teamMatches": 4,
+          "teamMatches": 3,
           "teamWins": 2
         }
       ],
       "tags": []
     },
     {
-      "heroId": 120,
-      "heroName": "Pangolier",
-      "shortName": "pangolier",
-      "teamMatches": 4,
+      "heroId": 29,
+      "heroName": "Tidehunter",
+      "shortName": "tidehunter",
+      "teamMatches": 3,
       "teamWins": 2,
-      "teamWinRate": 0.5,
-      "score": 0.34948500216800943,
+      "teamWinRate": 0.6666666666666666,
+      "score": 0.4013733275519749,
       "picks": [
         {
-          "accountId": 1089531,
-          "playerName": "bUxU",
-          "positions": [
-            2
-          ],
-          "teamMatches": 4,
-          "teamWins": 2
-        }
-      ],
-      "tags": []
-    },
-    {
-      "heroId": 71,
-      "heroName": "Spirit Breaker",
-      "shortName": "spirit_breaker",
-      "teamMatches": 4,
-      "teamWins": 2,
-      "teamWinRate": 0.5,
-      "score": 0.34948500216800943,
-      "picks": [
-        {
-          "accountId": 26852904,
-          "playerName": "Jorel",
-          "positions": [
-            4
-          ],
-          "teamMatches": 2,
-          "teamWins": 1
-        },
-        {
-          "accountId": 81955501,
-          "playerName": "Shadow Fin-Kedinn",
+          "accountId": 81459751,
+          "playerName": "KIT",
           "positions": [
             3
           ],
-          "teamMatches": 2,
-          "teamWins": 1
+          "teamMatches": 3,
+          "teamWins": 2
         }
       ],
-      "tags": [
-        "FLEX"
-      ]
+      "tags": []
+    },
+    {
+      "heroId": 105,
+      "heroName": "Techies",
+      "shortName": "techies",
+      "teamMatches": 3,
+      "teamWins": 2,
+      "teamWinRate": 0.6666666666666666,
+      "score": 0.4013733275519749,
+      "picks": [
+        {
+          "accountId": 44346572,
+          "playerName": "Humble",
+          "positions": [
+            4
+          ],
+          "teamMatches": 3,
+          "teamWins": 2
+        }
+      ],
+      "tags": []
     }
   ],
   "bansByPosition": {
     "1": [
       {
-        "heroId": 53,
-        "heroName": "Nature's Prophet",
-        "shortName": "furion",
+        "heroId": 12,
+        "heroName": "Phantom Lancer",
+        "shortName": "phantom_lancer",
         "position": 1,
-        "source": "league",
-        "teamMatches": 5,
-        "teamWins": 2,
-        "teamWinRate": 0.4,
-        "totalMatches": 5,
-        "score": 0.31126050015345746,
-        "tags": [],
-        "flexBoosted": false,
-        "players": [
-          {
-            "accountId": 54437353,
-            "playerName": "Haj",
-            "teamMatches": 5,
-            "teamWins": 2,
-            "teamWinRate": 0.4,
-            "viaFlex": false
-          }
-        ]
-      },
-      {
-        "heroId": 21,
-        "heroName": "Windranger",
-        "shortName": "windrunner",
-        "position": 1,
-        "source": "pub",
-        "teamMatches": 39,
-        "teamWins": 26,
-        "teamWinRate": 0.6666666666666666,
-        "totalMatches": 39,
-        "score": 1.0680399942186416,
-        "tags": [
-          "COMF",
-          "PUB"
-        ],
-        "flexBoosted": false,
-        "players": [
-          {
-            "accountId": 54437353,
-            "playerName": "Haj",
-            "teamMatches": 39,
-            "teamWins": 26,
-            "teamWinRate": 0.6666666666666666,
-            "viaFlex": false
-          }
-        ]
-      },
-      {
-        "heroId": 46,
-        "heroName": "Templar Assassin",
-        "shortName": "templar_assassin",
-        "position": 1,
-        "source": "pub",
-        "teamMatches": 27,
-        "teamWins": 15,
-        "teamWinRate": 0.5555555555555556,
-        "totalMatches": 27,
-        "score": 0.8039766840790107,
-        "tags": [
-          "PUB"
-        ],
-        "flexBoosted": false,
-        "players": [
-          {
-            "accountId": 54437353,
-            "playerName": "Haj",
-            "teamMatches": 27,
-            "teamWins": 15,
-            "teamWinRate": 0.5555555555555556,
-            "viaFlex": false
-          }
-        ]
-      },
-      {
-        "heroId": 138,
-        "heroName": "Muerta",
-        "shortName": "muerta",
-        "position": 1,
-        "source": "pub",
-        "teamMatches": 17,
-        "teamWins": 12,
-        "teamWinRate": 0.7058823529411765,
-        "totalMatches": 17,
-        "score": 0.8860747094846867,
-        "tags": [
-          "COMF",
-          "PUB"
-        ],
-        "flexBoosted": false,
-        "players": [
-          {
-            "accountId": 54437353,
-            "playerName": "Haj",
-            "teamMatches": 17,
-            "teamWins": 12,
-            "teamWinRate": 0.7058823529411765,
-            "viaFlex": false
-          }
-        ]
-      }
-    ],
-    "2": [
-      {
-        "heroId": 17,
-        "heroName": "Storm Spirit",
-        "shortName": "storm_spirit",
-        "position": 2,
-        "source": "league",
-        "teamMatches": 4,
-        "teamWins": 2,
-        "teamWinRate": 0.5,
-        "totalMatches": 4,
-        "score": 0.34948500216800943,
-        "tags": [],
-        "flexBoosted": false,
-        "players": [
-          {
-            "accountId": 1089531,
-            "playerName": "bUxU",
-            "teamMatches": 4,
-            "teamWins": 2,
-            "teamWinRate": 0.5,
-            "viaFlex": false
-          }
-        ]
-      },
-      {
-        "heroId": 120,
-        "heroName": "Pangolier",
-        "shortName": "pangolier",
-        "position": 2,
-        "source": "league",
-        "teamMatches": 4,
-        "teamWins": 2,
-        "teamWinRate": 0.5,
-        "totalMatches": 4,
-        "score": 0.34948500216800943,
-        "tags": [],
-        "flexBoosted": false,
-        "players": [
-          {
-            "accountId": 1089531,
-            "playerName": "bUxU",
-            "teamMatches": 4,
-            "teamWins": 2,
-            "teamWinRate": 0.5,
-            "viaFlex": false
-          }
-        ]
-      },
-      {
-        "heroId": 106,
-        "heroName": "Ember Spirit",
-        "shortName": "ember_spirit",
-        "position": 2,
-        "source": "league",
-        "teamMatches": 3,
-        "teamWins": 1,
-        "teamWinRate": 0.3333333333333333,
-        "totalMatches": 3,
-        "score": 0.20068666377598746,
-        "tags": [],
-        "flexBoosted": false,
-        "players": [
-          {
-            "accountId": 1089531,
-            "playerName": "bUxU",
-            "teamMatches": 3,
-            "teamWins": 1,
-            "teamWinRate": 0.3333333333333333,
-            "viaFlex": false
-          }
-        ]
-      },
-      {
-        "heroId": 39,
-        "heroName": "Queen of Pain",
-        "shortName": "queenofpain",
-        "position": 2,
-        "source": "pub",
-        "teamMatches": 25,
-        "teamWins": 18,
-        "teamWinRate": 0.72,
-        "totalMatches": 25,
-        "score": 1.0187808105389888,
-        "tags": [
-          "COMF",
-          "PUB"
-        ],
-        "flexBoosted": false,
-        "players": [
-          {
-            "accountId": 1089531,
-            "playerName": "bUxU",
-            "teamMatches": 25,
-            "teamWins": 18,
-            "teamWinRate": 0.72,
-            "viaFlex": false
-          }
-        ]
-      }
-    ],
-    "3": [
-      {
-        "heroId": 100,
-        "heroName": "Tusk",
-        "shortName": "tusk",
-        "position": 3,
-        "source": "league",
-        "teamMatches": 4,
-        "teamWins": 2,
-        "teamWinRate": 0.5,
-        "totalMatches": 4,
-        "score": 0.34948500216800943,
-        "tags": [],
-        "flexBoosted": false,
-        "players": [
-          {
-            "accountId": 81955501,
-            "playerName": "Shadow Fin-Kedinn",
-            "teamMatches": 4,
-            "teamWins": 2,
-            "teamWinRate": 0.5,
-            "viaFlex": false
-          }
-        ]
-      },
-      {
-        "heroId": 129,
-        "heroName": "Mars",
-        "shortName": "mars",
-        "position": 3,
-        "source": "pub",
-        "teamMatches": 10,
-        "teamWins": 7,
-        "teamWinRate": 0.7,
-        "totalMatches": 10,
-        "score": 0.7289748796107574,
-        "tags": [
-          "COMF",
-          "PUB"
-        ],
-        "flexBoosted": false,
-        "players": [
-          {
-            "accountId": 81955501,
-            "playerName": "Shadow Fin-Kedinn",
-            "teamMatches": 10,
-            "teamWins": 7,
-            "teamWinRate": 0.7,
-            "viaFlex": false
-          }
-        ]
-      },
-      {
-        "heroId": 86,
-        "heroName": "Rubick",
-        "shortName": "rubick",
-        "position": 3,
-        "source": "pub",
-        "teamMatches": 9,
-        "teamWins": 5,
-        "teamWinRate": 0.5555555555555556,
-        "totalMatches": 9,
-        "score": 0.5555555555555556,
-        "tags": [
-          "PUB"
-        ],
-        "flexBoosted": false,
-        "players": [
-          {
-            "accountId": 81955501,
-            "playerName": "Shadow Fin-Kedinn",
-            "teamMatches": 9,
-            "teamWins": 5,
-            "teamWinRate": 0.5555555555555556,
-            "viaFlex": false
-          }
-        ]
-      }
-    ],
-    "4": [
-      {
-        "heroId": 35,
-        "heroName": "Sniper",
-        "shortName": "sniper",
-        "position": 4,
-        "source": "league",
-        "teamMatches": 6,
-        "teamWins": 3,
-        "teamWinRate": 0.5,
-        "totalMatches": 6,
-        "score": 0.46480392200784126,
-        "tags": [
-          "SPAM",
-          "FLEX"
-        ],
-        "flexBoosted": true,
-        "players": [
-          {
-            "accountId": 26852904,
-            "playerName": "Jorel",
-            "teamMatches": 6,
-            "teamWins": 3,
-            "teamWinRate": 0.5,
-            "viaFlex": false
-          }
-        ]
-      },
-      {
-        "heroId": 22,
-        "heroName": "Zeus",
-        "shortName": "zuus",
-        "position": 4,
-        "source": "league",
-        "teamMatches": 5,
-        "teamWins": 2,
-        "teamWinRate": 0.4,
-        "totalMatches": 5,
-        "score": 0.31126050015345746,
-        "tags": [],
-        "flexBoosted": false,
-        "players": [
-          {
-            "accountId": 26852904,
-            "playerName": "Jorel",
-            "teamMatches": 5,
-            "teamWins": 2,
-            "teamWinRate": 0.4,
-            "viaFlex": false
-          }
-        ]
-      },
-      {
-        "heroId": 64,
-        "heroName": "Jakiro",
-        "shortName": "jakiro",
-        "position": 4,
-        "source": "league",
-        "teamMatches": 4,
-        "teamWins": 3,
-        "teamWinRate": 0.75,
-        "totalMatches": 4,
-        "score": 0.5766502535772157,
-        "tags": [
-          "FLEX"
-        ],
-        "flexBoosted": true,
-        "players": [
-          {
-            "accountId": 26852904,
-            "playerName": "Jorel",
-            "teamMatches": 4,
-            "teamWins": 3,
-            "teamWinRate": 0.75,
-            "viaFlex": false
-          }
-        ]
-      },
-      {
-        "heroId": 111,
-        "heroName": "Oracle",
-        "shortName": "oracle",
-        "position": 4,
-        "source": "league",
-        "teamMatches": 4,
-        "teamWins": 1,
-        "teamWinRate": 0.25,
-        "totalMatches": 4,
-        "score": 0.17474250108400471,
-        "tags": [],
-        "flexBoosted": false,
-        "players": [
-          {
-            "accountId": 26852904,
-            "playerName": "Jorel",
-            "teamMatches": 4,
-            "teamWins": 1,
-            "teamWinRate": 0.25,
-            "viaFlex": false
-          }
-        ]
-      }
-    ],
-    "5": [
-      {
-        "heroId": 87,
-        "heroName": "Disruptor",
-        "shortName": "disruptor",
-        "position": 5,
         "source": "league",
         "teamMatches": 5,
         "teamWins": 3,
@@ -3203,8 +2746,8 @@
         "flexBoosted": false,
         "players": [
           {
-            "accountId": 28064250,
-            "playerName": "Poppmaister6000",
+            "accountId": 159010079,
+            "playerName": "Dr Görts",
             "teamMatches": 5,
             "teamWins": 3,
             "teamWinRate": 0.6,
@@ -3213,60 +2756,58 @@
         ]
       },
       {
-        "heroId": 64,
-        "heroName": "Jakiro",
-        "shortName": "jakiro",
-        "position": 5,
+        "heroId": 63,
+        "heroName": "Weaver",
+        "shortName": "weaver",
+        "position": 1,
         "source": "league",
         "teamMatches": 4,
-        "teamWins": 2,
-        "teamWinRate": 0.5,
+        "teamWins": 3,
+        "teamWinRate": 0.75,
         "totalMatches": 4,
-        "score": 0.3844335023848104,
-        "tags": [
-          "FLEX"
-        ],
-        "flexBoosted": true,
-        "players": [
-          {
-            "accountId": 28064250,
-            "playerName": "Poppmaister6000",
-            "teamMatches": 4,
-            "teamWins": 2,
-            "teamWinRate": 0.5,
-            "viaFlex": false
-          }
-        ]
-      },
-      {
-        "heroId": 84,
-        "heroName": "Ogre Magi",
-        "shortName": "ogre_magi",
-        "position": 5,
-        "source": "league",
-        "teamMatches": 4,
-        "teamWins": 2,
-        "teamWinRate": 0.5,
-        "totalMatches": 4,
-        "score": 0.34948500216800943,
+        "score": 0.5242275032520142,
         "tags": [],
         "flexBoosted": false,
         "players": [
           {
-            "accountId": 28064250,
-            "playerName": "Poppmaister6000",
+            "accountId": 159010079,
+            "playerName": "Dr Görts",
             "teamMatches": 4,
-            "teamWins": 2,
-            "teamWinRate": 0.5,
+            "teamWins": 3,
+            "teamWinRate": 0.75,
             "viaFlex": false
           }
         ]
       },
       {
-        "heroId": 68,
-        "heroName": "Ancient Apparition",
-        "shortName": "ancient_apparition",
-        "position": 5,
+        "heroId": 56,
+        "heroName": "Clinkz",
+        "shortName": "clinkz",
+        "position": 1,
+        "source": "league",
+        "teamMatches": 4,
+        "teamWins": 1,
+        "teamWinRate": 0.25,
+        "totalMatches": 4,
+        "score": 0.17474250108400471,
+        "tags": [],
+        "flexBoosted": false,
+        "players": [
+          {
+            "accountId": 159010079,
+            "playerName": "Dr Görts",
+            "teamMatches": 4,
+            "teamWins": 1,
+            "teamWinRate": 0.25,
+            "viaFlex": false
+          }
+        ]
+      },
+      {
+        "heroId": 102,
+        "heroName": "Abaddon",
+        "shortName": "abaddon",
+        "position": 1,
         "source": "league",
         "teamMatches": 3,
         "teamWins": 2,
@@ -3277,8 +2818,8 @@
         "flexBoosted": false,
         "players": [
           {
-            "accountId": 28064250,
-            "playerName": "Poppmaister6000",
+            "accountId": 159010079,
+            "playerName": "Dr Görts",
             "teamMatches": 3,
             "teamWins": 2,
             "teamWinRate": 0.6666666666666666,
@@ -3287,10 +2828,271 @@
         ]
       },
       {
-        "heroId": 27,
-        "heroName": "Shadow Shaman",
-        "shortName": "shadow_shaman",
-        "position": 5,
+        "heroId": 67,
+        "heroName": "Spectre",
+        "shortName": "spectre",
+        "position": 1,
+        "source": "pub",
+        "teamMatches": 24,
+        "teamWins": 18,
+        "teamWinRate": 0.75,
+        "totalMatches": 24,
+        "score": 1.0484550065040283,
+        "tags": [
+          "COMF",
+          "PUB"
+        ],
+        "flexBoosted": false,
+        "players": [
+          {
+            "accountId": 159010079,
+            "playerName": "Dr Görts",
+            "teamMatches": 24,
+            "teamWins": 18,
+            "teamWinRate": 0.75,
+            "viaFlex": false
+          }
+        ]
+      },
+      {
+        "heroId": 6,
+        "heroName": "Drow Ranger",
+        "shortName": "drow_ranger",
+        "position": 1,
+        "source": "pub",
+        "teamMatches": 13,
+        "teamWins": 9,
+        "teamWinRate": 0.6923076923076923,
+        "totalMatches": 13,
+        "score": 0.7934732554695494,
+        "tags": [
+          "COMF",
+          "PUB"
+        ],
+        "flexBoosted": false,
+        "players": [
+          {
+            "accountId": 159010079,
+            "playerName": "Dr Görts",
+            "teamMatches": 13,
+            "teamWins": 9,
+            "teamWinRate": 0.6923076923076923,
+            "viaFlex": false
+          }
+        ]
+      },
+      {
+        "heroId": 93,
+        "heroName": "Slark",
+        "shortName": "slark",
+        "position": 1,
+        "source": "pub",
+        "teamMatches": 8,
+        "teamWins": 5,
+        "teamWinRate": 0.625,
+        "totalMatches": 8,
+        "score": 0.596401568399578,
+        "tags": [
+          "COMF",
+          "PUB"
+        ],
+        "flexBoosted": false,
+        "players": [
+          {
+            "accountId": 159010079,
+            "playerName": "Dr Görts",
+            "teamMatches": 8,
+            "teamWins": 5,
+            "teamWinRate": 0.625,
+            "viaFlex": false
+          }
+        ]
+      }
+    ],
+    "2": [
+      {
+        "heroId": 39,
+        "heroName": "Queen of Pain",
+        "shortName": "queenofpain",
+        "position": 2,
+        "source": "league",
+        "teamMatches": 4,
+        "teamWins": 2,
+        "teamWinRate": 0.5,
+        "totalMatches": 4,
+        "score": 0.34948500216800943,
+        "tags": [],
+        "flexBoosted": false,
+        "players": [
+          {
+            "accountId": 61988095,
+            "playerName": "Big Frankie",
+            "teamMatches": 4,
+            "teamWins": 2,
+            "teamWinRate": 0.5,
+            "viaFlex": false
+          }
+        ]
+      },
+      {
+        "heroId": 25,
+        "heroName": "Lina",
+        "shortName": "lina",
+        "position": 2,
+        "source": "league",
+        "teamMatches": 4,
+        "teamWins": 0,
+        "teamWinRate": 0,
+        "totalMatches": 4,
+        "score": 0,
+        "tags": [],
+        "flexBoosted": false,
+        "players": [
+          {
+            "accountId": 61988095,
+            "playerName": "Big Frankie",
+            "teamMatches": 4,
+            "teamWins": 0,
+            "teamWinRate": 0,
+            "viaFlex": false
+          }
+        ]
+      },
+      {
+        "heroId": 106,
+        "heroName": "Ember Spirit",
+        "shortName": "ember_spirit",
+        "position": 2,
+        "source": "league",
+        "teamMatches": 3,
+        "teamWins": 2,
+        "teamWinRate": 0.6666666666666666,
+        "totalMatches": 3,
+        "score": 0.4013733275519749,
+        "tags": [],
+        "flexBoosted": false,
+        "players": [
+          {
+            "accountId": 61988095,
+            "playerName": "Big Frankie",
+            "teamMatches": 3,
+            "teamWins": 2,
+            "teamWinRate": 0.6666666666666666,
+            "viaFlex": false
+          }
+        ]
+      },
+      {
+        "heroId": 23,
+        "heroName": "Kunkka",
+        "shortName": "kunkka",
+        "position": 2,
+        "source": "pub",
+        "teamMatches": 12,
+        "teamWins": 7,
+        "teamWinRate": 0.5833333333333334,
+        "totalMatches": 12,
+        "score": 0.6498002888456548,
+        "tags": [
+          "PUB"
+        ],
+        "flexBoosted": false,
+        "players": [
+          {
+            "accountId": 61988095,
+            "playerName": "Big Frankie",
+            "teamMatches": 12,
+            "teamWins": 7,
+            "teamWinRate": 0.5833333333333334,
+            "viaFlex": false
+          }
+        ]
+      },
+      {
+        "heroId": 16,
+        "heroName": "Sand King",
+        "shortName": "sand_king",
+        "position": 2,
+        "source": "pub",
+        "teamMatches": 11,
+        "teamWins": 9,
+        "teamWinRate": 0.8181818181818182,
+        "totalMatches": 11,
+        "score": 0.8829664740389659,
+        "tags": [
+          "COMF",
+          "PUB"
+        ],
+        "flexBoosted": false,
+        "players": [
+          {
+            "accountId": 61988095,
+            "playerName": "Big Frankie",
+            "teamMatches": 11,
+            "teamWins": 9,
+            "teamWinRate": 0.8181818181818182,
+            "viaFlex": false
+          }
+        ]
+      }
+    ],
+    "3": [
+      {
+        "heroId": 71,
+        "heroName": "Spirit Breaker",
+        "shortName": "spirit_breaker",
+        "position": 3,
+        "source": "league",
+        "teamMatches": 5,
+        "teamWins": 4,
+        "teamWinRate": 0.8,
+        "totalMatches": 5,
+        "score": 0.6225210003069149,
+        "tags": [
+          "COMF",
+          "SPAM"
+        ],
+        "flexBoosted": false,
+        "players": [
+          {
+            "accountId": 30751656,
+            "playerName": "wilton",
+            "teamMatches": 5,
+            "teamWins": 4,
+            "teamWinRate": 0.8,
+            "viaFlex": false
+          }
+        ]
+      },
+      {
+        "heroId": 29,
+        "heroName": "Tidehunter",
+        "shortName": "tidehunter",
+        "position": 3,
+        "source": "league",
+        "teamMatches": 3,
+        "teamWins": 2,
+        "teamWinRate": 0.6666666666666666,
+        "totalMatches": 3,
+        "score": 0.4013733275519749,
+        "tags": [],
+        "flexBoosted": false,
+        "players": [
+          {
+            "accountId": 81459751,
+            "playerName": "KIT",
+            "teamMatches": 3,
+            "teamWins": 2,
+            "teamWinRate": 0.6666666666666666,
+            "viaFlex": false
+          }
+        ]
+      },
+      {
+        "heroId": 45,
+        "heroName": "Pugna",
+        "shortName": "pugna",
+        "position": 3,
         "source": "league",
         "teamMatches": 3,
         "teamWins": 1,
@@ -3301,8 +3103,8 @@
         "flexBoosted": false,
         "players": [
           {
-            "accountId": 28064250,
-            "playerName": "Poppmaister6000",
+            "accountId": 81459751,
+            "playerName": "KIT",
             "teamMatches": 3,
             "teamWins": 1,
             "teamWinRate": 0.3333333333333333,
@@ -3311,27 +3113,134 @@
         ]
       },
       {
-        "heroId": 30,
-        "heroName": "Witch Doctor",
-        "shortName": "witch_doctor",
-        "position": 5,
+        "heroId": 86,
+        "heroName": "Rubick",
+        "shortName": "rubick",
+        "position": 3,
         "source": "pub",
-        "teamMatches": 67,
-        "teamWins": 40,
-        "teamWinRate": 0.5970149253731343,
-        "totalMatches": 67,
-        "score": 1.094035171764917,
+        "teamMatches": 24,
+        "teamWins": 14,
+        "teamWinRate": 0.5833333333333334,
+        "totalMatches": 24,
+        "score": 0.8154650050586887,
         "tags": [
           "PUB"
         ],
         "flexBoosted": false,
         "players": [
           {
-            "accountId": 28064250,
-            "playerName": "Poppmaister6000",
-            "teamMatches": 67,
-            "teamWins": 40,
-            "teamWinRate": 0.5970149253731343,
+            "accountId": 30751656,
+            "playerName": "wilton",
+            "teamMatches": 24,
+            "teamWins": 14,
+            "teamWinRate": 0.5833333333333334,
+            "viaFlex": false
+          }
+        ]
+      },
+      {
+        "heroId": 110,
+        "heroName": "Phoenix",
+        "shortName": "phoenix",
+        "position": 3,
+        "source": "pub",
+        "teamMatches": 19,
+        "teamWins": 12,
+        "teamWinRate": 0.631578947368421,
+        "totalMatches": 19,
+        "score": 0.8217031551561986,
+        "tags": [
+          "COMF",
+          "PUB"
+        ],
+        "flexBoosted": false,
+        "players": [
+          {
+            "accountId": 30751656,
+            "playerName": "wilton",
+            "teamMatches": 19,
+            "teamWins": 12,
+            "teamWinRate": 0.631578947368421,
+            "viaFlex": false
+          }
+        ]
+      },
+      {
+        "heroId": 75,
+        "heroName": "Silencer",
+        "shortName": "silencer",
+        "position": 3,
+        "source": "pub",
+        "teamMatches": 14,
+        "teamWins": 10,
+        "teamWinRate": 0.7142857142857143,
+        "totalMatches": 14,
+        "score": 0.8400651850397725,
+        "tags": [
+          "COMF",
+          "PUB"
+        ],
+        "flexBoosted": false,
+        "players": [
+          {
+            "accountId": 30751656,
+            "playerName": "wilton",
+            "teamMatches": 14,
+            "teamWins": 10,
+            "teamWinRate": 0.7142857142857143,
+            "viaFlex": false
+          }
+        ]
+      },
+      {
+        "heroId": 108,
+        "heroName": "Underlord",
+        "shortName": "abyssal_underlord",
+        "position": 3,
+        "source": "pub",
+        "teamMatches": 13,
+        "teamWins": 9,
+        "teamWinRate": 0.6923076923076923,
+        "totalMatches": 13,
+        "score": 0.7934732554695494,
+        "tags": [
+          "COMF",
+          "PUB"
+        ],
+        "flexBoosted": false,
+        "players": [
+          {
+            "accountId": 81459751,
+            "playerName": "KIT",
+            "teamMatches": 13,
+            "teamWins": 9,
+            "teamWinRate": 0.6923076923076923,
+            "viaFlex": false
+          }
+        ]
+      }
+    ],
+    "4": [
+      {
+        "heroId": 26,
+        "heroName": "Lion",
+        "shortName": "lion",
+        "position": 4,
+        "source": "league",
+        "teamMatches": 5,
+        "teamWins": 2,
+        "teamWinRate": 0.4,
+        "totalMatches": 5,
+        "score": 0.31126050015345746,
+        "tags": [],
+        "flexBoosted": false,
+        "players": [
+          {
+            "accountId": 44346572,
+            "playerName": "Humble",
+            "teamMatches": 5,
+            "teamWins": 2,
+            "teamWinRate": 0.4,
             "viaFlex": false
           }
         ]
@@ -3340,28 +3249,81 @@
         "heroId": 105,
         "heroName": "Techies",
         "shortName": "techies",
-        "position": 5,
+        "position": 4,
+        "source": "league",
+        "teamMatches": 3,
+        "teamWins": 2,
+        "teamWinRate": 0.6666666666666666,
+        "totalMatches": 3,
+        "score": 0.4013733275519749,
+        "tags": [],
+        "flexBoosted": false,
+        "players": [
+          {
+            "accountId": 44346572,
+            "playerName": "Humble",
+            "teamMatches": 3,
+            "teamWins": 2,
+            "teamWinRate": 0.6666666666666666,
+            "viaFlex": false
+          }
+        ]
+      },
+      {
+        "heroId": 9,
+        "heroName": "Mirana",
+        "shortName": "mirana",
+        "position": 4,
         "source": "pub",
-        "teamMatches": 23,
-        "teamWins": 13,
-        "teamWinRate": 0.5652173913043478,
-        "totalMatches": 23,
-        "score": 0.7801193974891685,
+        "teamMatches": 20,
+        "teamWins": 12,
+        "teamWinRate": 0.6,
+        "totalMatches": 20,
+        "score": 0.7933315768403516,
         "tags": [
+          "COMF",
           "PUB"
         ],
         "flexBoosted": false,
         "players": [
           {
-            "accountId": 28064250,
-            "playerName": "Poppmaister6000",
-            "teamMatches": 23,
-            "teamWins": 13,
-            "teamWinRate": 0.5652173913043478,
+            "accountId": 44346572,
+            "playerName": "Humble",
+            "teamMatches": 20,
+            "teamWins": 12,
+            "teamWinRate": 0.6,
+            "viaFlex": false
+          }
+        ]
+      },
+      {
+        "heroId": 37,
+        "heroName": "Warlock",
+        "shortName": "warlock",
+        "position": 4,
+        "source": "pub",
+        "teamMatches": 8,
+        "teamWins": 6,
+        "teamWinRate": 0.75,
+        "totalMatches": 8,
+        "score": 0.7156818820794937,
+        "tags": [
+          "COMF",
+          "PUB"
+        ],
+        "flexBoosted": false,
+        "players": [
+          {
+            "accountId": 44346572,
+            "playerName": "Humble",
+            "teamMatches": 8,
+            "teamWins": 6,
+            "teamWinRate": 0.75,
             "viaFlex": false
           }
         ]
       }
-    ]
+    ],
+    "5": []
   }
 }

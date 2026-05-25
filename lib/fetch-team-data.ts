@@ -36,6 +36,7 @@ import type {
   HeroPerf,
   MatchHero,
   MatchRecord,
+  PatchInfo,
   PlayerReport,
   PositionCount,
   StandinReport,
@@ -80,7 +81,7 @@ const SPAMMER_MIN_WR = 0.5;
 // ≥20% of team-scrim games at a non-primary position, with a minimum
 // total game count to keep noisy 1-game-per-position rosters from
 // triggering FLEX on everyone.
-const FLEX_SHARE = 0.2;
+const FLEX_SHARE = 0.1;
 const FLEX_MIN_TOTAL_GAMES = 10;
 
 // Ban-candidate floors. Set higher than before — we now have complete
@@ -468,7 +469,43 @@ function bucketMatches(rows: OpenDotaMatchRow[]): {
 }
 
 // ──────────────────────────────────────────────────────────────────────────
-// Build per-player report from STRATZ position counts + OpenDota match list.
+// Dota patch list — fetched from the Dota 2 datafeed at build time.
+// We keep the 4 most recent patches so the header can show "7.39b — 12d ago".
+// ──────────────────────────────────────────────────────────────────────────
+async function fetchRecentPatches(
+  nowSec: number,
+  count = 4,
+): Promise<PatchInfo[]> {
+  try {
+    const res = await fetch(
+      "https://www.dota2.com/datafeed/patchnoteslist?language=english",
+      {
+        headers: { "User-Agent": "dota-cli (build-time prefetch)" },
+        signal: AbortSignal.timeout(15000),
+      },
+    );
+    if (!res.ok) return [];
+    const json = (await res.json()) as {
+      success: boolean;
+      patches: Array<{ patch_name: string; patch_timestamp: number }>;
+    };
+    if (!json.success || !Array.isArray(json.patches)) return [];
+    // The list is ordered oldest-first; take from the end.
+    return json.patches
+      .slice(-count)
+      .reverse()
+      .map((p) => ({
+        patchName: p.patch_name,
+        timestamp: p.patch_timestamp,
+        daysAgo: Math.floor((nowSec - p.patch_timestamp) / 86400),
+      }));
+  } catch {
+    return [];
+  }
+}
+
+// ──────────────────────────────────────────────────────────────────────────
+// Main entry point: STRATZ + OpenDota orchestration.
 // ──────────────────────────────────────────────────────────────────────────
 function buildPlayerReport(
   acc: TeamAccount,
@@ -1073,10 +1110,11 @@ export async function buildTeamReport(teamId: number, token: string): Promise<Te
   const now = Math.floor(Date.now() / 1000);
   const windowStart = now - WINDOW_DAYS * 86400;
 
-  // Step 1: heroes + team meta in parallel (both STRATZ).
-  const [heroes, teamPart] = await Promise.all([
+  // Step 1: heroes + team meta + recent patches in parallel.
+  const [heroes, teamPart, recentPatches] = await Promise.all([
     fetchHeroMap(stratz),
     fetchTeamAndRoster(stratz, teamId, windowStart),
+    fetchRecentPatches(now),
   ]);
   const { team, accounts, standins, matchesAnalyzed } = teamPart;
 
@@ -1139,8 +1177,13 @@ export async function buildTeamReport(teamId: number, token: string): Promise<Te
     heroes,
   );
 
+  const toYMD = (unixSec: number) =>
+    new Date(unixSec * 1000).toISOString().slice(0, 10);
+
   return {
     generatedAt: new Date().toISOString(),
+    windowFrom: toYMD(windowStart),
+    windowTo: toYMD(now),
     teamId: team.id,
     teamName: team.name,
     teamTag: team.tag,
@@ -1153,6 +1196,7 @@ export async function buildTeamReport(teamId: number, token: string): Promise<Te
     players,
     standins: standinReports,
     matchHistory,
+    recentPatches,
     topBans,
     bansByPosition,
   };

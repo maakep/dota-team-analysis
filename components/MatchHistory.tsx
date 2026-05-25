@@ -9,13 +9,10 @@ const HERO_CDN =
 // Grid column template — must match between header and row.
 // W/L · Side · Date · Team heroes (5×32px + gaps) · Score · Opp heroes · Duration · Opponent · SUB · Link
 const GRID =
-  "grid grid-cols-[1.25rem_4rem_3.5rem_172px_3.5rem_172px_3rem_minmax(6rem,1fr)_2rem_4rem] items-center gap-x-2";
+  "grid grid-cols-[1.25rem_4rem_6rem_172px_3.5rem_172px_3rem_minmax(6rem,1fr)_2rem_4rem] items-center gap-x-2";
 
 function fmt(unix: number): string {
-  return new Date(unix * 1000).toLocaleDateString(undefined, {
-    month: "short",
-    day: "numeric",
-  });
+  return new Date(unix * 1000).toISOString().slice(0, 10);
 }
 
 function fmtDuration(secs: number): string {

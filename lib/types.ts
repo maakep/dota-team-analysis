@@ -236,8 +236,21 @@ export interface MatchRecord {
   hasStandin: boolean;
 }
 
+export interface PatchInfo {
+  /** e.g. "7.39b" */
+  patchName: string;
+  /** Unix seconds. */
+  timestamp: number;
+  /** Days elapsed since this patch dropped, relative to generatedAt. */
+  daysAgo: number;
+}
+
 export interface TeamReport {
   generatedAt: string; // ISO-8601
+  /** YYYY-MM-DD — start of the analysis window (= generatedAt minus windowDays). */
+  windowFrom: string;
+  /** YYYY-MM-DD — end of the analysis window (= date of generatedAt). */
+  windowTo: string;
   teamId: number;
   teamName: string | null;
   teamTag: string | null;
@@ -257,6 +270,8 @@ export interface TeamReport {
   standins: StandinReport[];
   /** Recent team matches, newest first, capped at MATCH_HISTORY_TAKE. */
   matchHistory: MatchRecord[];
+  /** 4 most recent Dota patches at time of generation. */
+  recentPatches: PatchInfo[];
   /** Cross-roster top-N priority bans from league pools. */
   topBans: TeamBanCandidate[];
   /** Pre-computed top ban candidates per position (top 8 each). */
