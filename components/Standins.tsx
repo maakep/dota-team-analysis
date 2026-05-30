@@ -3,7 +3,7 @@ import { PlayerCard } from "./PlayerCard";
 
 function fmtDate(unix: number | null): string {
   if (!unix) return "unknown";
-  return new Date(unix * 1000).toLocaleDateString();
+  return new Date(unix * 1000).toISOString().slice(0, 10);
 }
 
 /** Stand-ins are rendered with the same per-position breakdown as roster

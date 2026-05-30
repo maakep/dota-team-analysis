@@ -20,28 +20,25 @@ function loadTeamReport(teamId: number): TeamReport {
   return JSON.parse(raw) as TeamReport;
 }
 
-/** Root page renders the first team's dashboard. When multiple teams are
- *  configured, the TeamSwitcher nav appears and links to /[teamId]/ pages. */
-export default function RootPage() {
+export function generateStaticParams(): Array<{ teamId: string }> {
   const manifest = loadManifest();
-  const firstTeam = manifest.teams[0];
-  if (!firstTeam) {
-    return (
-      <main className="mx-auto max-w-[1680px] px-4 py-8 sm:px-6 lg:px-8">
-        <p className="text-sm text-ink-400">
-          No teams configured. Run <code>npm run prefetch</code> with TEAM_ID set.
-        </p>
-      </main>
-    );
-  }
+  return manifest.teams.map((t) => ({ teamId: String(t.teamId) }));
+}
 
-  const data = loadTeamReport(firstTeam.teamId);
+export default function TeamPage({
+  params,
+}: {
+  params: { teamId: string };
+}) {
+  const teamId = Number(params.teamId);
+  const data = loadTeamReport(teamId);
+  const manifest = loadManifest();
 
   return (
     <TeamDashboard
       data={data}
       teams={manifest.teams}
-      currentTeamId={firstTeam.teamId}
+      currentTeamId={teamId}
     />
   );
 }

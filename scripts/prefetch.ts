@@ -1,18 +1,35 @@
 // Build-time data fetch. Reads TEAM_ID and STRATZ_TOKEN from env (or .env.local),
-// pulls everything from STRATZ, and writes data/team.json. The Next.js app
-// imports that JSON directly — no runtime API.
+// pulls everything from STRATZ, and writes per-team JSON files + a manifest.
 //
 // Usage:   npm run prefetch
 //          TEAM_ID=9200913 npm run prefetch
+//          TEAM_ID=9200913,1234567 npm run prefetch
 //
 // Configure via .env.local (auto-loaded):
 //   STRATZ_TOKEN=eyJhbG...
-//   TEAM_ID=9200913
+//   TEAM_ID=9200913          (single team)
+//   TEAM_ID=9200913,1234567  (comma-separated for multiple teams)
+//
+// Output:
+//   data/teams.json          — manifest listing all teams
+//   data/team-{id}.json      — full TeamReport per team
+//   data/team.json           — kept as alias of the first team (backwards compat)
 
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import { buildTeamReport } from "../lib/fetch-team-data";
 import { UserError } from "../lib/errors";
+import type { TeamReport } from "../lib/types";
+
+/** Manifest written to data/teams.json. Consumed by Next.js at build time
+ *  for generateStaticParams() and the team switcher component. */
+interface TeamManifest {
+  teams: Array<{
+    teamId: number;
+    teamName: string | null;
+    teamTag: string | null;
+  }>;
+}
 
 async function loadDotenv(): Promise<void> {
   // Tiny .env loader — avoids adding a dep just for build.
@@ -41,6 +58,27 @@ async function loadDotenv(): Promise<void> {
   }
 }
 
+function parseTeamIds(raw: string): number[] {
+  const ids: number[] = [];
+  for (const part of raw.split(",")) {
+    const trimmed = part.trim();
+    if (!trimmed) continue;
+    const n = Number(trimmed);
+    if (!Number.isInteger(n) || n <= 0) {
+      throw new UserError(
+        `Each TEAM_ID must be a positive integer (got: "${trimmed}" in "${raw}").`,
+      );
+    }
+    ids.push(n);
+  }
+  if (ids.length === 0) {
+    throw new UserError(
+      `TEAM_ID is empty. Set it in .env.local (e.g. TEAM_ID=9200913 or TEAM_ID=9200913,1234567).`,
+    );
+  }
+  return ids;
+}
+
 async function main(): Promise<void> {
   await loadDotenv();
 
@@ -56,25 +94,52 @@ async function main(): Promise<void> {
       "TEAM_ID is missing. Set it in .env.local (e.g. TEAM_ID=9200913).",
     );
   }
-  const teamId = Number(teamIdRaw);
-  if (!Number.isInteger(teamId) || teamId <= 0) {
-    throw new UserError(`TEAM_ID must be a positive integer (got: ${teamIdRaw}).`);
-  }
-
-  process.stderr.write(`» fetching team ${teamId} from STRATZ...\n`);
-  const t0 = Date.now();
-  const report = await buildTeamReport(teamId, token);
-  const ms = Date.now() - t0;
-  process.stderr.write(
-    `» fetched: ${report.teamName ?? "(unnamed)"}  ${report.players.length} players  ` +
-      `${report.matchesAnalyzed} matches analyzed  (${ms}ms)\n`,
-  );
+  const teamIds = parseTeamIds(teamIdRaw);
 
   const outDir = path.resolve(process.cwd(), "data");
   await fs.mkdir(outDir, { recursive: true });
-  const outPath = path.join(outDir, "team.json");
-  await fs.writeFile(outPath, JSON.stringify(report, null, 2) + "\n", "utf8");
-  process.stderr.write(`» wrote ${path.relative(process.cwd(), outPath)}\n`);
+
+  const manifest: TeamManifest = { teams: [] };
+  let firstReport: TeamReport | null = null;
+
+  // Fetch teams sequentially to avoid rate-limit issues with STRATZ/OpenDota.
+  for (const teamId of teamIds) {
+    process.stderr.write(`\n» fetching team ${teamId} from STRATZ...\n`);
+    const t0 = Date.now();
+    const report = await buildTeamReport(teamId, token);
+    const ms = Date.now() - t0;
+    process.stderr.write(
+      `» fetched: ${report.teamName ?? "(unnamed)"}  ${report.players.length} players  ` +
+        `${report.matchesAnalyzed} matches analyzed  (${ms}ms)\n`,
+    );
+
+    // Write per-team JSON.
+    const teamPath = path.join(outDir, `team-${teamId}.json`);
+    await fs.writeFile(teamPath, JSON.stringify(report, null, 2) + "\n", "utf8");
+    process.stderr.write(`» wrote ${path.relative(process.cwd(), teamPath)}\n`);
+
+    manifest.teams.push({
+      teamId: report.teamId,
+      teamName: report.teamName,
+      teamTag: report.teamTag,
+    });
+
+    if (!firstReport) firstReport = report;
+  }
+
+  // Write manifest.
+  const manifestPath = path.join(outDir, "teams.json");
+  await fs.writeFile(manifestPath, JSON.stringify(manifest, null, 2) + "\n", "utf8");
+  process.stderr.write(`» wrote ${path.relative(process.cwd(), manifestPath)}\n`);
+
+  // Backwards compat: also write data/team.json as the first team.
+  if (firstReport) {
+    const legacyPath = path.join(outDir, "team.json");
+    await fs.writeFile(legacyPath, JSON.stringify(firstReport, null, 2) + "\n", "utf8");
+    process.stderr.write(`» wrote ${path.relative(process.cwd(), legacyPath)} (legacy alias)\n`);
+  }
+
+  process.stderr.write(`\n» done: ${manifest.teams.length} team(s) fetched.\n`);
 }
 
 main().catch((err: unknown) => {
