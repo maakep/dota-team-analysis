@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-30T08:14:15.115Z",
+  "generatedAt": "2026-05-30T08:16:01.660Z",
   "windowFrom": "2025-12-01",
   "windowTo": "2026-05-30",
   "teamId": 9254880,
@@ -7,7 +7,7 @@
   "teamTag": null,
   "totalWins": 31,
   "totalLosses": 45,
-  "windowStart": 1764576851,
+  "windowStart": 1764576959,
   "windowDays": 180,
   "matchesAnalyzed": 24,
   "lastMatchAt": 1779742219,
