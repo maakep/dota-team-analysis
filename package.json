@@ -10,7 +10,7 @@
     "start": "npm run prefetch && next dev",
     "lint": "next lint",
     "format": "prettier --write .",
-    "refresh": "npm run prefetch && git add data/team.json && git commit -m \"data: refresh team.json\" && git push"
+    "refresh": "npm run prefetch && git add data/* && git commit -m \"data: refresh team.json\" && git push"
   },
   "dependencies": {
     "next": "14.2.13",
