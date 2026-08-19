@@ -1,13 +1,43 @@
 {
   "teams": [
     {
-      "teamId": 9471875,
-      "teamName": "Färskt Kaffe",
+      "teamId": 9572001,
+      "teamName": "PARIVISION",
       "teamTag": null
     },
     {
-      "teamId": 9838881,
-      "teamName": "De 4 clownerna och Poppe",
+      "teamId": 2163,
+      "teamName": "Team Liquid",
+      "teamTag": "LIQ"
+    },
+    {
+      "teamId": 7119388,
+      "teamName": "Team Spirit",
+      "teamTag": "TS"
+    },
+    {
+      "teamId": 10136357,
+      "teamName": "Nigma Galaxy ",
+      "teamTag": null
+    },
+    {
+      "teamId": 9247354,
+      "teamName": "Team Falcons",
+      "teamTag": "FLCN"
+    },
+    {
+      "teamId": 8255888,
+      "teamName": "BetBoom Team",
+      "teamTag": "BBT"
+    },
+    {
+      "teamId": 10150413,
+      "teamName": "Tundra Esports",
+      "teamTag": null
+    },
+    {
+      "teamId": 9823272,
+      "teamName": "Team Yandex",
       "teamTag": null
     }
   ]
